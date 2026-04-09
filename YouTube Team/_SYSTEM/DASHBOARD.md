@@ -9,7 +9,7 @@
 
 | Channel | Master Context | Phase | Next Task | Notes |
 |---------|---------------|-------|-----------|-------|
-| **Quant Trading** | DRAFT | Phase 1 | Task 1 — Content Research | Master Context drafted 2026-04-09 |
+| **Quant Trading** | DRAFT | Phase 5 | Task 13 — Awaiting Decisions | Channel Setup Plan delivered, 4 decisions pending |
 | **Cricket Analytics** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Gaming Noob** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Vasanth Builds** | NOT STARTED | — | Waiting | Live prep/building channel — QF learning, Cricket Analytics, AI projects |
@@ -32,7 +32,7 @@
 | 03 - Scripting | Task 10 — CTA Inserter | not-started | — | — |
 | 04 - Community & Comments | Task 11 — Community Posts | not-started | — | — |
 | 04 - Community & Comments | Task 12 — Comment Replies | not-started | — | — |
-| 05 - Channel & Positioning | Task 13 — Channel Setup Plan | not-started | — | — |
+| 05 - Channel & Positioning | Task 13 — Channel Setup Plan | waiting-on-decisions | 2026-04-09 | [task-snapshot](../Quant-Trading/05%20-%20Channel%20%26%20Positioning/Task%2013%20-%20Channel%20Audit/task-snapshot.md) |
 | 05 - Channel & Positioning | Task 14 — About Section | not-started | — | — |
 | 05 - Channel & Positioning | Task 15 — Banner | not-started | — | — |
 | 05 - Channel & Positioning | Task 16 — Playlist Strategy | not-started | — | — |
