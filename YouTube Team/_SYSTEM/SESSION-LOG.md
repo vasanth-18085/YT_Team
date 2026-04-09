@@ -175,4 +175,62 @@
 - Tier-S videos generated first to prioritize highest-impact content
 
 ### Next
-- Task 5 — Thumbnail Concepts (pair with chosen titles)
+- ~~Task 5 — Thumbnail Concepts~~ (started in Session 7)
+
+---
+
+## Session 7 — 2026-04-09
+
+**Focus:** Task 5 — Thumbnail Concepts (V0–V2)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Re-read Master Context Doc, Dashboard, Task 4 title picks | Context loaded: faceless channel, ML-aware beginners, chosen titles for V0-V2 |
+| — | Generated 5 thumbnail concepts for V0 (Trailer) | Pick: "ALL FREE." + cracking gold padlock — liberation emotion |
+| — | Generated 5 thumbnail concepts for V1 (Architecture Reveal) | Pick: "FULL SYSTEM" + clean architecture diagram — authority emotion |
+| — | Generated 5 thumbnail concepts for V2 (Backtests Are Lies) | Pick: "IT'S A LIE" + cracked equity curve — fear + curiosity |
+| — | Saved consolidated output + task snapshot | Task 5 folder: V0-V2 concepts + snapshot |
+
+### Decisions
+- Dark backgrounds as default (authority + tech aesthetic)
+- Each thumbnail targets ONE emotion only — no mixed signals
+- Thumbnail text never repeats the title — always completes or amplifies
+- Faceless rule: objects, diagrams, abstract visuals serve as "face" element
+- Color palette: green = growth, red = fear, gold = premium/free, blue = technical
+
+### Next
+- Continue Task 5 for V3–V25 (batch by tier: S-tier next)
+
+---
+
+## Session 8 — 2026-04-09
+
+**Focus:** Task 5 — Thumbnail Concepts (all 26 videos, full completion)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Re-read Task 5 instructions + Master Context Doc + Task 4 title picks | Full context loaded |
+| — | Generated 5 thumbnail concepts for V0–V2 (Batch 1) | 15 concepts, 3 best picks |
+| — | Generated 5 thumbnail concepts for V3–V6 (Batch 2) | 20 concepts, 4 best picks |
+| — | Generated 5 thumbnail concepts for V7–V10 (Batch 3) | 20 concepts, 4 best picks |
+| — | Generated 5 thumbnail concepts for V11–V14 (Batch 4) | 20 concepts, 4 best picks |
+| — | Generated 5 thumbnail concepts for V15–V18 (Batch 5) | 20 concepts, 4 best picks |
+| — | Generated 5 thumbnail concepts for V19–V22 (Batch 6) | 20 concepts, 4 best picks |
+| — | Generated 5 thumbnail concepts for V23–V25 (Batch 7) | 15 concepts, 3 best picks |
+| — | Compiled consolidated output file | 130 concepts total, quick reference table, design notes |
+| — | Created task snapshot | Task 5 complete |
+| — | Updated DASHBOARD + SESSION-LOG | Phase 2 complete, next = Task 6 |
+
+### Decisions
+- Regenerated all 26 videos from scratch (Session 7 only had V0-V2) for consistency across the full set
+- 3-4 videos per batch worked well for thumbnails (more concise than titles)
+- All visuals faceless: objects, diagrams, charts, code, metaphorical imagery only
+- Dark/moody aesthetic across all 26 — near-black backgrounds, teal/green/gold/red accents
+- Thumbnail text always adds info the title doesn't contain — never repeats
+- Identified 4 recurring visual motifs: before/after splits, shattered objects, tournaments, pipelines
+- Phase 2 (Titles & Thumbnails) is now COMPLETE for Quant Trading
+
+### Next
+- Task 6 — Brain Dump Organiser (Phase 3: Scripting begins)
