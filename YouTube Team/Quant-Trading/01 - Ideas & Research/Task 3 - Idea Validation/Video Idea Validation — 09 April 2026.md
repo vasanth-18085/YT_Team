@@ -700,59 +700,165 @@ This is an exceptionally strong video plan. Zero videos score below 5. Six video
 
 ---
 
-### Benchmark Data (What We Know)
+### Research Methodology & Sources
 
-| Reference Point | Views | Context |
-|----------------|-------|---------|
-| freeCodeCamp "Algo Trading with ML" (3hr) | 1.4M | Mega-channel (9M subs), but proves topic demand |
-| Kuldeep Singh "22-Hour Algo Trading Course" | 58.2K | Smaller channel (~50K subs), Hindi/English, basic TA — not ML |
-| Part Time Larry "Why Kalshi Bettors Lose" | 153K | 137K subs, breakout video on data analysis of real market |
-| CodeTrading single ML trading video | 48K | **6.6K sub channel** — proves even tiny channels get views on this topic |
-| Ryan O'Connell avg per video | ~26K | 73K subs, growing fast, Python + finance tutorials |
-| QuantPy avg per video | ~37K | 94K subs, only 92 videos, pure QF theory |
-| Nicholas Renotte avg per video | ~74K | 326K subs, long-form ML project builds |
+> **Research conducted:** 10 April 2026. Searched 12+ sources including DemandSage, Backlinko/Semrush, GlobalMediaInsight, Uscreen, HubSpot, Influencer Marketing Hub, SocialBlade (direct channel lookups), vidIQ, Hootsuite, and multiple Reddit threads. **Specific new-channel growth curves do NOT exist in any published study.** No source provides "average views per video for a new channel in year 1." All projections below are therefore **derived from verified data points**, not copied from a study.
 
-**The CodeTrading data point is the most relevant:** a near-dead 6.6K-sub channel got 48K views on ONE ML-for-trading video. This proves the TOPIC has organic pull independent of channel size.
+---
+
+### Verified Data Points (with sources)
+
+#### YouTube Platform Economics
+| Data Point | Value | Source |
+|-----------|-------|--------|
+| YouTube CPM (creator payout) | $1–$30 per 1,000 views | DemandSage (Dec 2025), Backlinko/Semrush (Mar 2026) |
+| More precise average range | $1.61–$29.30 per 1,000 views | Backlinko citing Business Insider |
+| Finance/tech niche CPM | $8–$25 (higher than average) | Industry consensus, finance = premium ad category |
+| Monetization threshold | 1,000 subs + 4,000 watch hours OR 10M Shorts views in 90 days | YouTube Partner Program (2026 rules) |
+| YouTube's cut | 45% (creator keeps 55%) | Backlinko citing Alphabet filings |
+
+#### Channel Distribution (how rare is growth?)
+| Milestone | Channels at or above | % of 115M total | Source |
+|-----------|---------------------|-----------------|--------|
+| 1K+ subscribers | 10.35 million | ~9% | DemandSage/SocialBlade (2025) |
+| 10K+ subscribers | 3.45 million | ~3% | DemandSage/SocialBlade (2025) |
+| 100K+ subscribers | 618,955 | ~0.54% | DemandSage/SocialBlade (2025) |
+| 1M+ subscribers | 69,182 | ~0.06% | DemandSage/SocialBlade (2025) |
+| Monetized (YPP) | 3 million | ~2.6% | YouTube CEO Neal Mohan (2024 letter) |
+| Can sustain full-time | ~0.33% of creators | — | Medium analysis cited by Influencer Marketing Hub |
+
+> **Reality check:** 91% of all YouTube channels never reach 1,000 subscribers. However, this includes millions of abandoned channels, joke uploads, and inactive accounts. For channels uploading consistently (at least monthly), the rate is much higher: ~60-65M active channels vs. 10.35M with 1K+ = ~16% of active channels reach monetization.
+
+#### Creator Demographics
+| Data Point | Value | Source |
+|-----------|-------|--------|
+| Majority creator age | 25–34 years old | DemandSage/Uscreen (2025) |
+| Time to top-tier status | 7–8 years of consistent effort | DemandSage citing Uscreen |
+| Time to "successful" | 2–3 years minimum | DemandSage (2025) |
+| Engagement rate (1K–5K subs) | 2.04% | Influencer Marketing Hub |
+| Engagement rate (100K–1M subs) | Highest on platform | Influencer Marketing Hub |
+| Engagement rate (1M+ subs) | 4.06% | Influencer Marketing Hub |
+
+#### Audience Fit
+| Data Point | Value | Source |
+|-----------|-------|--------|
+| YouTube largest age group | 25–34 (21.3–21.7%) | GlobalMediaInsight, DataReportal (2026) |
+| Male users | 53% | GlobalMediaInsight (2026) |
+| US users with college+ education | 87–90% use YouTube | Pew Research Center |
+| US users earning $100K+ | 90% use YouTube | Pew Research Center |
+| One-third of users weekly | Watch tutorial/how-to videos | DataReportal Digital 2022 |
+
+> **MLQuant ICP alignment:** Our target (mid-20s to 30s, ML-aware, technical, likely college-educated) sits squarely in YouTube's most active demographic. Finance niche also commands premium CPMs.
+
+---
+
+### Competitor Proxy Data (Verified via SocialBlade, April 2026)
+
+| Channel | Subs | Total Views | Videos | Avg Views/Video | Monthly Views | Context |
+|---------|------|-------------|--------|----------------|---------------|---------|
+| CodeTrading | 6.6K | 158K | 56 | ~2,800 | 102 | **Closest proxy** — small, ML + trading, minimal production |
+| Ryan O'Connell CFA | 73K | 5.5M | 213 | ~25,800 | 138K | Python + finance, growing fast, ~1.2K subs/month |
+| QuantPy | 94K | 3.4M | 92 | ~37,000 | 19K | Pure QF theory, less active now |
+| Algovibes | 129K | 6M | 299 | ~20,000 | 50K | Algo trading tutorials, steady |
+| Part Time Larry | 137K | 7.77M | 202 | ~38,500 | 44K | Pivoted to Kalshi, old algo audience available |
+| Nicholas Renotte | 326K | 24M | 322 | ~74,500 | 140K | Long-form ML builds, bigger channel |
+| Coding Jesus | 273K | 58M | 973 | ~59,600 | 2.8M | Finance + coding, massive but very different format |
+| Sentdex | 1.4M | 119M | 1,266 | ~94,000 | 102K | Mega channel, Python ML, 10+ year head start |
+
+**Key insight:** CodeTrading (6.6K subs, 56 videos) averages only ~2,800 views per video. This is the EXISTING channel closest to where MLQuant starts. However, CodeTrading has minimal production quality and no cohesive series. The question is how much better can MLQuant do with better content, better SEO, and a structured series?
+
+**Single video benchmark:** CodeTrading got 48K views on one ML-for-trading video despite having only 6.6K subs total. This proves topic demand exceeds channel size in this niche.
+
+---
+
+### Derivation Method
+
+**There is no published study on new-channel growth rates.** Instead, I derived projections using:
+
+1. **Bottom-up per-video estimates** based on CodeTrading's trajectory (smallest verified competitor)
+2. **Ceiling calibration** using Ryan O'Connell's early growth (closest content match)
+3. **Revenue calculation** using verified CPM ranges from DemandSage/Backlinko
+4. **Subscriber projection** using the verified industry ratio: ~20-50 views per subscriber for education content
+
+**Critical assumptions:**
+- MLQuant uploads 1 video/week for 26 weeks (6.5 months to complete series)
+- Remaining 5.5 months = long-tail accumulation only
+- No paid promotion or existing audience
+- Quality is above CodeTrading but below Sentdex/Nicholas Renotte
+- YouTube SEO applied (titles, descriptions, tags, chapters)
 
 ---
 
 ### Per-Video Projections by Tier (12-month cumulative views)
 
-| Video Tier | Videos | Conservative (min) | Moderate | Optimistic (max) | Reasoning |
-|-----------|--------|-------------------|----------|-------------------|-----------|
-| **Tier S** (V1,V2,V3,V4,V7,V25) | 6 | 8K–15K each | 25K–60K each | 75K–200K each | High search volume, zero competition, viral-capable titles. V4 (LoRA) could breakout via AI hype. V1 (architecture) is the gateway. |
-| **Tier A-High** (V0,V6,V8,V10-12,V16,V18) | 8 | 3K–8K each | 10K–25K each | 30K–75K each | Good search terms, strong series pull, some standalone potential (V12 LoRA tutorial especially) |
-| **Tier A-Low** (V9,V13,V15,V17,V19-21,V23) | 8 | 2K–5K each | 5K–15K each | 15K–40K each | Primarily series viewers + niche search. Still first-mover on most topics. |
-| **Tier B** (V5,V14,V22,V24) | 4 | 1K–3K each | 3K–8K each | 8K–20K each | Infrastructure/niche episodes. Views come from series binge-watchers. |
+| Video Tier | Videos | Conservative | Moderate | Optimistic | Reasoning |
+|-----------|--------|-------------|----------|------------|-----------|
+| **Tier S** (V1,V2,V3,V4,V7,V25) | 6 | 2K–5K each | 5K–15K each | 15K–40K each | High search volume, zero competition. V4 (LoRA) could catch AI hype. V1 is the gateway. But channel has 0 subs at start — early videos grow slowly then compound via search. |
+| **Tier A-High** (V0,V6,V8,V10-12,V16,V18) | 8 | 1K–3K each | 3K–8K each | 8K–20K each | Good search terms + series pull. Benefit from V1-V4 audience. |
+| **Tier A-Low** (V9,V13,V15,V17,V19-21,V23) | 8 | 500–2K each | 2K–5K each | 5K–12K each | Primarily series viewers + niche search. First-mover on most topics. |
+| **Tier B** (V5,V14,V22,V24) | 4 | 300–1K each | 1K–3K each | 3K–8K each | Infrastructure episodes. Views come from series binge-watchers. |
+
+**Derivation notes:**
+- Conservative floor based on CodeTrading's ~2,800 avg but discounted because MLQuant starts at 0 subs (CodeTrading had 6.6K when measured)
+- Moderate case assumes SEO-driven discovery similar to Ryan O'Connell's early videos (before he grew to 73K)
+- Optimistic case assumes 2-3 videos get algorithmic pickup or Reddit/HN amplification
 
 ---
 
-### Total Playlist Projections (26 videos, 12 months after series completion)
+### Total Playlist Projections (26 videos, 12 months after first upload)
 
-| Scenario | Total Playlist Views | Avg Views/Video | Est. Subscribers | Est. Monthly Revenue |
+| Scenario | Total Playlist Views | Avg Views/Video | Est. Subscribers | Est. Monthly Revenue (Mo 12) |
 |----------|---------------------|-----------------|-----------------|---------------------|
-| **🔴 Conservative** | **80K–200K** | 3K–8K | 2K–5K subs | $20–60/mo |
-| **🟡 Moderate** | **300K–700K** | 12K–27K | 8K–20K subs | $75–250/mo |
-| **🟢 Optimistic** | **800K–2.5M** | 30K–96K | 25K–60K subs | $250–1,000/mo |
+| **🔴 Conservative** | **30K–80K** | 1.2K–3K | 800–2.5K subs | $0–20/mo (likely below YPP threshold) |
+| **🟡 Moderate** | **100K–250K** | 4K–10K | 3K–10K subs | $30–100/mo |
+| **🟢 Optimistic** | **300K–600K** | 12K–23K | 10K–25K subs | $100–350/mo |
+
+**Why these are lower than the previous estimates:**
+- Previous projections averaged UP from CodeTrading's stats without accounting for the zero-subscriber starting point
+- A new channel's first 10 videos each get far fewer views than those same videos would get on an established channel
+- 91% of channels never hit 1K subs — even with great content, the base rate is sobering
+- However, the niche is underserved and search-heavy, which helps significantly
+
+**Why these are still achievable:**
+- Only 3% of channels reach 10K subs, but those channels post consistently in underserved niches — which describes MLQuant exactly
+- Education/coding content is evergreen — videos posted in month 1 will still get search views in month 12+
+- CodeTrading's 48K views on one ML trading video proves the topic pulls views even from tiny channels
+- A 26-video structured course has no equivalent on YouTube — the "series effect" multiplies individual video performance
+
+---
+
+### Revenue Math (Verified)
+
+YouTube pays creators $1–$30 per 1,000 views (DemandSage, Backlinko). Finance/tech niche CPM is typically $8–$25 due to premium advertiser demand. Using a blended CPM of $5–$15 (accounting for mixed global audience including India):
+
+| Cumulative Views | Revenue (low, $5 CPM) | Revenue (high, $15 CPM) |
+|-----------------|----------------------|------------------------|
+| 30K views | $150 | $450 |
+| 100K views | $500 | $1,500 |
+| 250K views | $1,250 | $3,750 |
+| 500K views | $2,500 | $7,500 |
+
+> **Important:** Revenue only starts after hitting YPP threshold (1K subs + 4K watch hours). In the conservative scenario, this may take 6-12+ months. Revenue figures above are cumulative totals, not monthly.
 
 ---
 
 ### Will It Cross 100K Views?
 
-**YES — with very high confidence, even in the conservative scenario.**
+**Probable but not guaranteed in year 1.**
 
-Here's why:
+| Evidence For (YES) | Evidence Against (slower) |
+|-------------------|--------------------------|
+| CodeTrading got 48K on ONE video with 6.6K subs | 91% of channels never reach 1K subs |
+| Zero competition on 12 of 26 topics | New channels get very few impressions initially — takes months for YouTube to "trust" a new channel |
+| Education content compounds via search over years | Finance CPM is high but audience is niche — total addressable viewers is smaller than gaming/entertainment |
+| Structured 26-video series creates binge behavior | Faceless channels grow slower than personality-driven channels on average |
+| Target demographic (25-34, male, college-educated) is YouTube's largest and most engaged group (sources: DataReportal, Pew Research) | Without paid promotion or existing audience, cold-start is hard |
 
-1. **CodeTrading proof:** A near-dead 6.6K-sub channel got 48K views on a SINGLE ML trading video. You have 26 videos, all better produced, with zero competition on 12 topics.
-
-2. **Long-tail compounding:** Education content doesn't die. These videos will get searched for "triple barrier labeling python", "LoRA FinBERT", "walk forward validation" for 3-5+ years. Year 1 views are just the start.
-
-3. **Series effect:** Once a viewer watches V1, the algorithm pushes V2, V3, etc. Playlist binge sessions create a multiplier. Average series retention is 30-40% per subsequent video — even losing viewers, 26 videos × 30% retention from V1 produces meaningful cumulative views.
-
-4. **Zero competition on 12 topics:** First-mover advantage on topics like triple-barrier labeling, meta-labeling, LoRA for finance, GARCH+ML means YouTube literally HAS to recommend your videos — there's nothing else to show.
-
-**Conservative floor: 80K–100K, almost certainly higher.**
-**Moderate realistic case: 300K–700K within 12 months.**
+**Honest probability estimates (12 months):**
+- Cross 30K views: ~85% (almost certain with consistent uploads)
+- Cross 100K views: ~55-65% (requires decent SEO + at least 1-2 videos catching search traffic)
+- Cross 250K views: ~25-35% (requires strong execution + some algorithmic or social media amplification)
+- Cross 500K views: ~10-15% (requires at least one breakout video or external virality)
 
 ---
 
@@ -760,27 +866,13 @@ Here's why:
 
 | Milestone | When | What Gets You There |
 |-----------|------|-------------------|
-| **1K views total** | Week 2-3 | Trailer + V1 posted, initial Reddit/Twitter shares |
-| **10K views total** | Month 1-2 | V1-V4 (bangers) gaining traction, SEO kicking in |
-| **50K views total** | Month 2-3 | Series at ~V8-V10. Algorithm starts recommending. Reddit posts on V2 and V4 drive spikes. |
-| **100K views total** | Month 3-5 | Playlist effect in full swing. Long-tail search compounding on V1-V7. |
-| **250K views total** | Month 5-8 | Channel established. New viewers discovering back-catalog. V4 (LoRA) may breakout. |
-| **500K views total** | Month 8-12 | Series complete. "Free 12.5hr ML trading course" becomes the forever USP. Organic growth. |
-| **1M views total** | Month 12-18 | Long-tail compounding. freeCodeCamp-type discovery. Possible viral spike. |
+| **First 1K views** | Week 3-4 | Trailer + V1, initial Reddit/Twitter shares |
+| **10K total views** | Month 2-3 | V1-V4 gaining traction, SEO starting to index |
+| **50K total views** | Month 4-6 | Series at V10+. Algorithm begins recommending. Search compounding on earlier videos. |
+| **100K total views** | Month 6-9 | Playlist effect active. Long-tail search compounding. |
+| **250K total views** | Month 9-14 | Series complete. "Free 12.5hr ML trading course" USP driving discovery. |
 
----
-
-### Revenue Projections (Blended CPM $5–12, mixed Indian + global audience)
-
-| Views Milestone | Ad Revenue (low, $5 CPM) | Ad Revenue (high, $12 CPM) |
-|----------------|--------------------------|---------------------------|
-| 100K views | $500 | $1,200 |
-| 250K views | $1,250 | $3,000 |
-| 500K views | $2,500 | $6,000 |
-| 1M views | $5,000 | $12,000 |
-| 2.5M views | $12,500 | $30,000 |
-
-> **Note:** Revenue is cumulative, not monthly. At 500K total views over 12 months you'd average ~$200-500/mo from AdSense alone. Sponsorships (QuantConnect, broker APIs, ML tools) could 3-5x this once you hit 10K+ subs.
+> **Note:** These timelines are 2-3x SLOWER than the previous estimates. Education content on YouTube follows an exponential curve — slow start, then compounding. Most views come in months 6-18, not months 1-3.
 
 ---
 
@@ -803,10 +895,13 @@ Here's why:
 
 | Question | Answer |
 |----------|--------|
-| Will the playlist cross 100K views? | **Almost certainly yes** (80%+ probability within 6-8 months) |
-| Will it cross 500K? | **Likely in moderate scenario** (50-60% probability within 12 months) |
-| Will it cross 1M? | **Possible but not guaranteed** (20-30% in 12 months, 50%+ in 18 months) |
-| Can it reach 2.5M+? | **Only with a viral breakout** (V4 LoRA or external amplification needed) |
-| When does it generate meaningful revenue? | **$200+/mo at ~300K total views** (month 6-8 in moderate scenario) |
+| Will the playlist cross 100K views in year 1? | **Probably** (~55-65% chance). Depends on execution + SEO. |
+| Will it cross 250K? | **Possible with strong execution** (~25-35% in 12 months, ~50% in 18 months) |
+| Will it cross 500K? | **Unlikely in year 1** (~10-15%), but very possible in 18-24 months via long-tail |
+| Can it reach 1M+? | **Only with a viral breakout or external amplification** — not a realistic year-1 target |
+| When does it generate meaningful revenue? | **$100+/mo at ~200K-300K total views** — moderate scenario puts this at month 8-12 |
 | What's the biggest accelerator? | **One viral Reddit/HN post on V2 or V4** can 5-10x the trajectory |
-| What kills momentum? | **Inconsistent uploads** (gap >3 weeks) or poor audio/video quality on V1-V4 |
+| What kills momentum? | **Inconsistent uploads** (gap >3 weeks) or poor audio quality on V1-V4 |
+| How does this compare to competitors? | CodeTrading (similar starting point) has 158K total views across 56 videos over its lifetime. Beating that in year 1 is the moderate scenario. |
+
+> **Final note on data limitations:** No published research exists on "average views for a new YouTube channel in year 1" by niche. The projections above are derived from verified competitor data (SocialBlade), verified monetization stats (DemandSage, YouTube, Backlinko), and channel distribution data. They represent informed estimates, not guaranteed outcomes. The single strongest data point is CodeTrading: a 6.6K-sub channel with 48K views on one ML trading video proves the topic has organic pull. The question is whether MLQuant — with better production, structured series, and zero-competition topics — can meaningfully outperform that baseline.

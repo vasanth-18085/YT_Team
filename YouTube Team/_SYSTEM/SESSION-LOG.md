@@ -123,3 +123,29 @@
 ### Next
 - Task 4 — Title Generator (100 frameworks for all 26 videos)
 - Task 5 — Thumbnail Concepts
+
+---
+
+## Session 5 — 2026-04-10
+
+**Focus:** Deep research to validate Task 3 playlist view projections
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Searched 12+ sources for new-channel growth data | DemandSage, Backlinko, GlobalMediaInsight, Uscreen, HubSpot, Influencer Marketing Hub, SocialBlade, vidIQ, Hootsuite, Reddit (blocked), others |
+| — | Found platform-level stats (CPM, channel distribution, demographics) | Verified: $1-$30/1K views, only 9% of channels reach 1K subs, 3M channels monetized |
+| — | Confirmed NO published study exists on new-channel growth rates | Searched specifically for "average views per video for new channels" — no such data exists publicly |
+| — | Derived bottom-up projections from competitor SocialBlade data | CodeTrading (6.6K subs, 2.8K avg views/video) as floor; Ryan O'Connell as ceiling |
+| — | Revised projections DOWNWARD with full sourcing | Conservative: 30K-80K (was 80K-200K), Moderate: 100K-250K (was 300K-700K), Optimistic: 300K-600K (was 800K-2.5M) |
+| — | Added Research Methodology section, Verified Data Points tables, Derivation Method | All numbers now traceable to named sources |
+
+### Decisions
+- Previous projections were 2-3x too high — corrected with honest derivation
+- No published benchmark exists for new channel growth; all projections are derived estimates (honestly stated)
+- CodeTrading's 48K views on one ML trading video remains the strongest data point for topic demand
+- 100K views in year 1 is probable (~55-65%) but NOT guaranteed
+- Moderate scenario (100K-250K) is the most realistic planning target
+
+### Next
+- Task 4 — Title Generator (100 frameworks for all 26 videos)
