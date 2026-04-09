@@ -32,8 +32,8 @@
 | 03 - Scripting | Task 10 — CTA Inserter | not-started | — | — |
 | 04 - Community & Comments | Task 11 — Community Posts | not-started | — | — |
 | 04 - Community & Comments | Task 12 — Comment Replies | not-started | — | — |
-| 05 - Channel & Positioning | Task 13 — Channel Setup Plan | waiting-on-decisions | 2026-04-09 | [task-snapshot](../Quant-Trading/05%20-%20Channel%20%26%20Positioning/Task%2013%20-%20Channel%20Audit/task-snapshot.md) |
-| 05 - Channel & Positioning | Task 14 — About Section | not-started | — | — |
+| 05 - Channel & Positioning | Task 13 — Channel Setup Plan | done | 2026-04-09 | [task-snapshot](../Quant-Trading/05%20-%20Channel%20%26%20Positioning/Task%2013%20-%20Channel%20Audit/task-snapshot.md) |
+| 05 - Channel & Positioning | Task 14 — About Section | done | 2026-04-09 | — |
 | 05 - Channel & Positioning | Task 15 — Banner | not-started | — | — |
 | 05 - Channel & Positioning | Task 16 — Playlist Strategy | not-started | — | — |
 | 06 - Monetisation & Outreach | Task 17 — Brand Outreach | not-started | — | — |
