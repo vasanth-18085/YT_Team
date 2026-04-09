@@ -1,0 +1,69 @@
+MLQuant YouTube Channel Logo — Generation Prompt
+
+Platform: NanoBanana / Midjourney / DALL-E
+
+---
+
+PROMPT 1 (Geometric Monogram):
+Minimalist logo icon for a YouTube channel called "MLQuant". Fuse the letters "ML" into a clean geometric monogram. Style: modern tech, sharp edges, no gradients. Color: electric blue (#00B4D8) on a dark navy/black circular background (#0A0A1A). Must be legible and recognizable at 40x40 pixels. No text other than "ML". No background clutter. Flat design, suitable for a profile picture.
+
+---
+
+PROMPT 2 (Neural Network + Finance):
+Minimalist logo icon for a YouTube channel about machine learning applied to quantitative finance. A simple neural network node pattern (3-4 nodes with connecting lines) subtly shaped like an upward trending chart line. Color: teal/cyan (#00C9A7) on dark background (#0D1117). Clean, geometric, no gradients, no text. Must read clearly at 40x40px. Flat vector style, suitable as a YouTube profile picture.
+
+---
+
+PROMPT 3 (Brain + Candlestick):
+Minimalist flat icon combining a simplified brain circuit pattern on the left merging into a single candlestick chart bar on the right. Color: bright electric blue on near-black background. Clean lines, no noise, no text, no gradients. Designed to be recognizable as a 40x40px YouTube profile picture. Tech meets finance aesthetic.
+
+---
+
+PROMPT 4 (Abstract Mark):
+Abstract minimalist logo mark: a single continuous line that forms both a neural network connection and a stock chart peak. Electric blue (#0096FF) glowing subtly on matte black (#111111). No text. Ultra clean. Must work as a tiny YouTube profile avatar. Flat design, high contrast.
+
+---
+
+===========================
+BANNER GENERATION PROMPTS
+===========================
+
+BANNER PROMPT 1 (Clean Dark Minimal):
+Wide YouTube banner background (2560x1440px). Dark matte black (#0A0A1A) with a subtle abstract grid pattern of faint neural network connection lines in dark blue (#1A2744). No text, no logos, no icons — just the background. Clean, minimal, tech aesthetic. The grid lines should be barely visible, adding depth without clutter.
+
+---
+
+BANNER PROMPT 2 (Circuit + Finance Lines):
+Wide YouTube banner background (2560x1440px). Deep navy (#0D1117) background with subtle abstract circuit board traces and a faint stock chart line running across the bottom third. Lines in muted teal (#00C9A7) at 15-20% opacity. No text, no logos. Ultra clean — the text will be overlaid separately. Tech meets finance atmosphere.
+
+---
+
+BANNER PROMPT 3 (Gradient Glow):
+Wide YouTube banner background (2560x1440px). Near-black background with a soft centered glow in electric blue (#00B4D8) fading into dark edges. Minimal, no patterns, no text, no icons. Just a clean atmospheric gradient that draws the eye to center where text will be placed. Modern, premium tech feel.
+
+---
+
+BANNER PROMPT 4 (Data Visualization):
+Wide YouTube banner background (2560x1440px). Dark background (#111111) with a very subtle abstract data visualization — scattered small dots and thin connecting lines like a network graph or scatter plot, in faint blue (#1E3A5F). Concentrated slightly in the bottom-left and top-right corners, leaving the center clean for text overlay. No text, no logos.
+
+---
+
+BANNER TEXT (overlay in Canva after generating background):
+"ML meets Quant Finance. Real code. Real systems. Completely free."
+
+Banner design steps:
+1. Generate background using one of the prompts above
+2. Open Canva → Custom size → 2560 x 1440 px
+3. Upload generated background
+4. Add text centered: "ML meets Quant Finance. Real code. Real systems. Completely free."
+5. Font: JetBrains Mono or Space Grotesk, white (#FFFFFF), bold
+6. Optionally split into two lines for readability
+7. Export as PNG
+
+===========================
+LOGO NOTES
+===========================
+
+- Generate all 4 logo prompts and pick the cleanest one
+- After selecting, bring into Canva and export at 800x800px for YouTube profile picture
+- Make sure the logo reads clearly when shrunk to 40x40px (YouTube comment size)
