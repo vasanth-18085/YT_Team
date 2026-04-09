@@ -68,3 +68,31 @@
 - Task 2 — Competitor Analysis (deeper dive on mapped channels)
 - Task 3 — Idea Validation
 - Task 4 — Title Generator (100 frameworks)
+
+---
+
+## Session 3 — 2026-04-09
+
+**Focus:** Task 2 — Competitor Gap Analysis (10 channels)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Pulled SocialBlade stats for 8 channels | Hard numbers: subs, views, monthly growth, earnings |
+| — | Pulled vidIQ data for Part Time Larry | Recent video performance + breakout video (153K views) |
+| — | Deep-dived each channel | What's working, what's missing, gaps MLQuant fills |
+| — | Built cross-competitor gap matrix | MLQuant has exclusive coverage on 12/18 core topics |
+| — | Identified 5 universal gaps | Nobody validates properly, nobody shows full pipeline, nobody honest about results |
+| — | Threat tier assessment | Ryan O'Connell = #1 threat (same audience, growing fast, but no ML) |
+| — | Generated 8 bonus video ideas | From gaps identified across competitors |
+| — | Saved Combined Gap Analysis + task snapshot | Full output saved to Task 2 folder |
+
+### Decisions
+- Combined analysis of 10 channels (vs individual analyses) for comprehensive landscape view
+- Ryan O'Connell is the #1 direct threat — differentiate on ML depth
+- Part Time Larry pivoted to Kalshi — his old algo trading audience is available to capture
+- 12.5hr ML trading course is an open goal — zero direct competition
+- MLQuant's moat: Quant_System repo, walk-forward validation, modern ML, full pipeline, honest results
+
+### Next
+- Task 3 — Idea Validation (all 26 videos)

@@ -9,7 +9,7 @@
 
 | Channel | Master Context | Phase | Next Task | Notes |
 |---------|---------------|-------|-----------|-------|
-| **Quant Trading** | DRAFT | Phase 1 | Task 2 — Competitor Analysis | Task 1 Content Research done — 26-video plan approved |
+| **Quant Trading** | DRAFT | Phase 1 | Task 3 — Idea Validation | Tasks 1-2 done — 26-video plan + 10-channel gap analysis |
 | **Cricket Analytics** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Gaming Noob** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Vasanth Builds** | NOT STARTED | — | Waiting | Live prep/building channel — QF learning, Cricket Analytics, AI projects |
@@ -21,7 +21,7 @@
 | Phase | Task | Status | Last Updated | Snapshot |
 |-------|------|--------|--------------|----------|
 | 01 - Ideas & Research | Task 1 — Content Research | done | 2026-04-09 | [task-snapshot](../Quant-Trading/01%20-%20Ideas%20%26%20Research/Task%201%20-%20Content%20Research/task-snapshot.md) |
-| 01 - Ideas & Research | Task 2 — Competitor Analysis | not-started | — | — |
+| 01 - Ideas & Research | Task 2 — Competitor Analysis | done | 2026-04-09 | [task-snapshot](../Quant-Trading/01%20-%20Ideas%20%26%20Research/Task%202%20-%20Competitor%20Analysis/task-snapshot.md) |
 | 01 - Ideas & Research | Task 3 — Idea Validation | not-started | — | — |
 | 02 - Titles & Thumbnails | Task 4 — Title Generator | not-started | — | — |
 | 02 - Titles & Thumbnails | Task 5 — Thumbnail Concepts | not-started | — | — |
