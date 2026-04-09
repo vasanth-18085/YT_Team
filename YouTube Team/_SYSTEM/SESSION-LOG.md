@@ -96,3 +96,30 @@
 
 ### Next
 - Task 3 — Idea Validation (all 26 videos)
+
+---
+
+## Session 4 — 2026-04-09
+
+**Focus:** Task 3 — Video Idea Validation (all 26 videos)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Re-read Master Context Doc | Refreshed ICP pains, pleasures, myths, method for validation |
+| — | Validated all 26 videos through ICP fit + CCN + growth potential | Full scorecard: avg 7.7/10, six Tier-S videos |
+| — | Generated improvement suggestions | 2-3 actionable suggestions per video |
+| — | Identified 4 retitle candidates | V5, V9, V14, V24 need better cold-traffic titles |
+| — | Identified 2 merge candidates | V21+V22 and V13+V14 could combine (optional) |
+| — | Cross-niche promotion plan | V2, V4, V7, V12 for Reddit/Twitter/HN outside QF |
+| — | Saved validation + task snapshot | Full output to Task 3 folder |
+
+### Decisions
+- First 4 videos confirmed as "bangers" (scores: 10, 10, 9, 10) — front-load strategy validated
+- Zero videos should be cut (all score 5+)
+- Phase 1 (Ideas & Research) is now COMPLETE for Quant Trading
+- Average score 7.7/10 — exceptionally strong plan
+
+### Next
+- Task 4 — Title Generator (100 frameworks for all 26 videos)
+- Task 5 — Thumbnail Concepts
