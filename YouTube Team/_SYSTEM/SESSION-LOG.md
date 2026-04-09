@@ -121,7 +121,7 @@
 - Average score 7.7/10 — exceptionally strong plan
 
 ### Next
-- Task 4 — Title Generator (100 frameworks for all 26 videos)
+- ~~Task 4 — Title Generator~~ (done in Session 6)
 - Task 5 — Thumbnail Concepts
 
 ---
@@ -148,4 +148,31 @@
 - Moderate scenario (100K-250K) is the most realistic planning target
 
 ### Next
-- Task 4 — Title Generator (100 frameworks for all 26 videos)
+- ~~Task 4 — Title Generator~~ (done in Session 6)
+
+---
+
+## Session 6 — 2025-06-06
+
+**Focus:** Task 4 — Title Generator (all 26 videos)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Re-read full Title Mastery Guide (1106 lines) | All 100 frameworks, 20 rules, psychological lever glossary loaded |
+| — | Re-read Master Context Doc | ICP, tone, audience profile refreshed |
+| — | Generated 20 titles for all 6 Tier-S videos (V1, V2, V3, V4, V7, V25) | 120 titles with framework refs + top 3 picks each |
+| — | Generated 20 titles for all 8 Tier-A-High videos (V0, V6, V8, V10, V11, V12, V16, V18) | 160 titles with framework refs + top 3 picks each |
+| — | Generated 20 titles for all 8 Tier-A-Low videos (V9, V13, V15, V17, V19, V20, V21, V23) | 160 titles with framework refs + top 3 picks each |
+| — | Generated 20 titles for all 4 Tier-B videos (V5, V14, V22, V24) | 80 titles with framework refs + top 3 picks each |
+| — | Compiled into single consolidated document | 520 total titles + summary table + framework distribution analysis |
+| — | Created task snapshot | Task 4 complete |
+
+### Decisions
+- Batched 2-3 videos per sub-agent call (larger batches exceeded response limits)
+- Single consolidated file over 26 separate files for easier comparison
+- Flagged Framework #70 overuse (6/26 top picks) — recommended rotation before final selection
+- Tier-S videos generated first to prioritize highest-impact content
+
+### Next
+- Task 5 — Thumbnail Concepts (pair with chosen titles)

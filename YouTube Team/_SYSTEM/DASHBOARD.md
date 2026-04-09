@@ -1,6 +1,6 @@
 # YouTube Team — Dashboard
 
-> **Last updated:** 2026-04-10
+> **Last updated:** 2025-06-06
 > **Active channel:** Quant Trading (proving workflow)
 
 ---
@@ -9,7 +9,7 @@
 
 | Channel | Master Context | Phase | Next Task | Notes |
 |---------|---------------|-------|-----------|-------|
-| **Quant Trading** | DRAFT | Phase 2 | Task 4 — Title Generator | Phase 1 complete — projections revised with deep research (30K-600K range, sourced) |
+| **Quant Trading** | DRAFT | Phase 2 | Task 5 — Thumbnail Concepts | Task 4 done — 520 titles generated (20 per video × 26 videos), top 3 per video with reasoning |
 | **Cricket Analytics** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Gaming Noob** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Vasanth Builds** | NOT STARTED | — | Waiting | Live prep/building channel — QF learning, Cricket Analytics, AI projects |
@@ -23,7 +23,7 @@
 | 01 - Ideas & Research | Task 1 — Content Research | done | 2026-04-09 | [task-snapshot](../Quant-Trading/01%20-%20Ideas%20%26%20Research/Task%201%20-%20Content%20Research/task-snapshot.md) |
 | 01 - Ideas & Research | Task 2 — Competitor Analysis | done | 2026-04-09 | [task-snapshot](../Quant-Trading/01%20-%20Ideas%20%26%20Research/Task%202%20-%20Competitor%20Analysis/task-snapshot.md) |
 | 01 - Ideas & Research | Task 3 — Idea Validation | done | 2026-04-09 | [task-snapshot](../Quant-Trading/01%20-%20Ideas%20%26%20Research/Task%203%20-%20Idea%20Validation/task-snapshot.md) |
-| 02 - Titles & Thumbnails | Task 4 — Title Generator | not-started | — | — |
+| 02 - Titles & Thumbnails | Task 4 — Title Generator | done | 2025-06-06 | [task-snapshot](../Quant-Trading/02%20-%20Titles%20%26%20Thumbnails/Task%204%20-%20Title%20Generator/Task%204%20%E2%80%94%20Snapshot%20%E2%80%94%2006%20June%202025.md) |
 | 02 - Titles & Thumbnails | Task 5 — Thumbnail Concepts | not-started | — | — |
 | 03 - Scripting | Task 6 — Brain Dump Organiser | not-started | — | — |
 | 03 - Scripting | Task 7 — Script Refiner | not-started | — | — |
