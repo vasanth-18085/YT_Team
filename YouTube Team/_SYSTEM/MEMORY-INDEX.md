@@ -18,3 +18,4 @@
 | Quant Trading | `YouTube Team/Quant-Trading/00 - Master Context Doc/MASTER-CONTEXT.md` | DRAFT — 2026-04-09 |
 | Cricket Analytics | `YouTube Team/Cricket-Analytics/00 - Master Context Doc/MASTER-CONTEXT.md` | NOT YET CREATED |
 | Gaming Noob | `YouTube Team/Gaming-Noob/00 - Master Context Doc/MASTER-CONTEXT.md` | NOT YET CREATED |
+| Vasanth Builds | `YouTube Team/Vasanth-Builds/00 - Master Context Doc/MASTER-CONTEXT.md` | NOT YET CREATED |

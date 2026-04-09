@@ -1,10 +1,11 @@
 # YouTube Team — Copilot Workspace Instructions
 
 ## System Overview
-This workspace manages 3 YouTube channels using Oscar Owen's 18-task YouTube AI Team system.
+This workspace manages 4 YouTube channels using Oscar Owen's 18-task YouTube AI Team system.
 - **Quant Trading** — active (proving workflow first)
 - **Cricket Analytics** — waiting
 - **Gaming Noob** — waiting
+- **Vasanth Builds** — waiting (live prep/building channel: QF learning, Cricket Analytics, AI projects)
 
 ## Before Every Task
 1. Read `YouTube Team/_SYSTEM/DASHBOARD.md` to see current status across all channels
@@ -32,7 +33,8 @@ YouTube Team/
 ├── _TEMPLATES/        → master-context, task-snapshot, handoff templates + instructions + examples
 ├── Quant-Trading/     → 6 phases × 18 task folders
 ├── Cricket-Analytics/  → same structure (empty, waiting)
-└── Gaming-Noob/       → same structure (empty, waiting)
+├── Gaming-Noob/       → same structure (empty, waiting)
+└── Vasanth-Builds/    → same structure (empty, waiting) — live prep & building channel
 ```
 
 ## Task Reference (18 tasks, 6 phases)
