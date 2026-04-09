@@ -1,8 +1,8 @@
 # Channel Setup Plan — Quant Trading
 ## Task 13 — 09 April 2026
 
-> **Channel:** Quant Trading (name not finalized)
-> **Master Context:** Shadow Quant Method — Free, hands-on ML in Quantitative Finance
+> **Channel:** MLQuant
+> **Master Context:** MLQuant Method — Free, hands-on ML in Quantitative Finance
 > **Status:** Pre-launch — channel does not exist yet
 
 ---

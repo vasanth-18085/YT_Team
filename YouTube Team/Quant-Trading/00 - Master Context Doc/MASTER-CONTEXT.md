@@ -1,7 +1,7 @@
-# Master Context Doc — Shadow Quant (Quant Trading)
+# Master Context Doc — MLQuant (Quant Trading)
 
 > **Last updated:** 2026-04-09
-> **Channel:** Shadow Quant (working name)
+> **Channel:** MLQuant
 > **Status:** Draft
 
 ---
@@ -108,7 +108,7 @@
 
 ## 8. Secret Sauce
 
-**Method Name:** The Shadow Quant Method
+**Method Name:** The MLQuant Method
 
 ### Step 1: Foundation — ML Meets Finance
 - Beginner-friendly explanations of core QF concepts (no heavy math upfront)
