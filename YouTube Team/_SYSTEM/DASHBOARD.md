@@ -9,7 +9,7 @@
 
 | Channel | Master Context | Phase | Next Task | Notes |
 |---------|---------------|-------|-----------|-------|
-| **Quant Trading** | NOT STARTED | Setup | Fill Master Context | Priority — proving workflow first |
+| **Quant Trading** | DRAFT | Phase 1 | Task 1 — Content Research | Master Context drafted 2026-04-09 |
 | **Cricket Analytics** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Gaming Noob** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 
