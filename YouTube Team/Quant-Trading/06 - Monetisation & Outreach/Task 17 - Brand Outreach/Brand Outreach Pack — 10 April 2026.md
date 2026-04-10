@@ -34,5 +34,17 @@ MLQuant
 [Channel Link]
 Relevant stat: [Insert one metric]
 
-## Personalization step before sending
-Before sending, add one real sentence from the brand's latest post or release so the first line is clearly human and specific.
+## Before sending — required personalization checklist
+The template above will not work as-is. Before sending each email, complete these steps:
+
+1. **Find one real recent thing from the brand.** Visit their blog, Twitter, or changelog. Pick a specific product launch, feature update, or campaign from the last 30 days. Replace [campaign or product update], [specific detail], and [specific angle] with that real observation.
+2. **Write the value prop line.** Replace [brand value proposition] with the specific problem their product solves for MLQuant viewers. Examples below.
+3. **Add one real metric.** Replace [Insert one metric] with whichever channel stat is strongest at time of sending (e.g. "26 video series with 80K total views in first 3 months" or "4.2K subscribers, 65 percent watch-through rate on technical content").
+
+### Brand-specific value prop suggestions
+
+| Brand | Replace [brand value proposition] with | Natural video fit |
+|-------|---------------------------------------|-------------------|
+| Interactive Brokers | low commission API execution that lets viewers go from backtest to paper trading in the same Python session | V24 Live Backtester or V25 Deployment Checklist |
+| TradingView | visual charting and Pine Script alerts that let viewers validate signals visually before committing capital | V20 Performance Tearsheet or V15 Drift Monitoring |
+| Alpaca | commission free API brokerage purpose built for Python algo traders moving from paper to live | V13 VectorBT Backtesting or V24 Live Backtester |

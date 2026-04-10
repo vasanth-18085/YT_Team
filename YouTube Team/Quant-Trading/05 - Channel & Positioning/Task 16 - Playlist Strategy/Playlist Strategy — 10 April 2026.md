@@ -26,8 +26,8 @@ Videos:
 - V11 Volatility Estimation
 
 ## Playlist 3
-Title: Backtesting, Risk, and Going Live Without Blowing Up
-Description: For builders who already have signals and now need portfolio construction, risk controls, and deployment discipline.
+Title: How to Stop Your System From Blowing Up in Real Markets
+Description: For builders who already have signals and now need portfolio construction, risk controls, and position sizing before touching real capital.
 Videos:
 - V12 Portfolio Construction
 - V13 VectorBT Backtesting
@@ -35,6 +35,11 @@ Videos:
 - V15 Drift Monitoring
 - V16 Transaction Costs
 - V17 Position Sizing
+
+## Playlist 4
+Title: How to Prove Your Results Are Real Before Risking Money
+Description: For builders who need to validate that their backtest results are not flukes and then deploy with discipline.
+Videos:
 - V18 Multiple Testing Correction
 - V19 Deflated Sharpe and PBO
 - V20 Performance Tearsheet
@@ -45,4 +50,4 @@ Videos:
 - V25 Deployment Checklist
 
 ## AI and discoverability note
-Two to three focused playlists communicate authority more clearly than many fragmented lists. This structure compounds long term discoverability and makes the channel easier to navigate at first glance.
+Focused playlists communicate authority more clearly than fragmented or bloated lists. Four playlists of six to eight videos each signal topic ownership far better than three playlists where one has fourteen. This structure compounds long term discoverability and makes the channel easier to navigate at first glance.
