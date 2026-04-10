@@ -1,6 +1,6 @@
 # YouTube Team — Dashboard
 
-> **Last updated:** 2026-04-09
+> **Last updated:** 2026-04-10
 > **Active channel:** Quant Trading (proving workflow)
 
 ---
@@ -9,7 +9,7 @@
 
 | Channel | Master Context | Phase | Next Task | Notes |
 |---------|---------------|-------|-----------|-------|
-| **Quant Trading** | DRAFT | Phase 3 | Task 6 — Brain Dump Organiser | Task 5 done — 130 concepts, 26 best picks. Phase 2 complete. |
+| **Quant Trading** | DRAFT | Phase 3 | Task 8 — Intro Writer | Task 7 deep rewrite pass complete (V0-V25). Ready for Hook Writer. |
 | **Cricket Analytics** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Gaming Noob** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Vasanth Builds** | NOT STARTED | — | Waiting | Live prep/building channel — QF learning, Cricket Analytics, AI projects |
@@ -25,8 +25,8 @@
 | 01 - Ideas & Research | Task 3 — Idea Validation | done | 2026-04-09 | [task-snapshot](../Quant-Trading/01%20-%20Ideas%20%26%20Research/Task%203%20-%20Idea%20Validation/task-snapshot.md) |
 | 02 - Titles & Thumbnails | Task 4 — Title Generator | done | 2025-06-06 | [task-snapshot](../Quant-Trading/02%20-%20Titles%20%26%20Thumbnails/Task%204%20-%20Title%20Generator/Task%204%20%E2%80%94%20Snapshot%20%E2%80%94%2006%20June%202025.md) |
 | 02 - Titles & Thumbnails | Task 5 — Thumbnail Concepts | done | 2026-04-09 | [task-snapshot](../Quant-Trading/02%20-%20Titles%20%26%20Thumbnails/Task%205%20-%20Thumbnail%20Concept%20Generator/task-snapshot.md) |
-| 03 - Scripting | Task 6 — Brain Dump Organiser | not-started | — | — |
-| 03 - Scripting | Task 7 — Script Refiner | not-started | — | — |
+| 03 - Scripting | Task 6 — Brain Dump Organiser | done | 2026-04-10 | [task-snapshot](../Quant-Trading/03%20-%20Scripting/Task%206%20-%20Brain%20Dump%20Organiser/TASK_6_SNAPSHOT%20%E2%80%94%2009%20April%202026.md) |
+| 03 - Scripting | Task 7 — Script Refiner | done | 2026-04-10 | [task-snapshot](../Quant-Trading/03%20-%20Scripting/Task%207%20-%20Script%20Refiner/task-snapshot.md) |
 | 03 - Scripting | Task 8 — Intro Writer | not-started | — | — |
 | 03 - Scripting | Task 9 — Fluff Reducer | not-started | — | — |
 | 03 - Scripting | Task 10 — CTA Inserter | not-started | — | — |

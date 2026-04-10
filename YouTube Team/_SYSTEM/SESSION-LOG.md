@@ -4,6 +4,52 @@
 
 ---
 
+## Session 10 — 2026-04-10
+
+**Focus:** Task 7 — Script Refiner quality upgrade (deep rewrite pass)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Audited Task 7 outputs vs Task 6 logical flows | Confirmed many scripts were scaffold-style and too short for filming |
+| — | Deep-rewrote V0-V14 scripts to long-form spoken format | Full sections, transitions, practical explanation, code narration |
+| — | Added [INFORMATION GAIN] density and explicit score sections | Maintained honesty and evidence-first framing |
+| — | Preserved [PERSONAL INSERT NEEDED] placeholders | User-specific numbers/stories still required before final filming |
+| — | Promoted rewritten files into primary Task 7 script files | Short scaffold versions replaced for V0-V14 |
+| — | Updated Task 7 snapshot for current completion state | Snapshot now reflects V0-V14 complete and V15-V25 pending deep rewrite |
+
+### Decisions
+- Prioritized script depth and filming readiness over minimal polishing.
+- Rewrites remain grounded in Task 6 source content to avoid fabricated claims.
+- Kept code blocks and technical reasoning in spoken-language format where possible.
+
+### Next
+- Continue deep rewrite pass for V15-V25 to complete Task 7 at V7 quality standard.
+- After full deep rewrite completion, proceed to Task 8 (Hook Writer).
+
+---
+
+## Session 11 — 2026-04-10
+
+**Focus:** Task 7 — Script Refiner deep rewrite completion (V15-V25)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Deep-rewrote V15-V25 scripts to long-form spoken format | Full sections, transitions, technical narration, practical framing |
+| — | Promoted V15-V25 `.new.md` files into final Task 7 filenames | Scaffold versions replaced |
+| — | Verified representative files after promotion | Confirmed expanded versions active |
+| — | Updated Task 7 snapshot + dashboard | Task 7 now marked done, Task 8 next |
+
+### Decisions
+- Maintained the same quality standard used in V7 and V0-V14 rewrites.
+- Kept [INFORMATION GAIN] markers and evidence placeholders where personal metrics are required.
+
+### Next
+- Begin Task 8 (Hook Writer) using the completed deep scripts as source.
+
+---
+
 ## Session 1 — 2026-04-09
 
 **Focus:** Workspace setup and structure creation
@@ -234,3 +280,29 @@
 
 ### Next
 - Task 6 — Brain Dump Organiser (Phase 3: Scripting begins)
+
+---
+
+## Session 9 — 2026-04-10
+
+**Focus:** Task 7 — Script Refiner (full series V0-V25)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Loaded Master Context + Script instructions + Task 6 outputs | Task context validated before refinement |
+| — | Refined V0-V3 scripts | Filming-ready scripts with [INFORMATION GAIN] and score blocks |
+| — | Refined V4-V7 scripts | Data, features, model benchmark scripts completed |
+| — | Refined V8-V12 scripts | Meta-labeling, sentiment, fusion, vol, portfolio scripts completed |
+| — | Refined V13-V25 scripts | Backtesting, risk, stats, deployment scripts completed |
+| — | Created Task 7 snapshot | `Task 7 - Script Refiner/task-snapshot.md` |
+| — | Updated DASHBOARD + SESSION-LOG | Phase 3 progress synced |
+
+### Decisions
+- Proceeded without second voice-note transcripts (as approved by user), using Task 6 logical flows as source.
+- Preserved creator-first voice while avoiding fabricated personal claims.
+- Added explicit `[PERSONAL INSERT NEEDED]` placeholders for user-specific data/stories.
+- Added Information Gain Score section to each refined script for quality control.
+
+### Next
+- Task 8 — Intro Writer (start with V0-V3)
