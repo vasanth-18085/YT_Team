@@ -50,6 +50,33 @@
 
 ---
 
+## Session 12 — 2026-04-10
+
+**Focus:** Tasks 8, 9, 10, 11, 15, 16, 17 execution pass
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Task 8 Hook Writer pack generated for V0-V25 | Consolidated hook and intro file created in Task 8 folder |
+| — | Task 9 Fluff Reducer output generated from Task 7 scripts | Clean-script set created for V0-V25 in Task 9 folder |
+| — | Task 10 CTA Inserter pass applied | Final scripts with [CTA 1] and [CTA 2] inserted for V0-V25 with link placeholders |
+| — | Task 11 Community Posts drafted | Five post pack created with CTA placeholders |
+| — | Task 15 Banner copy drafted | One-line banner copy file created |
+| — | Task 16 Playlist strategy drafted | Three-playlist architecture mapped to V0-V25 |
+| — | Task 17 Brand outreach pack drafted | Brand shortlist plus outreach template created |
+| — | Dashboard and task snapshots updated | Statuses advanced and snapshot links added |
+
+### Decisions
+- Used placeholder CTA link in Task 8/10 deliverables to avoid fabricating destination URL.
+- Generated draft-complete assets where task instructions normally require user-provided screenshots or specific personalization.
+
+### Next
+- Replace placeholder CTA link with final destination.
+- Personalize Task 17 email opening lines with one real recent brand-specific detail before sending.
+- Continue with Task 18 (Creator Collab).
+
+---
+
 ## Session 1 — 2026-04-09
 
 **Focus:** Workspace setup and structure creation
