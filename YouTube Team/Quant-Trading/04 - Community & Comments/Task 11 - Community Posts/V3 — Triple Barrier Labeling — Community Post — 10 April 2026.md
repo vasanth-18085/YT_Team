@@ -1,13 +1,13 @@
 # V3 — Triple Barrier Labeling — Community Post
 
 **Date:** 10 April 2026
-**Topic:** ML Models DON'T Matter... But Your Labels Do
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Stop labelling your financial data with simple up or down.
 
-This video fixes that for **ML Models DON'T Matter... But Your Labels Do**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+The market does not work that way. A stock can go up 5% then crash 8% before your exit. That is not a win. But a binary label says it is.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Triple barrier labelling fixes this. Three conditions: take profit hit, stop loss hit, or timeout expires. Whichever triggers first determines the label.
+
+The result: labels that reflect how trades actually resolve, not just which direction price eventually went.
+
+New video covers the full implementation 👉 [INSERT PRIMARY LINK]

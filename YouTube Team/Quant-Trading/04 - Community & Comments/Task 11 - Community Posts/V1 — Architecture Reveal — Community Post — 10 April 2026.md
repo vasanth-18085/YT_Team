@@ -1,13 +1,15 @@
 # V1 — Architecture Reveal — Community Post
 
 **Date:** 10 April 2026
-**Topic:** I Built a 44-Model Trading System (Full Architecture)
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Everyone wants to build an ML trading system.
 
-This video fixes that for **I Built a 44-Model Trading System (Full Architecture)**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Almost nobody architects one properly before writing the first line of code.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+I spent months designing a 10 phase pipeline before training a single model. Data ingestion, feature engineering, forecasting, meta labelling, sentiment, fusion, volatility, portfolio construction, backtesting, deployment.
+
+Each phase has a defined interface. Each model follows the same contract. I can swap any component without touching the rest.
+
+New video walks through the full architecture. Every phase, every connection, every design decision.
+
+Grab the free MLQuant starter pack for the full repo map and checklist 👉 [INSERT PRIMARY LINK]

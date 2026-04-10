@@ -1,13 +1,13 @@
 # V15 — Drift Monitoring — Community Post
 
 **Date:** 10 April 2026
-**Topic:** 7 Drift Tests for Strategy Decay: When to Pause and Retrain
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Your model worked six months ago. Does it still work today?
 
-This video fixes that for **7 Drift Tests for Strategy Decay: When to Pause and Retrain**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Most systems have no way to answer that question until performance collapses.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+I built a DriftMonitor running seven statistical tests continuously. Feature distributions. Prediction calibration. Correlation stability.
+
+The most valuable: correlation regime drift. When uncorrelated stocks start moving together, your diversification breaks silently.
+
+New video walks through all seven tests 👉 [INSERT PRIMARY LINK]

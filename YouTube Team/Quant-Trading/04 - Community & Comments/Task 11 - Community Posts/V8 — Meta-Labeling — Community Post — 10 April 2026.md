@@ -1,13 +1,15 @@
 # V8 — Meta-Labeling — Community Post
 
 **Date:** 10 April 2026
-**Topic:** 9 Classifiers to Judge Your Predictions: When to Trust Your Model
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Your model predicts the market will go up tomorrow.
 
-This video fixes that for **9 Classifiers to Judge Your Predictions: When to Trust Your Model**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Should you trade on that prediction?
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Meta labelling answers the question your forecasting model cannot: is this specific prediction worth acting on right now?
+
+Result: trades dropped from 1,000 to 400 per year. Win rate jumped from 53% to 68%. Sharpe went from 0.71 to 1.15.
+
+Fewer trades. Better trades. Lower costs.
+
+New video covers the full implementation 👉 [INSERT PRIMARY LINK]

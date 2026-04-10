@@ -1,13 +1,13 @@
 # V22 — Factor Analysis — Community Post
 
 **Date:** 10 April 2026
-**Topic:** Fama-French 5-Factor: Where Does Your Edge Actually Come From?
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Your strategy returned 15% last year. Impressive?
 
-This video fixes that for **Fama-French 5-Factor: Where Does Your Edge Actually Come From?**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+If the market returned 12% and your portfolio was leveraged 1.5x, your actual alpha was roughly zero.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Factor decomposition separates genuine skill from market exposure, size tilt, value tilt, and momentum exposure.
+
+Most strategies that look profitable are just disguised factor bets.
+
+New video builds a custom factor model to prove your alpha exists 👉 [INSERT PRIMARY LINK]

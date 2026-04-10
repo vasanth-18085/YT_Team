@@ -1,13 +1,13 @@
 # V25 — Deployment Checklist — Community Post
 
 **Date:** 10 April 2026
-**Topic:** Going Live: 30-Point Checklist Before Risking Real Capital
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+The system works in backtest. Now what?
 
-This video fixes that for **Going Live: 30-Point Checklist Before Risking Real Capital**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Deployment is where most quant projects die. Not because the model is bad. Because nobody planned for reproducibility, monitoring, or failover.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+I built a 30 item checklist across five blocks: code, validation, risk, infrastructure, operations.
+
+The most overlooked item: what happens when a model update degrades performance? You need a rollback plan before you go live.
+
+Final video in the series 👉 [INSERT PRIMARY LINK]

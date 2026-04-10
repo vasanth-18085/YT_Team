@@ -1,13 +1,13 @@
 # V21 — Experiment Tracking — Community Post
 
 **Date:** 10 April 2026
-**Topic:** Systematic Experimentation: How to Track 1,000 Backtests
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+If you cannot reproduce your best result, you do not have a result.
 
-This video fixes that for **Systematic Experimentation: How to Track 1,000 Backtests**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Every hyperparameter change, every feature set, every model variant needs a timestamp and a hash.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+I built an ExperimentTracker that logs every run with full config and data fingerprints. Query by date, metric, or model type and get exact reproduction commands.
+
+Logging sounds boring. It is the most important habit for sustainable quant research.
+
+New video shows the full system 👉 [INSERT PRIMARY LINK]

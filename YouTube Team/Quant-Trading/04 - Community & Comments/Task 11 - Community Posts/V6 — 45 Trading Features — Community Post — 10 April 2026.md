@@ -1,13 +1,13 @@
 # V6 — 45 Trading Features — Community Post
 
 **Date:** 10 April 2026
-**Topic:** 45 Trading Features Explained: Every Signal In My Quant System
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+45 features across 5 categories.
 
-This video fixes that for **45 Trading Features Explained: Every Signal In My Quant System**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Momentum. Volatility. Trend. Volume. Date patterns.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Not randomly selected. Each one earned its place through correlation analysis. Features that survived deduplication and actually carried predictive signal in walk forward testing.
+
+The biggest surprise: some of the simplest features outperformed complex engineered alternatives. Complexity is not the same as usefulness.
+
+New video breaks down every category with the code 👉 [INSERT PRIMARY LINK]

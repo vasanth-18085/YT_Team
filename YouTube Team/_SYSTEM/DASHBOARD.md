@@ -9,7 +9,7 @@
 
 | Channel | Master Context | Phase | Next Task | Notes |
 |---------|---------------|-------|-----------|-------|
-| **Quant Trading** | DRAFT | Phase 6 | Task 18 — Creator Collab | Tasks 8,9,10,11,15,16,17 drafted with deliverables and placeholders for personalization. |
+| **Quant Trading** | DRAFT | Phase 6 | Task 12 / Task 18 | 16/18 tasks done. Tasks 6-11 deep-rewritten with per-video unique content. Only Task 12 (Comment Replies) + Task 18 (Creator Collab) remain. |
 | **Cricket Analytics** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Gaming Noob** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Vasanth Builds** | NOT STARTED | — | Waiting | Live prep/building channel — QF learning, Cricket Analytics, AI projects |

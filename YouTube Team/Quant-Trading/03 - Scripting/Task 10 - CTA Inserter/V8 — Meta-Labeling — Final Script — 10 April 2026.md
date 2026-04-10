@@ -1,7 +1,7 @@
 # V8 — Meta-Labeling — Final Script
 
 **Title:** 9 Classifiers to Judge Your Predictions: When to Trust Your Model
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -13,10 +13,6 @@
 The result: fewer trades, higher win rate, meaningfully better Sharpe. I am going to walk you through exactly how I built it.
 
 ---
-
-
-[CTA 1]
-By the way, if you want the full MLQuant build resources in one place, I put together a free starter pack with the repo map, workflow checklist, and implementation notes. It is built for this exact stage of the journey. Grab it here: [INSERT PRIMARY LINK]
 
 ## SECTION 2 — THE PROBLEM: PREDICTIONS WITHOUT CONFIDENCE (2:00–6:00)
 
@@ -33,6 +29,10 @@ Concrete example:
 - Primary model: "TSLA will go up" → Meta-classifier: 52% confident → Skip this trade, too close to a coin flip
 
 ---
+
+
+[CTA 1]
+If meta-labeling just clicked for you and you want to implement it, the free starter pack has the meta-feature list, the classifier comparison template, and the confidence threshold calibration guide. Grab it from the description.
 
 ## SECTION 3 — STAGE 1: PRIMARY FORECASTS (6:00–8:00)
 
@@ -168,6 +168,10 @@ class MetaClassifier:
 
 ---
 
+
+[CTA 2]
+The meta-labeling implementation guide is in the free starter pack — link in the description. It covers the nested CV setup and threshold tuning.
+
 ## SECTION 7 — FILTERING TRADES WITH CONFIDENCE THRESHOLDS (28:00–33:00)
 
 Once the meta-classifier is trained, it produces a probability score for each primary prediction. That score becomes a confidence gate.
@@ -195,6 +199,14 @@ With meta-labeling (conf > 0.70): 400 trades/year, win rate 68%, Sharpe 1.15
 [INFORMATION GAIN] You lose 600 trades per year — 60% of your trade volume. You gain 15 percentage points of win rate and a 0.44 improvement in Sharpe. The intuition is clear: the 600 trades you are skipping are the model's low-conviction guesses. Removing them improves the signal-to-noise ratio of what remains. Transaction costs also fall proportionally — 400 trades per year means lower cumulative spread and commission drag.
 
 The sizing rule `position_size(conf)` is also meaningful. A 75% confidence prediction gets a full position. An 85% confidence prediction gets 1.5x. This is not the Kelly criterion (covered in Video 17) but a linear scaling that increases capital exposure proportionally to the model's own confidence estimate.
+
+### Threshold sensitivity
+
+[INFORMATION GAIN] The 0.70 threshold is not arbitrary — it sits at the knee of the precision-recall curve for the Stacking classifier on validation data. Below 0.60, you are taking nearly every trade and gaining almost no filtering benefit. Between 0.60 and 0.70, win rate improves steadily but you start losing too many viable trades. Above 0.80, precision is excellent but recall collapses — you are only taking 150 trades per year, which is not enough to produce statistically meaningful performance metrics.
+
+The right threshold depends on your capital and your risk tolerance. If you are managing a large portfolio where each trade is meaningful, you push the threshold higher and take fewer, higher-conviction trades. If you are running a smaller account where you need more frequent compounding, you might lower it to 0.65 and accept a slightly lower win rate in exchange for more trade opportunities. I landed on 0.70 because it gave the best Sharpe on walk-forward validation, but I re-evaluate this threshold every quarter as market conditions shift.
+
+Another consideration: the threshold should be different for long and short trades. In my testing, the meta-classifier is better calibrated on long signals (where it has more training examples) than on short signals (where the training distribution is more sparse). I use 0.70 for longs and 0.75 for shorts — requiring higher conviction before taking the higher-risk short positions.
 
 ---
 
@@ -228,15 +240,17 @@ for outer_fold in range(n_outer):
 
 **Class imbalance:** If the primary model is 53% accurate, the meta-labels are roughly 53% "correct" and 47% "wrong" — mild imbalance. Use SMOTE (Synthetic Minority Oversampling Technique) or focal loss to prevent the classifier from defaulting to always predicting "correct."
 
+[INFORMATION GAIN] The imbalance is deceptively mild at 53/47, but it matters because the cost of false negatives and false positives is asymmetric. A false negative (saying a good trade is bad) costs you a missed opportunity. A false positive (saying a bad trade is good) costs you real money. In capital-limited settings, you want to bias toward fewer false positives even at the cost of more false negatives. This means tuning the classification threshold upward from the default 0.50 — exactly what the 0.70 threshold in Section 7 accomplishes. SMOTE helps the training phase; threshold tuning helps the deployment phase. Both are needed.
+
 ---
-
-
-[CTA 2]
-Quick reminder before we continue, if this is helping you, the free MLQuant starter pack is in the description and it goes deeper than what we can fit in one video. Link: [INSERT PRIMARY LINK]
 
 ## SECTION 9 — THE CLOSE (38:00–40:00)
 
 Meta-labeling is the difference between a system that trades everything the primary model suggests and one that filters intelligently. You are not building a better predictor — you are building a smarter decider about when to trust the predictor you have.
+
+Three key numbers: 1,000 trades per year without meta-labeling drops to 400 trades with it. Win rate jumps from 53 percent to 68 percent. Sharpe improves from 0.71 to 1.15. And transaction costs drop by 60 percent as a bonus because you are taking fewer, higher-quality trades.
+
+The meta-classifier feeds directly into the Signal Combiner in Video 10 as one of the two gates that control whether a signal becomes a trade. The other gate is directional confidence from the forecasting model. A signal must pass both gates to execute. Together they eliminate the ambiguous, low-conviction signals that drag down net performance.
 
 The Stacking classifier with a 0.70 confidence threshold gave us 400 trades per year at 68% win rate, up from 53% without filtering. Sharpe went from 0.71 to 1.15.
 

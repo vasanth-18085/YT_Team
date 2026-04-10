@@ -1,13 +1,13 @@
 # V5 — Data Pipeline — Community Post
 
 **Date:** 10 April 2026
-**Topic:** My Stock Data Pipeline: No More Corrupt Downloads, Missing Dates, or Feature Misalignment
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Yahoo Finance is lying to you.
 
-This video fixes that for **My Stock Data Pipeline: No More Corrupt Downloads, Missing Dates, or Feature Misalignment**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Duplicate dates. NaN prices mid series. Adjusted close that changes retroactively after splits.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Most people never notice until their backtest breaks in ways they cannot explain. I hit all three problems building this system.
+
+The fix: a DataValidator class that runs on every download before data touches your pipeline. Plus a caching system that detects when Yahoo reissues adjusted prices.
+
+New video covers the full pipeline: download, validation, alignment, splitting, standardisation 👉 [INSERT PRIMARY LINK]

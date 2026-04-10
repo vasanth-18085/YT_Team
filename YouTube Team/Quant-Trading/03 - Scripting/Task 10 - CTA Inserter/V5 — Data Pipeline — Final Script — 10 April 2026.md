@@ -1,7 +1,7 @@
 # V5 — Data Pipeline — Final Script
 
 **Title:** My Stock Data Pipeline: No More Corrupt Downloads, Missing Dates, or Feature Misalignment
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -13,10 +13,6 @@
 I am going to walk you through every stage: download, validation, alignment, splitting, feature engineering, and standardisation. By the end you have a pipeline that takes raw ticker symbols and returns a clean, split, leakage-free tensor ready for your model. Every step is production-quality code, not Kaggle notebook spaghetti.
 
 ---
-
-
-[CTA 1]
-By the way, if you want the full MLQuant build resources in one place, I put together a free starter pack with the repo map, workflow checklist, and implementation notes. It is built for this exact stage of the journey. Grab it here: [INSERT PRIMARY LINK]
 
 ## SECTION 2 — WHY YOUR DATA IS BROKEN AND YOU DO NOT KNOW IT (2:00–8:00)
 
@@ -37,6 +33,10 @@ Yahoo Finance adjusts all historical prices when dividends or splits occur. If y
 [INFORMATION GAIN] The solution to all three: a `DataValidator` class that runs on every download before data is stored, and a caching system that stores the raw download with a hash so you can detect when Yahoo reissues adjusted prices.
 
 ---
+
+
+[CTA 1]
+If you are building your own data pipeline and want to avoid the problems I just showed you, I put together a free starter pack with the validator checklist, the caching config, and the full download-to-tensor workflow. In the description.
 
 ## SECTION 3 — THREE DATA LOADERS (8:00–14:00)
 
@@ -231,6 +231,10 @@ class PipelineSplitter:
 
 ---
 
+
+[CTA 2]
+The data pipeline checklist from the free starter pack is in the description — it covers every validation step we walked through today.
+
 ## SECTION 7 — FEATURE ENGINEERING AND STANDARDISATION (28:00–35:00)
 
 Feature engineering is covered in depth in Video 6 — 45 features across 8 categories. The pipeline's job here is not feature selection, it is applying feature engineering within each training window without leakage.
@@ -317,13 +321,19 @@ class DataPipeline:
             yield train_X_scaled, test_X_scaled
 ```
 
-[INFORMATION GAIN] The pipeline yields split batches rather than returning a full dataset. This is a memory design decision. For large universes — 50+ stocks, 10+ years, 45 features — the full feature matrix is many gigabytes. Yielding train-test pairs allows the model training loop in Video 7 (forecasting models) to process each split without holding the entire dataset in RAM.
+[INFORMATION GAIN] The pipeline yields split batches rather than returning a full dataset. This is a memory design decision. For large universes — 50 or more stocks, 10 or more years, 45 features — the full feature matrix can be several gigabytes. Yielding train-test pairs allows the model training loop in Video 7 to process each split without holding the entire dataset in RAM.
+
+There is a second reason for the generator pattern: it makes the pipeline composable with any downstream consumer. The orchestrator does not care what model you are training. It yields (train_X, test_X) pairs and the consumer decides what to do with them. This means the same pipeline serves the forecasting models, the meta-labeling classifiers, the sentiment models, and the fusion architectures without any modification.
+
+### Error handling
+
+Production pipelines fail. The network drops during a Yahoo download. A ticker gets delisted mid-download. A date column has a timezone mismatch. Each stage in the orchestrator wraps its call in a try-except block that logs the error with full context — which stage failed, which ticker, which date range — and either retries (for network issues) or skips (for data issues) with a clear log message. After the full pipeline runs, the orchestrator produces a summary: 87 out of 100 tickers succeeded, 13 failed with reasons listed. You review the failures and decide whether to proceed or investigate.
+
+[INFORMATION GAIN] I learned this the hard way. My first version of the pipeline had no error handling. A single corrupted ticker in a 100-stock universe caused the entire pipeline to crash at 3am during an automated run. By the time I woke up, I had no data for that day's trading. The fix was not just adding try-except — it was building the pipeline to tolerate partial failures gracefully and still produce usable output from the tickers that succeeded.
+
+The logging design matters too. Each failed ticker gets a structured log entry with the failure time, the exception type, the failing stage name, and the ticker symbol. These logs feed into a monitoring dashboard that tracks failure rates over time. If a ticker starts failing consistently across multiple runs, that is a signal to investigate whether it was delisted, acquired, or has changed its data format. Automated alerts trigger when the failure rate exceeds 10 percent of the universe on any single run.
 
 ---
-
-
-[CTA 2]
-Quick reminder before we continue, if this is helping you, the free MLQuant starter pack is in the description and it goes deeper than what we can fit in one video. Link: [INSERT PRIMARY LINK]
 
 ## SECTION 9 — THE CLOSE (39:00–40:00)
 

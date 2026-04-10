@@ -1,7 +1,7 @@
 # V6 — 45 Trading Features — Final Script
 
 **Title:** 45 Trading Features Explained: Every Signal In My Quant System
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -15,10 +15,6 @@ This video is every feature in my system with the rationale for why it is there.
 Forty-five features across eight categories. Let me walk you through all of them.
 
 ---
-
-
-[CTA 1]
-By the way, if you want the full MLQuant build resources in one place, I put together a free starter pack with the repo map, workflow checklist, and implementation notes. It is built for this exact stage of the journey. Grab it here: [INSERT PRIMARY LINK]
 
 ## SECTION 2 — CATEGORY 1: MOMENTUM FEATURES (2:00–7:00)
 
@@ -52,6 +48,10 @@ You have seven momentum features: returns at 5, 10, 20, 60 days (four features) 
 [INFORMATION GAIN] Why z-score momentum instead of raw return? A 5% return in a stock with daily volatility of 0.5% is qualitatively different from a 5% return in a stock with daily volatility of 3%. The first is 10 standard deviations of movement in 20 days — extraordinary. The second is less than 2 standard deviations — ordinary. The z-score creates comparable units across different volatility regimes, which matters when training on multiple tickers simultaneously.
 
 ---
+
+
+[CTA 1]
+If 45 features sounds like a lot to implement from scratch, the free starter pack in the description has the full feature list with the category breakdown, the computation code references, and the correlation analysis. Grab it — it will save you hours.
 
 ## SECTION 3 — CATEGORY 2: VOLATILITY FEATURES (7:00–12:00)
 
@@ -223,6 +223,10 @@ def add_price_structure_features(df: pd.DataFrame) -> pd.DataFrame:
 
 ---
 
+
+[CTA 2]
+Quick reminder — the feature reference sheet in the free starter pack covers all 45 features by category. Link in the description.
+
 ## SECTION 8 — CATEGORY 7: ROLLING STATISTICS (27:00–31:00)
 
 Rolling statistics capture the distributional shape of returns — not just their direction and magnitude but their stability.
@@ -330,10 +334,6 @@ def debug_feature_quality(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
 Information Coefficient (IC) is the Pearson correlation between the feature and the next-period return label. An IC of 0.05 is considered meaningful in quantitative finance. An IC below 0.01 means the feature is essentially uncorrelated with future returns — it is noise. This does not mean remove it immediately; it means investigate why and cross-check on subperiods.
 
 ---
-
-
-[CTA 2]
-Quick reminder before we continue, if this is helping you, the free MLQuant starter pack is in the description and it goes deeper than what we can fit in one video. Link: [INSERT PRIMARY LINK]
 
 ## SECTION 11 — THE CLOSE (38:00–40:00)
 

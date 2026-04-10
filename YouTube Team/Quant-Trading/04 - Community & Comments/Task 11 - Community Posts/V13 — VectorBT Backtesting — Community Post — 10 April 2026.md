@@ -1,13 +1,11 @@
 # V13 — VectorBT Backtesting — Community Post
 
 **Date:** 10 April 2026
-**Topic:** VectorBT: Testing 100 Stocks, 6 Folds, 50 Features in 2 Minutes
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Traditional backtesting: 15 minutes per run. VectorBT: under 2 minutes.
 
-This video fixes that for **VectorBT: Testing 100 Stocks, 6 Folds, 50 Features in 2 Minutes**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+That speed difference changes what research is feasible. 20 parameter combinations per day versus 150.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+For a system with 14 models, 7 fusion architectures, and 4 portfolio methods, vectorised backtesting is essential.
+
+New video shows VectorBT with walk forward folds, realistic costs, and the metrics that actually matter 👉 [INSERT PRIMARY LINK]

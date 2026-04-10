@@ -1,7 +1,7 @@
 # V7 — Testing 14 Forecasting Models — Final Script
 
 **Title:** ARIMA vs LSTM vs Transformers: I Tested Them All (Spoilers: Not What You Think)
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -28,10 +28,6 @@ Let's go.
 
 ---
 
-
-[CTA 1]
-By the way, if you want the full MLQuant build resources in one place, I put together a free starter pack with the repo map, workflow checklist, and implementation notes. It is built for this exact stage of the journey. Grab it here: [INSERT PRIMARY LINK]
-
 ## SECTION 2 — WHY MOST MODEL COMPARISONS ARE USELESS (2:00–6:00)
 
 Before I show you the results I need to explain why most model comparisons you read online are garbage.
@@ -53,6 +49,10 @@ So in this benchmark I controlled for all three. Same data, same number of tunin
 That is the only way the comparison actually means something.
 
 ---
+
+
+[CTA 1]
+If you want to run this same 14-model benchmark on your own data, the free starter pack includes the model list, the evaluation config, and the walk-forward settings I used. You can replicate this entire comparison. Link in the description.
 
 ## SECTION 3 — THE 14 MODELS (6:00–28:00)
 
@@ -140,45 +140,30 @@ The weakness: training is sequential. You cannot parallelise across time. Step 1
 
 **Model 4: GRU**
 
-GRU — Gated Recurrent Unit — is the lighter version of LSTM. Same core idea, fewer parameters, faster to train. Think of it as LSTM with the complexity dialled down.
-
-In practice on financial data the performance difference between LSTM and GRU is small. GRU trains faster, which often makes it the better choice for rapid iteration. If you are doing a lot of experiments, GRU saves you real time over thousands of runs.
+GRU — Gated Recurrent Unit — is LSTM with fewer parameters. Same core idea, faster to train. Performance difference on financial data is small. GRU trains faster, making it the better choice for rapid iteration across thousands of experiments.
 
 **Model 5: TCN**
 
-Temporal Convolutional Networks take a completely different approach to sequence modelling. Instead of processing step by step like a recurrent network, they apply 1D convolutions across time.
+Temporal Convolutional Networks apply 1D convolutions across time instead of processing step by step.
 
 ```python
 class TCNBlock:
     def __init__(self, filters, kernel_size, dilation):
-        # dilation controls how far back each convolution reaches
-        self.conv = Conv1d(
-            filters,
-            kernel_size,
-            dilation=dilation,
-            padding='same'
-        )
+        self.conv = Conv1d(filters, kernel_size, dilation=dilation, padding='same')
         self.dropout = Dropout(0.2)
         self.relu = ReLU()
 
     def forward(self, x):
-        x = self.conv(x)
-        x = self.relu(x)
-        x = self.dropout(x)
-        return x
+        return self.dropout(self.relu(self.conv(x)))
 ```
 
-The key word here is dilation. By stacking convolution layers with increasing dilation factors — 1, 2, 4, 8 — each layer reaches further back in time. A dilation of 8 means the convolution is looking 8 steps apart. Stack enough of those and you cover a very long history.
+The key is dilation. Stacking layers with increasing dilation factors — 1, 2, 4, 8 — means each layer reaches further back in time. The critical advantage: convolutions are fully parallelisable, making TCN significantly faster than LSTM or GRU.
 
-The critical advantage: convolutions are fully parallelisable. The entire sequence can be processed at once. TCN is significantly faster to train than LSTM or GRU on the same hardware.
-
-[INFORMATION GAIN] On my benchmark, TCN trained roughly 2.5 times faster than LSTM while producing comparable or slightly better accuracy. That speed advantage is real and it matters when you are running hundreds of experiments.
+[INFORMATION GAIN] On my benchmark, TCN trained roughly 2.5 times faster than LSTM while producing comparable or slightly better accuracy.
 
 **Model 6: TCN-LSTM Hybrid**
 
-This one stacks both. TCN layers first to extract local patterns fast, then LSTM layers to capture longer-range dependencies. The idea is you get the parallelism of convolutions for short patterns and the memory of recurrence for longer ones.
-
-Whether the added complexity is worth it is one of the things this benchmark actually answers — so I will leave that for the results section.
+Stacks both: TCN layers first for fast local pattern extraction, then LSTM layers for longer-range dependencies. Whether the added complexity is worth it is something the results section answers.
 
 ---
 
@@ -252,37 +237,21 @@ The residual connection is important. It gives the model a direct linear path fr
 
 ### Tier D — Transformers and Foundation Models (Models 11 through 14)
 
-These are the headline architectures. Transformers revolutionised language modelling and the natural question was whether the same approach works for time series. The answer is: sometimes, and with significant caveats.
-
 **Model 11: PatchTST**
 
-PatchTST — Patch Time Series Transformer — borrows the core idea from Vision Transformers. Instead of applying attention token by token across individual timesteps, it divides the time series into patches — chunks of consecutive timesteps — and applies attention across those patches.
-
-The motivation is straightforward. In language models, individual tokens are meaningful units. In a time series, individual timesteps are noisy. Patches aggregate that noise and give attention something more structured to work with.
-
-The result is that PatchTST runs significantly faster than naive transformers on time-series data while maintaining the ability to capture long-range dependencies through attention.
+PatchTST borrows the Vision Transformer idea: divide the time series into patches — chunks of consecutive timesteps — and apply attention across patches rather than individual timesteps. Individual timesteps in a financial time series are noisy. Patches aggregate that noise. The result: significantly faster than naive transformers while maintaining long-range dependency capture.
 
 **Model 12: TFT**
 
-The Temporal Fusion Transformer was published by Google in 2019 and became one of the most cited time-series models of the past decade. It layers attention mechanisms with gating — learned gates that decide at each timestep how much of the past is actually relevant.
-
-This gating mechanism is what sets it apart from vanilla transformers. A standard attention mechanism weights everything by relevance but passes all of it through. TFT's gating can zero out irrelevant context entirely. In financial time series, where most past timesteps are noise, that is a meaningful architectural advantage.
-
-TFT also explicitly models static covariates — features that don't change over time, like the stock ticker or sector — separately from time-varying features. That structure tends to generalise better.
-
-The cost: TFT is one of the slowest models in this benchmark by a significant margin.
+The Temporal Fusion Transformer (Google, 2019) layers attention with learned gates that decide at each timestep how much of the past is relevant. Unlike standard attention which weights everything, TFT's gating can zero out irrelevant context entirely — meaningful for financial time series where most past timesteps are noise. TFT also separates static covariates (ticker, sector) from time-varying features. The cost: one of the slowest models in this benchmark.
 
 **Model 13: iTransformer**
 
-iTransformer came out in 2023 and flipped the standard transformer design in an unexpected way. In a standard transformer applied to time series, attention is computed across time — each timestep attends to other timesteps. iTransformer inverts this: attention is computed across features — each feature attends to other features.
-
-The argument is that for multivariate time-series forecasting, the cross-feature relationships are often more informative than the cross-time relationships. Your 45 features are correlated in complex ways and learning which combinations of features predict the next move might be more tractable than learning which historical timesteps matter.
-
-[INFORMATION GAIN] iTransformer produced interesting results in my benchmark. On single-asset forecasting it was roughly comparable to TFT. Where it became more interesting was when I started looking at cross-sectional signals — but that is a different video.
+iTransformer (2023) inverts the standard transformer: attention across features rather than across time. The cross-feature relationships (which combinations of your 45 features predict the next move) may be more tractable than cross-time relationships. In my benchmark, comparable to TFT on single-asset forecasting but more promising for cross-sectional work.
 
 **Model 14: Chronos-Tiny**
 
-This one is fundamentally different from everything else. Chronos is Amazon's pre-trained foundation model for time-series forecasting, released in 2024. It was trained on over a billion time-series observations from diverse domains.
+Fundamentally different from everything else. Amazon's pre-trained foundation model for time-series forecasting (2024), trained on over a billion time-series observations.
 
 ```python
 from chronos import ChronosPipeline
@@ -301,21 +270,15 @@ forecast = pipeline.predict(
 )
 ```
 
-There is no training step. You feed in your historical data and get a forecast distribution back. It is zero-shot by default.
+No training step. Feed in historical data, get a forecast distribution back. The Tiny variant runs on CPU at reasonable speeds.
 
-The "Tiny" variant has far fewer parameters than the full model, which is why it can run on CPU at reasonable speeds. The full Chronos models are significantly more capable but also significantly heavier.
-
-[INFORMATION GAIN] Including Chronos was one of the most interesting decisions in this benchmark. A model with zero training time that achieves competitive accuracy changes the calculus entirely. If you are exploring whether a particular asset is even forecastable, you can run Chronos first in seconds and get an immediate signal — before committing to training anything.
+[INFORMATION GAIN] A model with zero training time that achieves competitive accuracy changes the calculus entirely. If you are exploring whether an asset is forecastable, Chronos gives you an immediate signal in seconds — before committing to training anything.
 
 ---
 
 ## SECTION 4 — THE EVALUATION FRAMEWORK (28:00–33:00)
 
-Now let's talk about how I actually ran the comparison. This part matters as much as the results.
-
-Every model went through the same six-fold walk-forward cross-validation — the same framework I built in Video 2. No exceptions.
-
-Here is the evaluation loop:
+Now let's talk about how I ran the comparison. Every model went through the same six-fold walk-forward cross-validation from Video 2. No exceptions.
 
 ```python
 results = []
@@ -323,58 +286,31 @@ results = []
 for fold in range(6):
     X_train, y_train, X_test, y_test = get_walk_forward_split(
         fold,
-        embargo_days=10  # no data within 10 days of boundary
+        embargo_days=10
     )
 
     for ModelClass in ALL_14_MODELS:
         model = ModelClass()
-
         start_time = time.time()
         model.fit(X_train, y_train)
         train_time = time.time() - start_time
 
         preds = model.predict(len(y_test))
         metrics = compute_metrics(preds, y_test, train_time)
-
-        results.append({
-            'model': ModelClass.__name__,
-            'fold': fold,
-            **metrics
-        })
+        results.append({'model': ModelClass.__name__, 'fold': fold, **metrics})
 ```
 
-Important: the embargo. I have a 10-day gap between training and test data in each fold. That prevents any look-ahead leakage from correlated observations near the boundary. Without this, all models look artificially better. With it, you see their real generalisation performance.
+The 10-day embargo prevents look-ahead leakage from correlated observations near fold boundaries. Without it, all models look artificially better.
 
-The metrics I computed for each fold:
+Metrics per fold: MAE, MAPE, RMSE, directional accuracy (did the model get the sign right?), and a downstream Sharpe proxy using the cumulative return of a naive long-on-positive-forecast strategy. That Sharpe proxy is not the live trading Sharpe — it is good for ranking models relative to each other.
 
-```python
-def compute_metrics(pred, actual, train_time):
-    mae = mean_absolute_error(actual, pred)
-    mape = mean_absolute_percentage_error(actual, pred)
-    rmse = np.sqrt(mean_squared_error(actual, pred))
-
-    # directional accuracy: did the model get the sign right?
-    directional_acc = np.mean(np.sign(pred) == np.sign(actual))
-
-    # downstream Sharpe proxy
-    log_returns = np.diff(np.log(np.cumsum(pred) + 1))
-    sharpe = (log_returns.mean() / log_returns.std()) * np.sqrt(252)
-
-    return {
-        'mae': mae,
-        'mape': mape,
-        'rmse': rmse,
-        'directional_acc': directional_acc,
-        'sharpe': sharpe,
-        'train_time_sec': train_time
-    }
-```
-
-That Sharpe proxy is not the same as the live trading Sharpe you'd see after risk management and position sizing. It is a downstream proxy — it tells you how much tradable signal the forecast contains before you apply any of the later system layers. It is good for ranking models relative to each other.
-
-Final results for each model are the mean and standard deviation across the six folds. Standard deviation matters — a model with a slightly lower mean but much lower variance across folds is often the better real-world choice.
+Final results: mean and standard deviation across six folds. A model with slightly lower mean but much lower variance across folds is often the better real-world choice.
 
 ---
+
+
+[CTA 2]
+The free starter pack has the full benchmark config — all 14 models, the evaluation metrics, and the fold settings. In the description if you want to run your own comparison.
 
 ## SECTION 5 — THE RESULTS (33:00–37:00)
 
@@ -421,15 +357,11 @@ This one is not subtle. Prophet was built by a world-class team at Facebook for 
 
 [INFORMATION GAIN] This was a specific and useful lesson for me. Tool-data fit matters more than tool sophistication. Prophet is an excellent model used on the wrong problem.
 
-**Surprise four: iTransformer is slower than TFT but doesn't beat it here.**
+**Surprise four: Chronos-Tiny is competitive at near-zero training cost.**
 
-iTransformer takes 18 seconds per epoch — highest in the benchmark — and produces a Sharpe of 0.69, slightly below TFT's 0.71. For single-asset forecasting, the inverted attention approach doesn't pay off. Where it might pay off more is in cross-sectional settings with many correlated assets. That is a different experiment.
+Zero training time. Sharpe of 0.67. That beats LSTM (0.45), GRU (0.48), TCN (0.52), TCN-LSTM (0.55), and DLinear (0.61). A pre-trained foundation model with no fine-tuning is beating purpose-trained recurrent models.
 
-**Surprise five: Chronos-Tiny is competitive at near-zero training cost.**
-
-Zero training time. Sharpe of 0.67. That is better than LSTM (0.45), GRU (0.48), TCN (0.52), TCN-LSTM (0.55), and DLinear (0.61). A pre-trained foundation model with no fine-tuning at all is beating purpose-trained recurrent models on this data.
-
-[INFORMATION GAIN] The practical implication I take from Chronos: it is the model I now use for a rapid forecastability screen before committing to anything else. If even Chronos out of the box shows low Sharpe, training anything else probably won't save you.
+[INFORMATION GAIN] The practical implication: Chronos is now my rapid forecastability screen. If even Chronos out of the box shows low Sharpe, training anything else probably won't save you.
 
 ---
 

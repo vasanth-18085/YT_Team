@@ -1,7 +1,7 @@
 # V12 — Portfolio Construction — Final Script
 
 **Title:** How to Allocate Capital Across Positions: Mean-Variance vs HRP vs Black-Litterman
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -11,10 +11,6 @@
 [INFORMATION GAIN] You have 100 stock signals. Which stocks do you buy? How much of each? This is the portfolio construction problem, and it is where most quant systems quietly break down. A great prediction model combined with naive position sizing loses to an average prediction model combined with smart capital allocation. I compared four methods — equal weight, risk parity, mean-variance optimisation, and hierarchical risk parity — on the same signal set, same time period. The results have a clear winner, and it is not intuitively obvious which one it is.
 
 ---
-
-
-[CTA 1]
-By the way, if you want the full MLQuant build resources in one place, I put together a free starter pack with the repo map, workflow checklist, and implementation notes. It is built for this exact stage of the journey. Grab it here: [INSERT PRIMARY LINK]
 
 ## SECTION 2 — THE STARTING INPUTS (2:00–6:00)
 
@@ -31,6 +27,10 @@ A naive answer: equal weight everything. A smarter answer: weight by expected re
 Each approach has genuine trade-offs.
 
 ---
+
+
+[CTA 1]
+If you want to compare these portfolio methods on your own universe, the free starter pack includes the HRP implementation reference, the rebalancing config, and the concentration rules we walked through. In the description.
 
 ## SECTION 3 — METHOD 1: EQUAL WEIGHT (6:00–10:00)
 
@@ -225,6 +225,10 @@ class BlackLitterman:
 
 ---
 
+
+[CTA 2]
+The portfolio construction cheat sheet is in the free starter pack — link in the description.
+
 ## SECTION 8 — PERFORMANCE COMPARISON (36:00–38:00)
 
 All four methods tested on the same 100-stock universe, same fusion model signals, 2015-2024:
@@ -240,6 +244,10 @@ All four methods tested on the same 100-stock universe, same fusion model signal
 ```
 
 [INFORMATION GAIN] Mean-variance wins on raw Sharpe but has the worst max drawdown (-22%) and the highest concentration (25% positions allowed). During the 2022 drawdown, the concentrated positions amplified losses compared to the diversified alternatives. HRP is the practical production choice: 95% of Mean-Variance's Sharpe, much better drawdown profile, and robust to input estimation errors. Equal weight has lower Sharpe but is also the simplest to implement and hardest to break through coding errors.
+
+The hidden cost of mean-variance that does not show up in the Sharpe column: turnover. Mean-variance optimal weights are highly sensitive to small changes in the input correlation matrix. A slight change in estimated correlations week over week can cause large weight swings, which translates to high transaction costs from frequent rebalancing. HRP weights are structurally more stable because the hierarchical clustering produces consistent tree structures even when correlations shift moderately. In practice, HRP rebalancing generates about 40 percent less turnover than mean-variance for comparable risk-adjusted returns.
+
+One more comparison worth noting: Black-Litterman sits between mean-variance and equal weight philosophically. If you have no views (set all confidence parameters to zero), Black-Litterman defaults to the market-cap weighted portfolio. If you set extreme confidence on your views, it approaches mean-variance. The $\tau$ parameter controls how much you deviate from the market equilibrium. For this system, $\tau = 0.05$ keeps the portfolio close to the market baseline with modest tilts from the fusion model signals.
 
 ---
 
@@ -257,17 +265,15 @@ Minimum position:     No positions below 0.2% — too small to impact performanc
 
 ---
 
-
-[CTA 2]
-Quick reminder before we continue, if this is helping you, the free MLQuant starter pack is in the description and it goes deeper than what we can fit in one video. Link: [INSERT PRIMARY LINK]
-
 ## SECTION 10 — THE CLOSE (39:30–40:00)
 
 Portfolio construction is the difference between a strategy that looks good in backtest and one that survives live trading. HRP gives the best balance: competitive Sharpe, sound drawdown control, robust to correlation regime shifts.
 
-Next video: VectorBT backtesting. We have the full pipeline — data, features, forecasting models, meta-labeling, sentiment, volatility estimates, portfolio allocation. How do you run a rigorous backtest that gives you results you can actually trust? Walk-forward validation, transaction costs, and the VectorBT vectorised framework.
+[INFORMATION GAIN] One final point that connects portfolio construction to the rest of the pipeline. The weights from this module feed into the SignalCombiner as the `portfolio_weight` parameter. This means the position sizing chain is: signal direction (from forecasting) times meta-label confidence (from meta-labeling) times volatility target (from volatility estimation) times portfolio weight (from this module) times regime multiplier (from regime detection). Each layer adds a dimension of risk control. You could skip any one layer and the system still works. But each additional layer reduces a specific failure mode. Portfolio construction specifically handles the correlation and concentration risks that the other layers cannot address.
 
-Which portfolio method are you most likely to use? Comment below.
+The walk-forward rebalancing method in the `_PortfolioBase` class handles the temporal dimension. Every Friday, the weights are recomputed on the latest data and the portfolio is rebalanced. Transaction costs are deducted proportional to turnover. The average weekly turnover for HRP is about 8 percent — meaning 8 percent of the portfolio changes each week. At 10 bps per trade, the weekly rebalancing cost is about 0.8 bps of portfolio value, which annualises to roughly 40 bps or 0.4 percent. The cost of the portfolio construction layer is modest relative to the benefit.
+
+Next video: VectorBT backtesting. We have the full pipeline — data, features, forecasting models, meta-labeling, sentiment, volatility estimates, portfolio allocation. How do you run a rigorous backtest that gives you results you can actually trust?
 
 ---
 

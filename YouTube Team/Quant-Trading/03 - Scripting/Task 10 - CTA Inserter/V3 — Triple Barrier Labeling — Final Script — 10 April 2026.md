@@ -1,7 +1,7 @@
 # V3 — Triple Barrier Labeling — Final Script
 
 **Title:** ML Models DON'T Matter... But Your Labels Do
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -18,10 +18,6 @@ Today I am building triple-barrier labeling from scratch — the technique from 
 
 ---
 
-
-[CTA 1]
-By the way, if you want the full MLQuant build resources in one place, I put together a free starter pack with the repo map, workflow checklist, and implementation notes. It is built for this exact stage of the journey. Grab it here: [INSERT PRIMARY LINK]
-
 ## SECTION 2 — WHY STANDARD LABELS ARE USELESS (1:30–5:00)
 
 If you label every day as up or down, you are ignoring three things a trader actually cares about.
@@ -35,6 +31,10 @@ Third: what about sideways? Markets spend a lot of time going nowhere. Forcing e
 [INFORMATION GAIN] My system uses EWMA daily volatility to set barrier widths. A stock with 2% daily volatility needs different thresholds than one with 0.5% daily volatility. Standard direction labels treat them identically. That is a fundamentally broken approach for building a trading system that actually reflects market reality.
 
 ---
+
+
+[CTA 1]
+If you want to implement triple-barrier labeling on your own data, I put together a free starter pack that includes the label config, the timeout calibration method, and the exact barrier width settings I use. Link is in the description.
 
 ## SECTION 3 — TRIPLE-BARRIER LABELING: THE CONCEPT (5:00–12:00)
 
@@ -191,6 +191,10 @@ After labeling, plot the histogram of actual log returns grouped by label type. 
 [INFORMATION GAIN] If your take-profit labels have an average return near zero, your data has frequent price gaps — the price jumped right through the barrier rather than touching it. That is worth knowing and handling. If the distributions look correct, your volatility estimate is well-calibrated and the labeling is working as intended.
 
 ---
+
+
+[CTA 2]
+The free starter pack in the description includes the triple-barrier config file so you do not have to figure out barrier widths from scratch. Worth grabbing.
 
 ## SECTION 7 — THE MIN_RET FILTER (33:00–35:00)
 

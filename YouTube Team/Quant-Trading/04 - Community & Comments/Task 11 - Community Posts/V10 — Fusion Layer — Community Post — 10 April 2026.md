@@ -1,13 +1,15 @@
 # V10 — Fusion Layer — Community Post
 
 **Date:** 10 April 2026
-**Topic:** How to Merge Forecasts + Sentiment + Technicals: I Tested 7 Fusion Models
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Four signal types. 21 features. Seven fusion architectures.
 
-This video fixes that for **How to Merge Forecasts + Sentiment + Technicals: I Tested 7 Fusion Models**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+The question is not whether to combine them. It is how.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Simple averaging is surprisingly competitive. CatBoost captures nonlinear interactions. CrossAttention wins on every metric but takes 10x longer.
+
+My production choice: CatBoost. 80% of CrossAttention's improvement. Trains in 3 seconds. Deploys as a pickle file.
+
+Always start with the simplest model that works.
+
+New video compares all seven architectures head to head 👉 [INSERT PRIMARY LINK]

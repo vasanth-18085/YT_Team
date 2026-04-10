@@ -1,13 +1,13 @@
 # V11 — Volatility Estimation — Community Post
 
 **Date:** 10 April 2026
-**Topic:** Predicting Volatility: Why GARCH Fails (And What Works Better)
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+GARCH has been the standard for 30 years. It still works most of the time.
 
-This video fixes that for **Predicting Volatility: Why GARCH Fails (And What Works Better)**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+But during March 2020 it forecast 1.8% daily vol when realised vol was 4.9%. Off by 2.7x.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+That error feeds directly into position sizing. Underestimate volatility by 2.7x and your positions are 2.7x too large. During a crash.
+
+The fix: a three model ensemble. GARCH for normal conditions. A hybrid for transitions. An LSTM for crises.
+
+New video covers all three and the reweighting system 👉 [INSERT PRIMARY LINK]

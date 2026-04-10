@@ -1,13 +1,13 @@
 # V20 — Performance Tearsheet — Community Post
 
 **Date:** 10 April 2026
-**Topic:** How to Present Strategy Results Like a Quant Team
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+An equity curve going up tells you almost nothing.
 
-This video fixes that for **How to Present Strategy Results Like a Quant Team**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+You need the full picture. Drawdown depth and duration. Monthly heatmaps. Rolling Sharpe. Factor exposures.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+I built a six panel tearsheet that generates all of this automatically.
+
+The most revealing panel: rolling 90 day Sharpe. It shows when your strategy had no edge at all.
+
+New video builds the full tearsheet 👉 [INSERT PRIMARY LINK]

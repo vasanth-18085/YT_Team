@@ -1,13 +1,15 @@
 # V9 — Sentiment Aggregation — Community Post
 
 **Date:** 10 April 2026
-**Topic:** How to Turn 10,000 Headlines into Trading Features (The Right Way)
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+A single FinBERT score per headline is not useful for trading.
 
-This video fixes that for **How to Turn 10,000 Headlines into Trading Features (The Right Way)**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Ten thousand headlines across 100 stocks per day. You need seven daily features to compress that into something actionable.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Mean sentiment. Standard deviation. Volume. Bullish ratio. Recency weighted. Exponentially weighted. Momentum.
+
+Each captures a different dimension. Sentiment disagreement is itself a signal.
+
+Then you validate with event studies. Do the features actually predict post event returns?
+
+New video builds the full pipeline 👉 [INSERT PRIMARY LINK]

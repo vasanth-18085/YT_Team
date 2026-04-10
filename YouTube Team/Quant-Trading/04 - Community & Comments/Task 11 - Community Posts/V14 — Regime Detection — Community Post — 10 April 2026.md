@@ -1,13 +1,11 @@
 # V14 — Regime Detection — Community Post
 
 **Date:** 10 April 2026
-**Topic:** HMM-Based Regime Detection: Bull, Bear, and Crash Modes
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+The same signal that works in a bull market fails in a crash.
 
-This video fixes that for **HMM-Based Regime Detection: Bull, Bear, and Crash Modes**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+I built a Hidden Markov Model that classifies market state into three regimes: Bull, Bear, and Crash. Then I scale leverage based on regime probability.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Lower drawdowns during crashes without sacrificing too much upside during bull runs.
+
+New video covers the full HMM implementation and leverage rules 👉 [INSERT PRIMARY LINK]

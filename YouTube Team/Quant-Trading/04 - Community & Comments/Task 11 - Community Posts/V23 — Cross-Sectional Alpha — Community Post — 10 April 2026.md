@@ -1,13 +1,13 @@
 # V23 — Cross-Sectional Alpha — Community Post
 
 **Date:** 10 April 2026
-**Topic:** From Time-Series Prediction to Cross-Sectional Ranking
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Time series prediction asks: will this stock go up?
 
-This video fixes that for **From Time-Series Prediction to Cross-Sectional Ranking**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Cross sectional prediction asks: will this stock outperform that stock?
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Different question. Different methodology. Often more profitable.
+
+An information coefficient of 0.05 sounds tiny. Across 100 stocks over 6 years it compounds into meaningful alpha.
+
+New video shows the quintile framework and validation 👉 [INSERT PRIMARY LINK]

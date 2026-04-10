@@ -1,13 +1,13 @@
 # V12 — Portfolio Construction — Community Post
 
 **Date:** 10 April 2026
-**Topic:** How to Allocate Capital Across Positions: Mean-Variance vs HRP vs Black-Litterman
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+The best signal in the world is worthless with bad portfolio construction.
 
-This video fixes that for **How to Allocate Capital Across Positions: Mean-Variance vs HRP vs Black-Litterman**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+I tested five methods on 100 stocks. Mean variance won on Sharpe. But it had the worst max drawdown and concentrated 25% in single positions.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+HRP gave 95% of the Sharpe with far better drawdown control.
+
+In 2022, mean variance's concentrated bets amplified losses. HRP held up.
+
+New video compares all five methods with real numbers 👉 [INSERT PRIMARY LINK]

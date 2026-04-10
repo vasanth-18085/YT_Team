@@ -1,13 +1,13 @@
 # V16 — Transaction Costs — Community Post
 
 **Date:** 10 April 2026
-**Topic:** 10 bps Matters: How Commissions + Slippage Kill Backtests
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Transaction costs kill more strategies than bad signals.
 
-This video fixes that for **10 bps Matters: How Commissions + Slippage Kill Backtests**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Not dramatic. Just slow erosion. Every backtest that ignores costs is lying.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Three layers: commission (visible), slippage (hidden), market impact (invisible at small scale).
+
+The most revealing metric: break even frequency. How many trades can your strategy afford before costs consume all the alpha?
+
+New video builds the full cost model 👉 [INSERT PRIMARY LINK]

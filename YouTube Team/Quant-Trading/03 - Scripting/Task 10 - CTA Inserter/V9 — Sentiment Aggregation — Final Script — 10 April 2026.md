@@ -1,7 +1,7 @@
 # V9 — Sentiment Aggregation — Final Script
 
 **Title:** How to Turn 10,000 Headlines into Trading Features (The Right Way)
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -13,10 +13,6 @@
 I built a system that turns raw sentiment scores into seven daily aggregated features, then validated them with actual event studies to confirm the signal is real and not just noise. This video walks through all of it: the aggregation code, the event study framework, and the results.
 
 ---
-
-
-[CTA 1]
-By the way, if you want the full MLQuant build resources in one place, I put together a free starter pack with the repo map, workflow checklist, and implementation notes. It is built for this exact stage of the journey. Grab it here: [INSERT PRIMARY LINK]
 
 ## SECTION 2 — THE RAW PROBLEM (2:00–6:00)
 
@@ -37,6 +33,10 @@ The problem is that models do not consume individual rows. They need one feature
 The naive approach — simple mean — loses most of the information. Three positive headlines and one very negative one average out to mildly positive. But that one very negative headline might be about an accounting scandal. The mean cannot distinguish "mild net positive" from "three positives partially offset by a bombshell negative."
 
 ---
+
+
+[CTA 1]
+If you want to build your own sentiment pipeline, the free starter pack has the aggregation config, the seven feature definitions, and the event study validation template. Link is in the description — it will save you a lot of setup time.
 
 ## SECTION 3 — THE SEVEN DAILY AGGREGATES (6:00–22:00)
 
@@ -171,6 +171,22 @@ class PriceImpactAnalyzer:
                 (prices_df['ticker'] == ticker) &
                 (prices_df['date'].isin(post_dates)), 'return'
             ].values
+            abnormal = np.mean(post_returns) - baseline
+
+            bucket = self._score_to_bucket(sentiment)
+            results_by_bucket[bucket].append(abnormal)
+
+        return {k: np.mean(v) for k, v in results_by_bucket.items()}
+```
+
+[INFORMATION GAIN] The key design choice here is using abnormal returns rather than raw returns. Raw returns include market-wide movements that have nothing to do with the sentiment signal. If the entire market rallied 2 percent on a given day and your stock also rallied 2 percent, that is not evidence that the positive sentiment signal was correct — the stock just moved with the market. By subtracting the baseline pre-event return as a proxy for the expected return, you isolate the portion of the price movement that is plausibly attributable to the news event.
+
+A more sophisticated approach uses the market return on the same day as the baseline rather than the pre-event stock return. This is the classic "market model" event study used in academic finance. I use the simpler pre-event baseline because it requires no additional data source — you only need the stock's own price history. The results are directionally identical; the market-model approach just has tighter confidence intervals.
+            post_dates = self._trading_days_after(event_date, event_post)
+            post_returns = prices_df.loc[
+                (prices_df['ticker'] == ticker) &
+                (prices_df['date'].isin(post_dates)), 'return'
+            ].values
 
             if len(post_returns) == 0:
                 continue
@@ -217,6 +233,10 @@ p-value: < 0.001
 
 ---
 
+
+[CTA 2]
+The sentiment feature definitions and event study template are in the free starter pack. Description link.
+
 ## SECTION 5 — ROBUSTNESS CHECKS (32:00–36:00)
 
 Three checks I ran to confirm the event study results are not statistical artefacts.
@@ -257,11 +277,11 @@ market_sentiment = all_stocks_df.groupby('date')['sentiment_mean'].mean()
 
 A single daily number: average sentiment across all stocks in the universe. This serves as a market mood indicator — are analysts broadly positive or negative today? It becomes one of the fusion features in Video 10 alongside VIX and price-based regime indicators.
 
+[INFORMATION GAIN] There is a subtlety here that matters for trading. Stock-level sentiment is a cross-sectional signal — it helps you decide which stocks to trade today. Market-level sentiment is a time-series signal — it tells you how aggressively to trade today. When market sentiment is strongly positive, your long positions should be larger. When it is strongly negative, reduce exposure across the board. These are different uses of the same raw data, and the fusion model in Video 10 benefits from both perspectives being represented as separate features.
+
+One more aggregation worth mentioning: sector-level sentiment. Group stocks by GICS sector and average their sentiment scores. If the energy sector has a sentiment_mean of 0.7 while the tech sector has negative 0.3, you have a sector rotation signal. This is not a feature I use in the final pipeline because the S&P 100 universe does not have enough stocks per sector to estimate stable averages. But on a larger universe like the Russell 1000, sector sentiment is a powerful cross-sectional feature.
+
 ---
-
-
-[CTA 2]
-Quick reminder before we continue, if this is helping you, the free MLQuant starter pack is in the description and it goes deeper than what we can fit in one video. Link: [INSERT PRIMARY LINK]
 
 ## SECTION 7 — THE CLOSE (39:00–40:00)
 

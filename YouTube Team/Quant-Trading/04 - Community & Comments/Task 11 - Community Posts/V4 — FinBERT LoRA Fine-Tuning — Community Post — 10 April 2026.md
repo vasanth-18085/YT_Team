@@ -1,13 +1,15 @@
 # V4 — FinBERT LoRA Fine-Tuning — Community Post
 
 **Date:** 10 April 2026
-**Topic:** FinBERT + LoRA: Free GPU-Free Sentiment Fine-Tuning for Trading
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+I fine tuned a financial BERT model for free in under 4 hours.
 
-This video fixes that for **FinBERT + LoRA: Free GPU-Free Sentiment Fine-Tuning for Trading**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+No GPU required. Google Colab. Zero dollars.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Most traders either ignore sentiment entirely or pay thousands for Bloomberg terminal scores. There is a middle ground: LoRA fine tuning on domain specific data.
+
+Instead of retraining 109 million parameters, I trained 0.3% of them. Two stage process on free Colab.
+
+The result beats generic sentiment tools on every metric that matters for trading.
+
+New video walks through both stages step by step 👉 [INSERT PRIMARY LINK]

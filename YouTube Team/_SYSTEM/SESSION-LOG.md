@@ -382,3 +382,32 @@ All 26 Task 9 clean scripts are now sized for 25-35 minute Indian English narrat
 
 ### Next
 - Task 10 — CTA Inserter (insert per-video CTAs into Task 9 clean scripts)
+
+---
+
+## Session 14 — 2026-04-10
+
+**Focus:** Task 10 (CTA Inserter) + Task 11 (Community Posts) — full rewrite
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Audited existing Task 10 files | CTAs identical across all 26 videos — generic template, wrong placement |
+| — | Audited existing Task 11 files | Community posts identical template with only title swapped |
+| — | Read instruction files for Tasks 10 and 11 | Got proper CTA rules (2 per video, contextual) and post format (50-150w, hook+middle+CTA) |
+| — | Built Task 10: 26 Final Scripts | Copied Task 9 clean scripts, inserted 2 video-specific CTAs per script |
+| — | CTA1 placement: after Section 2 (first value point) | 3-4 sentences, references specific content just delivered |
+| — | CTA2 placement: at ~70% section mark | 1-2 sentences, shorter reminder connected to current content |
+| — | Built Task 11: 26 unique community posts | 56-104 words each, video-specific hooks and insights, grounded tone |
+| — | Verified all 26 Task 10 files have 2 CTAs each | Confirmed via grep |
+| — | Verified all 26 Task 11 posts in 50-150 word range | Confirmed via word count |
+
+### Key changes from old versions
+- **Task 10 old:** Generic "starter pack" CTA copy-pasted identically, placed after Section 1 (too early)
+- **Task 10 new:** Each CTA references that video's specific content (e.g., V2 mentions purge settings, V8 mentions meta-feature list)
+- **Task 11 old:** Same 5-line template for all 26 videos with only the title changed
+- **Task 11 new:** Unique hook, unique insight, unique structure per video. British English. No hyphens. Grounded tone.
+
+### Next
+- Task 12 (Comment Replies) and Task 18 (Creator Collab) remain
+- Consider pushing to GitHub after this session

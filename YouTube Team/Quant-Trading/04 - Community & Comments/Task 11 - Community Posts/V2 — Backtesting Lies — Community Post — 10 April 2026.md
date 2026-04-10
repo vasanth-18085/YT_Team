@@ -1,13 +1,15 @@
 # V2 — Backtesting Lies — Community Post
 
 **Date:** 10 April 2026
-**Topic:** The Backtesting Lie No One Talks About
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+Your backtest is lying to you.
 
-This video fixes that for **The Backtesting Lie No One Talks About**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Not maybe. Almost certainly.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+I built 14 forecasting models. Got a Sharpe of 1.14 on test data. Felt brilliant. Then I tested properly with purged walk forward validation. The real number was 0.72.
+
+Three specific types of leakage were inflating my results. Shuffled splits. Label overlap from triple barrier horizons. Autocorrelation at fold boundaries.
+
+Standard sklearn time series splits do not catch any of these.
+
+New video breaks down all three lies and shows the exact fix 👉 [INSERT PRIMARY LINK]

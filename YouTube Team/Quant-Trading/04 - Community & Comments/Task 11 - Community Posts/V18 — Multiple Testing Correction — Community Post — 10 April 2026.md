@@ -1,13 +1,13 @@
 # V18 — Multiple Testing Correction — Community Post
 
 **Date:** 10 April 2026
-**Topic:** p-Value Hacking in Quant: How to Avoid Fooling Yourself
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+You tested 14 models. One shows a Sharpe of 1.2.
 
-This video fixes that for **p-Value Hacking in Quant: How to Avoid Fooling Yourself**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+Is that real? Or did you just get lucky?
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+If you test enough strategies, one will look good by pure chance. Three corrections exist: Bonferroni, Holm step down, and BHY.
+
+After correction, that 1.2 Sharpe might not be significant at all.
+
+New video shows how to tell the difference between real alpha and noise 👉 [INSERT PRIMARY LINK]

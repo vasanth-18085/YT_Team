@@ -1,13 +1,13 @@
 # V19 — Deflated Sharpe & PBO — Community Post
 
 **Date:** 10 April 2026
-**Topic:** Is Your Backtest Real or Luck? Deflated Sharpe and PBO
 
-Most people do not fail in quant because they are lazy.
-They fail because they learn one piece in isolation and never connect it to a full production workflow.
+A Sharpe ratio without context means nothing.
 
-This video fixes that for **Is Your Backtest Real or Luck? Deflated Sharpe and PBO**.
-No hype. No toy examples. Just what actually matters when you want a system that survives real constraints.
+If you tested 14 models and picked the best, the expected lucky Sharpe from noise is about 0.6. Your observed 1.2 minus the lucky 0.6 gives a Deflated Sharpe of 0.6.
 
-If you are building your own ML quant stack and want the full roadmap, grab the free MLQuant starter pack here:
-[INSERT PRIMARY LINK]
+Then PBO: the probability your best in sample strategy underperforms out of sample.
+
+These two metrics separate backtest heroes from real strategies.
+
+New video implements both from scratch 👉 [INSERT PRIMARY LINK]
