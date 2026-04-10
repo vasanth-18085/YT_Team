@@ -14,6 +14,7 @@
 
 ## Outputs
 - Created `Community Posts — 10 April 2026.md` with 5 posts and CTA placeholders
+- Created 26 per-video community post files (`V0` through `V25`) in Task 11 folder
 
 ## Decisions Made
 1. Prioritized pain-point-first hooks.

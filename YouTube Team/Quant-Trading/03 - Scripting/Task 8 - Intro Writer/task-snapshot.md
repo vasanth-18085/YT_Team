@@ -14,6 +14,7 @@
 
 ## Outputs
 - Created `Hook & Intro Pack — V0-V25 — 10 April 2026.md`
+- Created 26 per-video hook files (`V0` through `V25`) in Task 8 folder
 - Added Hook Question, Credibility, Video Structure, Open Loop for each video
 
 ## Decisions Made
