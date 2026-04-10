@@ -1,16 +1,22 @@
 # V18 — Multiple Testing Correction — Hook & Intro
 
-**Video Title:** p-Value Hacking in Quant: How to Avoid Fooling Yourself
+**Video Title:** p-value Hacking: How to Avoid Fooling Yourself
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about p-Value Hacking in Quant: How to Avoid Fooling Yourself but almost nobody shows the full practical workflow that actually works in production?
+
+You tested 50 model configurations and found 5 that are profitable. Congratulations — statistically, at least 2 of those are pure luck. Do you know which ones?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I ran 50 strategy variations through my walk-forward pipeline. Before multiple testing correction, 12 looked statistically significant. After applying Bonferroni, Holm-Bonferroni, and Benjamini-Hochberg corrections, only 4 survived. The other 8 were noise that I would have confidently traded with real money if I had not applied these corrections.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I explain the multiple comparisons problem, walk through three correction methods with actual code, and show you exactly how many of my strategies survived the filter. You will see the p-value distributions, the correction thresholds, and the specific configurations that passed versus failed. By the end you will have a statistical hygiene system that prevents you from trading noise.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first let me show you how easy it is to accidentally p-value hack yourself — even if you think you are being careful — because the mechanism is more subtle than most people realise.

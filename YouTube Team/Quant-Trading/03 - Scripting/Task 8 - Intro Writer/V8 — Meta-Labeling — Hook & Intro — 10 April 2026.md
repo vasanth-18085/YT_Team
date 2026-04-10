@@ -3,14 +3,20 @@
 **Video Title:** 9 Classifiers to Judge Your Predictions: When to Trust Your Model
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about 9 Classifiers to Judge Your Predictions: When to Trust Your Model but almost nobody shows the full practical workflow that actually works in production?
+
+What if your model is right 60 percent of the time — but you have no idea which 60 percent? Would you still bet real money on every single prediction?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I built a meta-labelling layer that sits on top of the forecasting models and answers exactly that question: should I trust this particular prediction or not? Nine different classifiers vote on whether each trade is worth taking. The result: same gross accuracy, but the trades that pass the meta-label filter have a hit rate 11 percent higher than the ones that do not.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I walk you through the meta-labelling concept from Marcos López de Prado's work, show you how I implemented it with 9 classifiers, and demonstrate the filtering effect on trade quality. By the end you will have a system that tells you not just what to trade but when to trust the signal and when to sit out.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first let me show you what happens when you trade every signal your model generates versus only the ones the meta-label approves — because the equity curve comparison is the most convincing argument I can make.

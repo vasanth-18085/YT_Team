@@ -3,14 +3,20 @@
 **Video Title:** I Built 44 ML Trading Models — All Free on GitHub
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about I Built 44 ML Trading Models — All Free on GitHub but almost nobody shows the full practical workflow that actually works in production?
+
+What if someone built a full production-grade quant trading system — 44 machine learning models, 9 pipeline phases, 58 Python files — and then gave you the entire thing for free?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+That is exactly what I did. Over the past year I designed, coded, and validated a complete end-to-end algorithmic trading pipeline from raw data ingestion through live paper trading. Every model, every backtest, every line of code is open source on GitHub right now.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+This channel is the video companion to that codebase. We are going through every single component — forecasting models, labelling strategies, sentiment analysis, risk management, portfolio construction, and deployment — in 25 detailed videos. By the end of this series you will understand how a real quant system works from the inside. Not toy LSTM demos. Not Jupyter notebook tutorials. A real multi-file production system.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But before we dive in I want to show you the full architecture in one shot — the nine phases, how they connect, and where most people's understanding of quant trading goes completely wrong. Because once you see the whole picture, every individual video will make ten times more sense.

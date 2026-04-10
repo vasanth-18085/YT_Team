@@ -1,16 +1,22 @@
 # V19 — Deflated Sharpe & PBO — Hook & Intro
 
-**Video Title:** Is Your Backtest Real or Luck? Deflated Sharpe and PBO
+**Video Title:** Is Your Sharpe Real? Deflated Sharpe Ratio & Probability of Backtest Overfitting
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about Is Your Backtest Real or Luck? Deflated Sharpe and PBO but almost nobody shows the full practical workflow that actually works in production?
+
+Your strategy has a Sharpe ratio of 1.3. Impressive — until I tell you that after adjusting for the number of configurations you tried, the probability that Sharpe is real drops to 40 percent. Would you still trade it?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I computed the Deflated Sharpe Ratio and the Probability of Backtest Overfitting for every strategy variant in my pipeline. Strategies that looked like solid 1.0+ Sharpe performers deflated to 0.4 once you accounted for the search process that found them. Only the handful with deflated Sharpe above 0.7 made it into the production pipeline.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I cover two frameworks — the Deflated Sharpe Ratio from Bailey and López de Prado which adjusts your Sharpe for how many strategies you tried, and Probability of Backtest Overfitting which tells you the odds that your best in-sample strategy underperforms out of sample. You will see the exact formulas, the code, and the real numbers from my pipeline. By the end you will never trust a raw Sharpe ratio again.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first I want to show you a result that genuinely unsettled me — because the strategy I was most confident about had the highest probability of overfitting. Let me show you why.

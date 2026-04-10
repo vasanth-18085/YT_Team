@@ -3,14 +3,20 @@
 **Video Title:** ARIMA vs LSTM vs Transformers: I Tested Them All (Spoilers: Not What You Think)
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about ARIMA vs LSTM vs Transformers: I Tested Them All (Spoilers: Not What You Think) but almost nobody shows the full practical workflow that actually works in production?
+
+If someone told you that a simple linear model beats a transformer at predicting stock returns — would you believe them?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I trained and validated 14 forecasting models on the same dataset with the same walk-forward protocol — from ARIMA and Ridge regression to LSTMs, Temporal Fusion Transformers, and gradient-boosted trees. The results completely broke my assumptions about which model families work best for financial time series.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video you are going to see every model, every hyperparameter configuration, and every performance metric side by side. I will show you the actual accuracy tables, the training times, and the stability across folds. By the end you will know which models are worth your time for stock return prediction and which ones are overrated hype.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first there is a result that genuinely shocked me when I saw it — a model I almost did not bother testing came out on top in four out of six folds. Let me show you why.

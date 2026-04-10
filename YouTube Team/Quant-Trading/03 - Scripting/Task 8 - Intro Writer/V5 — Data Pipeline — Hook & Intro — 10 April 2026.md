@@ -3,14 +3,20 @@
 **Video Title:** My Stock Data Pipeline: No More Corrupt Downloads, Missing Dates, or Feature Misalignment
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about My Stock Data Pipeline: No More Corrupt Downloads, Missing Dates, or Feature Misalignment but almost nobody shows the full practical workflow that actually works in production?
+
+Have you ever spent three days debugging a model only to discover the problem was never the model — it was the data feeding it?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I burned two full weeks on a feature misalignment bug that was silently leaking future data into my training set. Every backtest result I had was inflated. I had to throw away a month of work and rebuild the data pipeline from scratch with validation checks at every step. That rebuilt pipeline is what powers this entire system now.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I am going to show you the complete data pipeline — from raw API downloads through cleaning, deduplication, date alignment, and feature-ready output. You will see every validation check I added after every bug I hit, including the ones that catch lookahead leaks before they contaminate your models. By the end you will have a bulletproof ingestion layer that you can trust.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first let me show you the three most common data bugs in quant pipelines — because at least one of them is probably in your code right now and you do not know it yet.

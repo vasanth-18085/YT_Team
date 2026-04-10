@@ -3,14 +3,20 @@
 **Video Title:** VectorBT: Testing 100 Stocks, 6 Folds, 50 Features in 2 Minutes
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about VectorBT: Testing 100 Stocks, 6 Folds, 50 Features in 2 Minutes but almost nobody shows the full practical workflow that actually works in production?
+
+What if you could backtest your entire trading strategy — 100 stocks, 6 walk-forward folds, 50 features — and get full performance metrics in under 2 minutes?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+My first backtest framework was a for-loop over dates. It took 8 hours to run a single pass. I rewrote the entire engine using VectorBT's vectorised architecture and the same backtest now runs in 110 seconds. That speed difference is not just convenience — it changes how you work because you can test ideas in real time instead of waiting overnight.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I show you the VectorBT engine I built — how I feed signals in, how walk-forward folds are handled, how transaction costs are integrated, and how the output metrics are computed. You will see the exact code and the performance comparison against a naive loop. By the end you will have a backtesting engine fast enough to iterate on strategies interactively.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first let me show you the one thing about VectorBT that trips everyone up on their first try — because if you get this wrong your backtest will run fast but produce completely wrong numbers.

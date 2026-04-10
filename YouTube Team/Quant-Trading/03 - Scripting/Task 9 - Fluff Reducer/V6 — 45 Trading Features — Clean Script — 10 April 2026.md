@@ -1,7 +1,7 @@
 # V6 — 45 Trading Features — Clean Script
 
 **Title:** 45 Trading Features Explained: Every Signal In My Quant System
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---

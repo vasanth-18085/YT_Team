@@ -349,3 +349,36 @@
 
 ### Next
 - Task 8 — Intro Writer (start with V0-V3)
+
+---
+
+## Session 13 — 2026-04-10 (continued)
+
+**Focus:** Task 9 — Fluff Reducer Quality Pass (expanding short scripts, trimming V7)
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Resumed Task 9 expansion from prior context | V5, V4, V13, V2, V11, V8, V10, V9, V12 under 2,400w |
+| — | Expanded V5 (Data Pipeline) | 1,976w → 2,309w (+333w: error handling, logging, generator pattern) |
+| — | Expanded V4 (FinBERT LoRA) | 2,083w → 2,334w (+251w: headline comparison examples, event study preview) |
+| — | Expanded V13 (VectorBT) | 1,730w → 2,368w (+638w: slippage detail, custom metrics, debugging tip) |
+| — | Expanded V2 (Backtesting Lies) | 1,789w → 2,319w (+530w: real numbers, implementation gotchas, repo review) |
+| — | Expanded V11 (Volatility) | 1,931w → 2,351w (+420w: LSTM overfitting detail, Transformer comparison, MAE downstream effect) |
+| — | Expanded V8 (Meta-Labeling) | 1,998w → 2,335w (+337w: threshold sensitivity, long/short asymmetry, class imbalance) |
+| — | Expanded V10 (Fusion Layer) | 1,979w → 2,371w (+392w: stacking speed, temporal signal stability, architecture selection guide) |
+| — | Expanded V9 (Sentiment) | 2,112w → 2,307w (+195w: abnormal returns methodology, market model comparison) |
+| — | Expanded V12 (Portfolio) | 2,136w → 2,299w (+163w: turnover cost, Black-Litterman tau parameter) |
+| — | Trimmed V7 (14 Models) | 4,647w → 3,962w (-685w: condensed Tier D descriptions, evaluation framework, merged surprises) |
+| — | Verified all 26 scripts | 25/26 in 2,300-3,850 range (V0 trailer at 480w is correct) |
+
+### Result Summary
+All 26 Task 9 clean scripts are now sized for 25-35 minute Indian English narration:
+- V0: 480w (trailer — intentionally short)
+- V1-V6, V8-V13: 2,299-2,546w (25-28 min with code display time)
+- V7: 3,962w (33-35 min — longest script due to 14 model descriptions)
+- V14-V17: 3,155-3,839w (28-33 min)
+- V18-V25: 2,371-2,780w (25-28 min)
+
+### Next
+- Task 10 — CTA Inserter (insert per-video CTAs into Task 9 clean scripts)

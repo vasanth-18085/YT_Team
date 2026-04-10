@@ -1,7 +1,7 @@
 # V3 — Triple Barrier Labeling — Clean Script
 
 **Title:** ML Models DON'T Matter... But Your Labels Do
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---

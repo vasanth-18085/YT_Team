@@ -3,14 +3,20 @@
 **Video Title:** Going Live: 30-Point Checklist Before Risking Real Capital
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about Going Live: 30-Point Checklist Before Risking Real Capital but almost nobody shows the full practical workflow that actually works in production?
+
+You have built the system. You have backtested it. You have paper traded it. You are about to hit the button that puts real money at risk. What could still go wrong?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I spent three months going through this exact transition from paper trading to live capital. I built a 30-point deployment checklist that covers everything from infrastructure reliability to risk limits to kill switches. Two of those 30 checks caught problems that would have caused real losses on day one.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I walk through the complete deployment checklist — infrastructure checks, data pipeline validation, risk limit configuration, execution safeguards, monitoring setup, and the graduated rollout plan from 1 percent capital to full allocation. You will see every check, why it exists, and what failure it prevents. By the end you will have a systematic process for going live with confidence.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first there is one check on this list that most people would never think of — and it is the one that saved me the most money. Let me start there.

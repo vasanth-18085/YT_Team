@@ -1,16 +1,22 @@
 # V20 — Performance Tearsheet — Hook & Intro
 
-**Video Title:** How to Present Strategy Results Like a Quant Team
+**Video Title:** The 6-Panel Strategy Report That Replaces Your Equity Curve
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about How to Present Strategy Results Like a Quant Team but almost nobody shows the full practical workflow that actually works in production?
+
+Why do most people evaluate their trading strategy by staring at an equity curve — when an equity curve hides more problems than it reveals?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I built a 6-panel tearsheet that shows everything an equity curve does not — drawdown timelines, monthly return heatmaps, rolling Sharpe, factor exposure, and regime-specific performance. The first time I ran it on a strategy I thought was good, three of the six panels showed obvious problems that the equity curve completely masked.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I walk through each panel of the tearsheet — what it measures, how to read it, and what red flags to look for. You will see the actual code that generates each visualisation and real output from my pipeline's best and worst strategies side by side. By the end you will have a diagnostic tool that gives you a complete picture of strategy health in a single glance.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first I want to show you two equity curves that look almost identical — but one strategy is robust and the other is a ticking time bomb. The tearsheet reveals the difference instantly.

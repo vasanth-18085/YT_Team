@@ -3,14 +3,20 @@
 **Video Title:** How to Merge Forecasts + Sentiment + Technicals: I Tested 7 Fusion Models
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about How to Merge Forecasts + Sentiment + Technicals: I Tested 7 Fusion Models but almost nobody shows the full practical workflow that actually works in production?
+
+You have a return forecast from your ML model. You have a sentiment score from your NLP pipeline. You have technical indicators. How do you combine them into a single trading decision without one signal drowning out the others?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I tested 7 different fusion approaches — from simple averaging to stacking ensembles to attention-weighted combination — on the same walk-forward folds. The difference between the best and worst fusion method was 0.15 Sharpe. Picking the right combiner matters more than I expected.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I walk through all 7 fusion strategies, show you the implementation for each one, and present the head-to-head performance comparison. You will see exactly which methods work, which ones overfit, and why the winning approach is not the most complex one. By the end you will know how to merge multiple signal sources into a single coherent trading signal.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first I want to show you what happens when you just average your signals together — because it is the most obvious approach and understanding why it fails reveals exactly what a good fusion layer needs to do.

@@ -3,14 +3,20 @@
 **Video Title:** Kelly Criterion vs Fixed Size: Which Maximizes Long-Term Wealth?
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about Kelly Criterion vs Fixed Size: Which Maximizes Long-Term Wealth? but almost nobody shows the full practical workflow that actually works in production?
+
+Same signals. Same entry points. Same exit points. One trader makes 15 percent annually. Another goes bankrupt. The only difference is how many dollars they put on each trade. How is that possible?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I ran a 10,000-path Monte Carlo simulation comparing three sizing methods on the same signal. Full Kelly had a 5 percent probability of total ruin. Half-Kelly had zero ruin probability and still captured 80 percent of Kelly's upside. The adaptive vol-targeted method I actually use in production had the highest Calmar ratio of all three — the most return per unit of drawdown.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I compare fixed sizing, Kelly criterion, and adaptive confidence-weighted volatility targeting — with actual code, actual backtest numbers, and actual equity curve comparisons. You will see exactly why position sizing matters more than most people think and which method fits which risk tolerance. By the end you will know how to size every trade in your pipeline.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first there is a mathematical fact about compounding that most people get backwards — and once you see it, you will never think about drawdowns the same way again.

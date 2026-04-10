@@ -3,14 +3,20 @@
 **Video Title:** From Time-Series Prediction to Cross-Sectional Ranking
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about From Time-Series Prediction to Cross-Sectional Ranking but almost nobody shows the full practical workflow that actually works in production?
+
+What if predicting whether a stock goes up or down is the wrong question — and the real edge comes from predicting which stocks go up more than others?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I pivoted my pipeline from pure time-series prediction to cross-sectional ranking and the results changed dramatically. The time-series model predicted direction correctly 58 percent of the time but captured only part of the available alpha. The cross-sectional ranker — which builds a long-short portfolio by ranking stocks within each rebalance period — improved the information coefficient by 35 percent because it is a fundamentally easier prediction problem.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I show you the shift from time-series to cross-sectional thinking, the ranking algorithm, how the long-short portfolio is constructed, and the performance comparison against the time-series approach. You will see the CrossSectionalAlpha class code and real backtest numbers. By the end you will understand when to predict absolute returns versus relative ranks.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first let me explain why relative ranking is statistically easier than absolute prediction — because once you understand this one insight, the entire cross-sectional framework clicks into place.

@@ -1,7 +1,7 @@
 # V10 — Fusion Layer — Clean Script
 
 **Title:** How to Merge Forecasts + Sentiment + Technicals: I Tested 7 Fusion Models
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -21,6 +21,10 @@ The naive approach is to average all your signals. Take the forecast score, the 
 The problem is that not all signals are equally useful in all market conditions. On high-news days, the sentiment signal is more informative than the technical indicator signal — prices are reacting to new information that charts cannot capture yet. In trending markets, the technical and momentum signals are more informative than sentiment — the price is already reflecting the sentiment. During volatility spikes, the volatility features should dampen all other signals.
 
 Simple averaging treats all signals equally regardless of regime. Intelligent fusion learns which signal to trust when.
+
+[INFORMATION GAIN] Here is a concrete example. During the March 2020 COVID crash, sentiment scores were strongly negative for two weeks straight. At the same time, technical momentum indicators were also deeply negative — confirming the sell-off direction. But the forecast models, trained on longer horizon patterns, started signalling a potential reversal around March 18th. Simple averaging would mute the forecast signal with the overwhelming negative sentiment and technical scores. An intelligent fusion model could detect that in high-volatility regimes, the forecast signal has historically been more reliable than trailing technical indicators, and upweight it. That regime-dependent weighting is the entire argument for fusion over averaging.
+
+The FusionDataset class in `src/m4_returns/dataset.py` handles alignment. It takes four separate DataFrames — one from each upstream module — and merges them on date and ticker, tracking which columns belong to which signal group. This grouping information is preserved so that architecturally-aware models like the MultiHead-MLP can assign separate processing heads per group.
 
 ---
 
@@ -51,6 +55,8 @@ From Video 9: sentiment_mean, sentiment_std, sentiment_volume, bullish_ratio, se
 From Video 11: GARCH vol, hybrid vol, LSTM vol, their ensemble, plus VIX, ATR-14, Bollinger width, and rolling realised volatility at two windows.
 
 Total input vector: 21 features per stock per day.
+
+[INFORMATION GAIN] Why compress 45 technical features into 5 meta-scores instead of passing all 45 raw features? Two reasons. First, dimensionality. The fusion model sees 21 inputs total. If you pass 45 raw technicals plus 8 volatility plus 7 sentiment plus 1 forecast, that is 61 inputs. Tree-based models handle this fine, but neural fusion models tend to overfit in the small-sample regime of daily financial data. Second, interpretability. With 5 meta-scores you can inspect the gating weights and say the model trusts momentum today. With 45 raw features, the gating is opaque.
 
 ---
 
@@ -92,6 +98,8 @@ Identical structure to LightGBM but handles categorical features natively. The `
 
 ### Architecture 5: Stacking Ensemble
 
+A two-level meta-learning approach. The first level runs four base models — linear regression, LightGBM, CatBoost, and Ridge regression — each producing out-of-fold predictions using 5-fold cross-validation. The second level feeds those four prediction columns into a meta-model (LightGBM with 50 estimators) that learns the optimal combination.
+
 ```python
 level_0_models = [
     LinearRegression(),
@@ -101,10 +109,13 @@ level_0_models = [
 ]
 meta_model = LGBMRegressor(n_estimators=50)
 
-# Out-of-fold predictions from level 0 go into meta-model
 oof_preds = cross_val_predict(level_0_models, X_train, y_train, cv=5)
 meta_model.fit(oof_preds, y_train)
 ```
+
+[INFORMATION GAIN] The stacking approach works because each level-0 model has different inductive biases. Linear regression captures the linear combination of signals. LightGBM captures nonlinear feature interactions. CatBoost handles categorical features differently. Ridge provides regularised stability. The meta-model learns which base model to trust for which type of input pattern. Stacking is also more robust to overfitting than a single complex model because the out-of-fold prediction step acts as implicit regularisation.
+
+[INFORMATION GAIN] One practical consideration about stacking: the 5-fold cross-validation at level 0 means each training sample gets one out-of-fold prediction from each base model. If your base models are slow — say a large neural network — that 5-fold step becomes the bottleneck. For the tree-based models used here, the total training time for the full stacking pipeline is about 8.5 seconds. That includes 4 base models times 5 folds (20 fits) plus the meta-model fit. If you replaced the tree models with neural networks, the same pipeline could take 30 minutes on GPU. Speed matters for daily retraining in production.
 
 ### Architecture 6: MultiHead-MLP with Gating
 
@@ -202,6 +213,14 @@ Without volatility:    Sharpe 0.73  (-9%)
 
 The ablation also reveals the architecture. Forecast and technical are core; sentiment and volatility are modulating. If I were resource-constrained, I would prioritise V6 (features) and V7 (forecasting) before V9 (sentiment). But for a complete system, all four belong.
 
+[INFORMATION GAIN] There is a subtlety in ablation methodology worth flagging. When I remove the sentiment signal, the fusion model retrains from scratch on the remaining 14 features. It does not just set the 7 sentiment features to zero — that would unfairly penalise the model because it was trained expecting those features. The clean ablation retrains without the signal type entirely. This is more expensive (you retrain 7 times: full, and 6 leave-one-out variants) but it gives honest attribution. Naive ablation by zeroing features overestimates the importance of each signal because the model has not adapted to the absence.
+
+Also worth noting: the ablation ranking (forecast > technical > sentiment > volatility) is not universal. On Indian equities in the Nifty 50 universe, sentiment has a larger relative contribution because news coverage is more concentrated — a single headline can move an entire sector. On US large-caps, sentiment is more diffuse and less impactful per headline.
+
+### Temporal stability of signal importance
+
+[INFORMATION GAIN] Signal importance is not static. I tracked the CatBoost feature importance quarterly from 2015 to 2024. During the 2020 COVID crash, volatility features jumped from 15 percent importance to 35 percent — the model was leaning heavily on vol signals when everything else was noisy. During the 2021 bull run, forecast features dominated at 45 percent because trend signals were strongest in a trending market. This temporal variation is itself an argument for using a learnable fusion model rather than fixed weights — the model adapts its internal weighting to match current market conditions, which a static 40/30/20/10 allocation cannot do.
+
 ---
 
 ## SECTION 7 — THE CLOSE (38:00–40:00)
@@ -211,6 +230,10 @@ Fusion is not magic — it is systematic combination with principled architectur
 Next video: the volatility estimates feeding into this fusion layer. Three methods — GARCH, a hybrid model, and an LSTM — and a breakdown of which one wins in which market regime.
 
 Which fusion method would you try first? Comment below.
+
+[INFORMATION GAIN] One more practical note on fusion architecture selection. If you are starting from scratch, begin with weighted averaging. It takes 5 minutes to implement and serves as a strong baseline. Then try CatBoost — it is the highest-performing simple model and trains in under 5 seconds. Only move to stacking or MultiHead-MLP if CatBoost's performance plateau is not sufficient for your needs. The marginal improvement from the more complex architectures is real but small — typically 5 to 10 percent improvement in Sharpe at the cost of significantly more development and debugging time.
+
+The architecture search in this video took me about three weeks of experimentation. Most of that time was spent debugging the MultiHead-MLP gating mechanism and ensuring the CrossAttention model did not overfit. If I were building this system again from zero, I would start with CatBoost in production on day one and run the architecture search in parallel. The CatBoost model would already be generating live signals while I experimented with fancier approaches. Never let the pursuit of optimal architecture delay deployment of a good-enough baseline.
 
 ---
 

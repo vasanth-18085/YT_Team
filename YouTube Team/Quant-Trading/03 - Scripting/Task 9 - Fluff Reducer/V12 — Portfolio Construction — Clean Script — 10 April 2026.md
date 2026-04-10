@@ -1,7 +1,7 @@
 # V12 — Portfolio Construction — Clean Script
 
 **Title:** How to Allocate Capital Across Positions: Mean-Variance vs HRP vs Black-Litterman
-**Target Length:** ~40 minutes
+**Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
 ---
@@ -237,6 +237,10 @@ All four methods tested on the same 100-stock universe, same fusion model signal
 
 [INFORMATION GAIN] Mean-variance wins on raw Sharpe but has the worst max drawdown (-22%) and the highest concentration (25% positions allowed). During the 2022 drawdown, the concentrated positions amplified losses compared to the diversified alternatives. HRP is the practical production choice: 95% of Mean-Variance's Sharpe, much better drawdown profile, and robust to input estimation errors. Equal weight has lower Sharpe but is also the simplest to implement and hardest to break through coding errors.
 
+The hidden cost of mean-variance that does not show up in the Sharpe column: turnover. Mean-variance optimal weights are highly sensitive to small changes in the input correlation matrix. A slight change in estimated correlations week over week can cause large weight swings, which translates to high transaction costs from frequent rebalancing. HRP weights are structurally more stable because the hierarchical clustering produces consistent tree structures even when correlations shift moderately. In practice, HRP rebalancing generates about 40 percent less turnover than mean-variance for comparable risk-adjusted returns.
+
+One more comparison worth noting: Black-Litterman sits between mean-variance and equal weight philosophically. If you have no views (set all confidence parameters to zero), Black-Litterman defaults to the market-cap weighted portfolio. If you set extreme confidence on your views, it approaches mean-variance. The $\tau$ parameter controls how much you deviate from the market equilibrium. For this system, $\tau = 0.05$ keeps the portfolio close to the market baseline with modest tilts from the fusion model signals.
+
 ---
 
 ## SECTION 9 — PRODUCTION RULES (38:00–39:30)
@@ -257,9 +261,11 @@ Minimum position:     No positions below 0.2% — too small to impact performanc
 
 Portfolio construction is the difference between a strategy that looks good in backtest and one that survives live trading. HRP gives the best balance: competitive Sharpe, sound drawdown control, robust to correlation regime shifts.
 
-Next video: VectorBT backtesting. We have the full pipeline — data, features, forecasting models, meta-labeling, sentiment, volatility estimates, portfolio allocation. How do you run a rigorous backtest that gives you results you can actually trust? Walk-forward validation, transaction costs, and the VectorBT vectorised framework.
+[INFORMATION GAIN] One final point that connects portfolio construction to the rest of the pipeline. The weights from this module feed into the SignalCombiner as the `portfolio_weight` parameter. This means the position sizing chain is: signal direction (from forecasting) times meta-label confidence (from meta-labeling) times volatility target (from volatility estimation) times portfolio weight (from this module) times regime multiplier (from regime detection). Each layer adds a dimension of risk control. You could skip any one layer and the system still works. But each additional layer reduces a specific failure mode. Portfolio construction specifically handles the correlation and concentration risks that the other layers cannot address.
 
-Which portfolio method are you most likely to use? Comment below.
+The walk-forward rebalancing method in the `_PortfolioBase` class handles the temporal dimension. Every Friday, the weights are recomputed on the latest data and the portfolio is rebalanced. Transaction costs are deducted proportional to turnover. The average weekly turnover for HRP is about 8 percent — meaning 8 percent of the portfolio changes each week. At 10 bps per trade, the weekly rebalancing cost is about 0.8 bps of portfolio value, which annualises to roughly 40 bps or 0.4 percent. The cost of the portfolio construction layer is modest relative to the benefit.
+
+Next video: VectorBT backtesting. We have the full pipeline — data, features, forecasting models, meta-labeling, sentiment, volatility estimates, portfolio allocation. How do you run a rigorous backtest that gives you results you can actually trust?
 
 ---
 

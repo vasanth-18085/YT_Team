@@ -1,16 +1,22 @@
 # V21 — Experiment Tracking — Hook & Intro
 
-**Video Title:** Systematic Experimentation: How to Track 1,000 Backtests
+**Video Title:** Systematic Experimentation: How to Track 1000 Backtests
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about Systematic Experimentation: How to Track 1,000 Backtests but almost nobody shows the full practical workflow that actually works in production?
+
+You have run 200 backtest configurations. Can you tell me right now which hyperparameters produced the best risk-adjusted return — and whether that result was statistically significant?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I could not answer that question for way too long. I was tracking experiments in spreadsheets and Jupyter notebook filenames. When I built a proper experiment tracker that logs every run with full metadata, I found three configurations I had tested months ago that I had completely forgotten about — and one of them was the best performer in the entire pipeline.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I show you the ExperimentTracker class I built — how it logs every backtest run with parameters, metrics, timestamps, and fold-level results. You will see how to query across experiments, rank by any metric, and generate comparison reports. By the end you will have a system that turns hundreds of scattered backtests into an organised searchable database.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first let me show you the specific experiment naming and tagging system I use — because without it, even a good tracker becomes a graveyard of unlabelled results you will never look at again.

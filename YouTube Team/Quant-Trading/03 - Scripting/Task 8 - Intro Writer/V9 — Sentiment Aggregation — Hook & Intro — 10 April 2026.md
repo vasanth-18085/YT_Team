@@ -3,14 +3,20 @@
 **Video Title:** How to Turn 10,000 Headlines into Trading Features (The Right Way)
 **Date:** 10 April 2026
 
+---
+
 ## Hook Question
-Have you ever wondered why people keep talking about How to Turn 10,000 Headlines into Trading Features (The Right Way) but almost nobody shows the full practical workflow that actually works in production?
+
+You have a fine-tuned sentiment model that can score individual headlines. But how do you actually turn thousands of noisy headline scores into a single clean trading signal for each stock on each day?
 
 ## Credibility
-I built this inside a full end to end quant pipeline with walk forward validation, transaction costs, and risk controls, so you are seeing what survives real constraints, not a demo that only works in a notebook.
+
+I process over 10,000 financial headlines per week through my pipeline. The raw sentiment scores are incredibly noisy — contradictory headlines for the same stock on the same day are normal. It took three iterations of the aggregation logic before the sentiment features actually improved the downstream models instead of making them worse.
 
 ## Video Structure
-In this video, we will break this topic into clear steps, look at the exact logic and implementation path, and then cover what changes when you apply it in real trading conditions.
+
+In this video I show you the full aggregation pipeline — from raw per-headline scores through time-decay weighting, source reliability ranking, and daily aggregation into a single sentiment feature per stock. You will see the exact code, the specific decay parameters I chose and why, and the before-and-after impact on model accuracy. By the end you will know how to turn messy text data into clean quantitative features.
 
 ## Open Loop
-By the end, you will have a practical blueprint you can apply immediately. But first, there is one hidden mistake most people make here that quietly destroys performance.
+
+But first there is a counterintuitive finding I need to share — because the naive approach to sentiment aggregation that everyone tries first actually makes your models worse, not better. Let me show you the data.
