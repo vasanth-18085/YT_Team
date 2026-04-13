@@ -13,6 +13,10 @@ Why do most people who know machine learning still have no idea how to build an 
 
 I spent over a year building a complete algorithmic trading pipeline — 44 models across 9 phases, 58 Python files, walk-forward validated and cost-aware. Not a demo. A system that ingests real market data, generates signals, manages risk, and executes trades.
 
+## Why Now (R.A.I.N.Y — N)
+
+Right now there are more people who know machine learning than ever before — free courses, open-source models, GPT writing your code for you. But if you search "ML trading system architecture" on YouTube, you get either toy Jupyter notebooks or black-box fund interviews. Nobody shows you how all the pieces actually connect. This video fills that gap before someone else does.
+
 ## Video Structure
 
 In this video I am going to walk you through the entire architecture from end to end. You will see exactly how raw price data flows through feature engineering, forecasting, labelling, sentiment analysis, risk management, and portfolio construction before a single trade is placed. By the end you will have a mental map of how every component connects and why each one exists.

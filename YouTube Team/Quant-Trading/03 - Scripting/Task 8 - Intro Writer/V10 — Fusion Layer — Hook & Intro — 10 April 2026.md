@@ -13,6 +13,10 @@ You have a return forecast from your ML model. You have a sentiment score from y
 
 I tested 7 different fusion approaches — from simple averaging to stacking ensembles to attention-weighted combination — on the same walk-forward folds. The difference between the best and worst fusion method was 0.15 Sharpe. Picking the right combiner matters more than I expected.
 
+## Why Now (R.A.I.N.Y — N)
+
+Multi-modal AI is the hottest topic in machine learning right now. But in finance, nobody is showing how to actually combine price forecasts, sentiment signals, and technical indicators into a single trading decision. This is the missing piece between having good individual models and having a system that trades.
+
 ## Video Structure
 
 In this video I walk through all 7 fusion strategies, show you the implementation for each one, and present the head-to-head performance comparison. You will see exactly which methods work, which ones overfit, and why the winning approach is not the most complex one. By the end you will know how to merge multiple signal sources into a single coherent trading signal.

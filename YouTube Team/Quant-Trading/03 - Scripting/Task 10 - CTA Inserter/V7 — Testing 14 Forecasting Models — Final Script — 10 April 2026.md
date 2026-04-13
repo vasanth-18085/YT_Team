@@ -58,6 +58,8 @@ If you want to run this same 14-model benchmark on your own data, the free start
 
 I organised the 14 models into four tiers. Not by performance — by architecture family. Because understanding why models behave differently is more useful than just seeing who came first in a leaderboard.
 
+Here is the quick map: Tier A uses classical statistics — math formulas that extend past prices into tomorrow. Tier B uses decision trees — gradient boosting that finds nonlinear patterns in features. Tier C uses recurrent and convolutional neural networks — deep learning for sequential data. Tier D uses the latest architectures — transformers and modern MLPs designed specifically for time series.
+
 ### Tier A — Statistical Baselines (Models 1 and 2)
 
 These are your anchors. If your fancy model can't beat these, something is wrong.

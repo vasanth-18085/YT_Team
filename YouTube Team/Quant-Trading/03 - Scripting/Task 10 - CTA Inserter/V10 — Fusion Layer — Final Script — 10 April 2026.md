@@ -153,6 +153,8 @@ class MultiHeadFusion(nn.Module):
 
 ### Architecture 7: Cross-Attention Transformer
 
+Cross-attention lets the forecast signal "look at" the sentiment and technical signals to decide what matters. Unlike gating, which learns fixed blend weights, cross-attention computes importance dynamically for each token — making it theoretically more flexible but also more prone to overfitting on small financial datasets.
+
 ```python
 class CrossAttentionFusion(nn.Module):
     def __init__(self, d_model=32):

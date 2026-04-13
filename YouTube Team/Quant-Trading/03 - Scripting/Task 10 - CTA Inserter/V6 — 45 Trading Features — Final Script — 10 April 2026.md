@@ -87,7 +87,7 @@ def add_volatility_features(df: pd.DataFrame) -> pd.DataFrame:
     return df
 ```
 
-[INFORMATION GAIN] Parkinson and Garman-Klass volatility estimators use intraday high-low data rather than just closing prices. Rolling close-to-close volatility ignores everything that happens during the trading day. A stock that opens at 100, spikes to 115 during the day, and closes at 101 has low close-to-close volatility but enormous intraday volatility. For options and position sizing, the intraday path matters. Parkinson is approximately 20% more efficient than close-to-close for estimating true volatility.
+[INFORMATION GAIN] Parkinson volatility uses the daily high-low range instead of just closing prices — capturing intraday movement that close-to-close volatility misses. Garman-Klass goes further by incorporating the open-close range as well, making it more efficient at estimating true volatility from a single day of data. Both are standard in quant finance because they extract more information from the same OHLC bar. Rolling close-to-close volatility ignores everything that happens during the trading day. A stock that opens at 100, spikes to 115 during the day, and closes at 101 has low close-to-close volatility but enormous intraday volatility. For options and position sizing, the intraday path matters. Parkinson is approximately 20% more efficient than close-to-close for estimating true volatility.
 
 `vol_regime` — the ratio of 10-day to 60-day volatility — is a regime detector embedded in the feature set. A ratio above 1 means short-term volatility is elevated relative to the long-term baseline. The models can use this to adjust their confidence even without explicit regime labeling from Video 14.
 

@@ -44,7 +44,7 @@ Where:
 - $\alpha \cdot \varepsilon_{t-1}^2$ is the weight on last period's shock — how much yesterday's surprise affects today's forecast
 - $\beta \cdot \sigma_{t-1}^2$ is the weight on last period's variance estimate — volatility momentum
 
-[INFORMATION GAIN] The ratio $\alpha / (1 - \alpha - \beta)$ gives you the model's half-life — how quickly it forgets a volatility shock. For AAPL on 20 years of daily data, typical fits give $\alpha \approx 0.08$, $\beta \approx 0.88$. The half-life works out to roughly 6 trading days. That means after a volatility spike, GARCH expects the elevated vol to persist for about a week before reverting toward the long-run mean. This is a reasonable empirical match for equities in normal conditions.
+[INFORMATION GAIN] The ratio $\alpha / (1 - \alpha - \beta)$ gives you the model's half-life — how many days until a volatility shock decays to half its impact. A half-life of 10 days means the model mostly forgets a spike within two weeks. A half-life of 30 days means volatility estimates stay elevated for over a month after a crash. For AAPL on 20 years of daily data, typical fits give $\alpha \approx 0.08$, $\beta \approx 0.88$. The half-life works out to roughly 6 trading days. That means after a volatility spike, GARCH expects the elevated vol to persist for about a week before reverting toward the long-run mean. This is a reasonable empirical match for equities in normal conditions.
 
 ```python
 from arch import arch_model

@@ -13,6 +13,10 @@ You have a fine-tuned sentiment model that can score individual headlines. But h
 
 I process over 10,000 financial headlines per week through my pipeline. The raw sentiment scores are incredibly noisy — contradictory headlines for the same stock on the same day are normal. It took three iterations of the aggregation logic before the sentiment features actually improved the downstream models instead of making them worse.
 
+## Why Now (R.A.I.N.Y — N)
+
+Financial news volume has exploded with AI-generated content. The signal-to-noise ratio is worse than ever, which means naive sentiment scoring is now actively harmful to models. Proper aggregation is no longer optional — it is the difference between sentiment helping and hurting your predictions.
+
 ## Video Structure
 
 In this video I show you the full aggregation pipeline — from raw per-headline scores through time-decay weighting, source reliability ranking, and daily aggregation into a single sentiment feature per stock. You will see the exact code, the specific decay parameters I chose and why, and the before-and-after impact on model accuracy. By the end you will know how to turn messy text data into clean quantitative features.

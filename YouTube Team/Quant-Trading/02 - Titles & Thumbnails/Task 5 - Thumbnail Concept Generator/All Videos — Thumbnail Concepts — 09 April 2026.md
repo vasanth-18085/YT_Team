@@ -20,29 +20,29 @@ Each video has **5 thumbnail concepts** with text, visual description, and reaso
 
 | Video | Title (from Task 4) | Thumbnail Text | Visual | Core Emotion |
 |-------|---------------------|---------------|--------|--------------|
-| V0 | I Built 44 ML Trading Models — All Free on GitHub | $0. NO CATCH. | Terminal with `git clone`, green text on dark | Relief / Disbelief |
+| V0 | I Built 44 ML Trading Models — All Free on GitHub | $0. NO CATCH. | Terminal with `git clone`, green text on dark, gold MLQuant logo accent | Relief / Disbelief |
 | V1 | I Built a 44-Model Trading System (Full Architecture) | THE BLUEPRINT | System architecture diagram, teal lines on dark | Authority / Reveal |
-| V2 | The Backtesting Lie No One Talks About | THIS IS A LIE | Split: green equity curve vs red crash | Fear / Betrayal |
+| V2 | The Backtest Lie That's Costing You Real Money | THIS IS A LIE | Split: green equity curve vs red crash | Fear / Betrayal |
 | V3 | ML Models DON'T Matter… But Your Labels Do | 3 BARRIERS | Three glowing monolith walls, tiny candlestick | Epic / Curiosity |
 | V4 | We Read the Market WITHOUT a Single Price Chart | NO CHARTS | Crossed-out price chart + glowing news headlines | Pattern Interrupt |
-| V5 | Your ML Models DON'T Matter… Your Data Pipeline Does | RAW → READY | Messy red CSV → clean green DataFrame | Transformation |
-| V6 | Every Trading Feature for ML Explained (All 45) | ALL 45 | Periodic table grid of 45 feature cards | Completeness |
+| V5 | The CSV File Lie Every ML Trader Still Believes | RAW → READY | Messy red CSV → clean green DataFrame, gold arrow accent | Transformation |
+| V6 | Every Trading Feature for ML Explained (All 45) | ALL 45 | Periodic table grid of 45 feature cards, gold border on best-performing cards | Completeness |
 | V7 | I Tested 14 Models on ONLY Real Stock Data | 11 MODELS DIED | Model graveyard, 3 survivors glowing | Survival / Fear |
 | V8 | They Got It ALL WRONG About Transformers for Stocks | TRANSFORMERS LOSE | Shattered Transformer architecture diagram | Shock / Vindication |
 | V9 | These Transformer Killers Are HIDDEN in Plain Sight | SIMPLE WINS | Tiny MLP on top of collapsed Transformer | David vs Goliath |
 | V10 | 99% of Traders Don't Know Meta-Labeling Exists | PRECISION WEAPON | Sniper crosshair on single green candlestick | Tactical Power |
 | V11 | VADER DOESN'T Matter for Finance. THIS Model Does. | 4 MODELS. 1 WINS. | Bar chart, 3 mediocre, 1 towering gold | Competition |
 | V12 | I Fine-Tuned FinBERT WITHOUT a Single GPU | NO GPU NEEDED | Crossed-out GPU + glowing Colab icon | Relief / Access |
-| V13 | Single Models DON'T Matter… But THIS Does | COMBINE THEM | Three data streams converging to fusion node | Convergence |
-| V14 | 99% of ML Traders Combine Data Wrong | YOU'RE DOING IT WRONG | Tangled wires (red) vs clean connections (gold) | Confrontation |
+| V13 | 90% of Traders Predict Markets The Wrong Way | COMBINE THEM | Three data streams converging to fusion node | Convergence |
+| V14 | Why Nobody Uses Neural Gating (They Should) | WRONG WIRES | Tangled wires (red) vs clean connections (gold) | Confrontation |
 | V15 | I Built a Hybrid Vol Model. It Beat Everything. | BEAT EVERYTHING | 3D volatility surface, GARCH + ML feeding it | Dominance |
-| V16 | Markowitz DOESN'T Matter… But THIS Does | WHICH WINS? | 4 racing equity curves, one pulling ahead | Competition |
-| V17 | Your Model DOESN'T Matter… But THIS Does | MODEL ≠ MONEY | Neural net ≠ dollar bills, broken bridge | Cognitive Dissonance |
-| V18 | The Backtesting Lie No One Talks About | 1000X FASTER | Progress bars: crawling for-loop vs blazing vectorized | Speed / Tool |
+| V16 | 4 Methods That Fix 90% of Portfolio Problems | WHICH WINS? | 4 racing equity curves, one pulling ahead | Competition |
+| V17 | 99% Of ML Models Never Become Real Trades | MODEL ≠ MONEY | Neural net ≠ dollar bills, broken bridge | Cognitive Dissonance |
+| V18 | I Backtested 44 Models WITHOUT Writing a Single Loop | 1000X FASTER | Progress bars: crawling for-loop vs blazing vectorized | Speed / Tool |
 | V19 | 99% of ML Models Trade Blind (This One Doesn't) | IT CAN SEE | Glowing neural eye on market chart with regime zones | Power / Vision |
-| V20 | 99% Don't Know Their ML Model Is Dying | MODEL DECAY | Green EKG flatline to red on dark terminal | Dread / Urgency |
-| V21 | The Lie About Backtested Profits | REAL COST | Iceberg — profit tip above, hidden costs below | Revelation |
-| V22 | 99% of "Profitable" Backtests Are WRONG | FANTASY | Shattering backtest screen, darkness behind | Disillusionment |
+| V20 | 99% of Traders Never Check for Model Drift | MODEL DECAY | Green EKG flatline to red on dark terminal | Dread / Urgency |
+| V21 | Execute Large Trades WITHOUT Moving Price | HIDDEN COST | Iceberg — small profit tip above waterline, large spread/slippage mass below, gold dollar sign on hidden portion | Revelation |
+| V22 | This Kills Most Strategies… Why Nobody Fixes It | FANTASY | Shattering backtest screen, darkness behind | Disillusionment |
 | V23 | How Quant Funds Make Money (No One Taught This) | THEIR SECRET | Ranked stock leaderboard, longs green/shorts red | Insider Access |
 | V24 | Your Model Doesn't Matter. Your Pipeline Does. | NOT THE MODEL | Crumbling pedestal under shiny model icon | Provocation |
 | V25 | I Built 44 ML Models to Beat the S&P 500 | DID IT WORK? | Two racing equity curves, hidden ending | Tension / Finale |
@@ -807,7 +807,7 @@ Each video has **5 thumbnail concepts** with text, visual description, and reaso
 **Title:** "99% of ML Traders Combine Data Wrong"
 
 **Concept 1**
-- Thumbnail text: YOU'RE DOING IT WRONG
+- Thumbnail text: WRONG WIRES
 - Visual: Tangled mess of wires/connections between data nodes on left (red). Clean gated connections on right (gold). Dark, split composition.
 - Why it works: Confrontational. Tangled vs clean = instant before/after. People who combine data will feel attacked and click.
 
@@ -831,7 +831,7 @@ Each video has **5 thumbnail concepts** with text, visual description, and reaso
 - Visual: Clean elegant gating diagram — two inputs entering gate node (sleek valve), one refined output. Minimal, gold on dark. Patent-diagram style.
 - Why it works: "THE RIGHT WAY" is positive counterpart to title's negative. Patent style conveys authority.
 
-**Best pick: #1 — "YOU'RE DOING IT WRONG"** with tangled vs clean wires. Title accuses (99% wrong), thumbnail proves it visually. Tangled wires vs clean connections is the most visceral way to show "your approach is a mess."
+**Best pick: #1 — "WRONG WIRES"** with tangled vs clean wires. Title accuses (nobody uses gating), thumbnail proves it visually. Shortened from 5 words to 2 to stay within the 3-4 word max rule. Tangled wires vs clean connections is the most visceral way to show "your approach is a mess."
 
 ---
 
@@ -907,6 +907,7 @@ Each video has **5 thumbnail concepts** with text, visual description, and reaso
 - **Text color:** White or bright yellow/gold. Occasional red for warning/danger thumbnails.
 - **Visual placement:** Right side or center-right. One focal point max.
 - **Color accents:** Teal/cyan for tech, green for positive/success, red for danger/failure, gold for premium/winner.
+- **Brand accent colour: GOLD (#FFD700 / warm gold).** This is the MLQuant signature — used on hero/winner thumbnails (V7, V11, V14, V25), the cracking padlock (V0), and wherever the 44-model system is the protagonist. Every thumbnail should include at least a subtle gold element (text glow, accent line, icon highlight) for brand consistency across the 26-video series.
 - **No human faces.** Use objects, diagrams, charts, icons, metaphorical visuals.
 - **No clutter.** If you can't understand it in 1 second at phone size, simplify.
 

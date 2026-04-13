@@ -1,6 +1,6 @@
 # V5 — Data Pipeline — Hook & Intro
 
-**Video Title:** My Stock Data Pipeline: No More Corrupt Downloads, Missing Dates, or Feature Misalignment
+**Video Title:** The CSV File Lie Every ML Trader Still Believes
 **Date:** 10 April 2026
 
 ---
@@ -12,6 +12,10 @@ Have you ever spent three days debugging a model only to discover the problem wa
 ## Credibility
 
 I burned two full weeks on a feature misalignment bug that was silently leaking future data into my training set. Every backtest result I had was inflated. I had to throw away a month of work and rebuild the data pipeline from scratch with validation checks at every step. That rebuilt pipeline is what powers this entire system now.
+
+## Why Now (R.A.I.N.Y — N)
+
+New data sources appear weekly — alternative data, social feeds, satellite imagery. But the pipeline problem is getting harder, not simpler. More data means more chances for silent bugs to leak future information into training. If you are building any ML trading system right now, the pipeline is where it will fail first.
 
 ## Video Structure
 

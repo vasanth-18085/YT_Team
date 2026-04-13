@@ -13,6 +13,10 @@ What if the reason your trading model does not work has nothing to do with the m
 
 I tested 14 different forecasting models on the same data. The best model and the worst model were separated by only 3 percent accuracy. Then I changed the labelling method — kept the same models — and accuracy jumped by 12 percent across the board. Labels matter more than models. I learned this the hard way.
 
+## Why Now (R.A.I.N.Y — N)
+
+Everyone is obsessing over which model to use — transformers, LLMs, foundation models. The model hype cycle has never been louder. Meanwhile, the labelling problem is still being ignored in almost every ML trading tutorial published this year. If you fix this one thing before touching your model, you skip months of wasted experimentation.
+
 ## Video Structure
 
 In this video I am going to show you exactly why standard return labels fail, how the triple barrier method from Marcos López de Prado's work solves the problem, and how I implemented it with configurable profit targets, stop losses, and time horizons. By the end you will have a labelling system that gives your models something actually worth predicting.

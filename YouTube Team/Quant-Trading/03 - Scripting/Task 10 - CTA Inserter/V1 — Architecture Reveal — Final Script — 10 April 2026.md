@@ -98,7 +98,7 @@ Triple-Barrier Labeling from Lopez de Prado's Advances in Financial Machine Lear
 
 For each event: take-profit at plus 2 sigma, stop-loss at minus 2 sigma, vertical timeout at 10 trading days. Sigma is the EWMA daily volatility estimate with a 21-day lookback. First barrier hit determines the label: plus 1 for take-profit, minus 1 for stop-loss, 0 for timeout.
 
-A CUSUM filter removes the non-event days — flat market days where nothing meaningful moved. You label roughly 30 to 40 percent of trading days.
+A CUSUM filter (cumulative sum control chart — it detects when price movement crosses a threshold) removes the non-event days — flat market days where nothing meaningful moved. You label roughly 30 to 40 percent of trading days.
 
 [INFORMATION GAIN] Standard up or down labels treat a 0.01 percent move and a 3 percent move identically. Triple-barrier labels encode what a real trader cares about — did this trade hit the take-profit, the stop-loss, or time out? That is the question a trading system actually needs answered.
 
@@ -134,7 +134,7 @@ Three volatility models. GARCH with AIC-based automatic p and q selection — th
 
 All three produce predicted sigma, VaR at 95 percent, and CVaR at 95 percent. These feed into position sizing: higher predicted volatility means smaller positions to keep the daily portfolio risk constant.
 
-Four portfolio methods: Mean-Variance via PyPortfolioOpt for maximum Sharpe, HRP (Hierarchical Risk Parity) which avoids the instability of inverting covariance matrices, Black-Litterman with ML predictions as prior views for combining market equilibrium with model forecasts, and Risk Parity with equal risk contribution.
+Four portfolio methods. Mean-Variance via PyPortfolioOpt for maximum Sharpe. HRP (Hierarchical Risk Parity) which avoids the instability of inverting covariance matrices. Black-Litterman with ML predictions as prior views — combining market equilibrium with model forecasts. And Risk Parity with equal risk contribution.
 
 System constraints from config: max single-stock weight 25 percent, daily VaR limit 2 percent, weekly rebalancing on Fridays, 10 basis point transaction cost.
 
@@ -158,7 +158,7 @@ The `VectorBTEngine` runs the full historical backtest: 100,000 dollar initial c
 
 This is the phase nobody else shows.
 
-[INFORMATION GAIN] Seven categories of production infrastructure. Statistical rigor: `MultipleTestingCorrector` with FDR correction, `DeflatedSharpe` adjusting for selection bias, `BacktestOverfitDetector` using Probability of Backtest Overfitting and Minimum Backtest Length. Purged CV: `PurgedWalkForwardCV` with purge and embargo to prevent label leakage. Drift detection: `DriftMonitor` with 7 statistical tests monitoring rolling accuracy, feature distributions, and cumulative deviations. Regime detection: `RegimeDetector` using Hidden Markov Model with 3 states plus `RegimeAwarePositionSizer` that scales exposure based on regime probability. Execution realism: `TransactionCostModel`, `SlippageModel`, `MarketImpactModel` implementing Almgren-Chriss, `FillSimulator`, `CapacityEstimator`. Data quality: `DataValidator`, `QualityReport`, `UniverseManager`. Serving: ONNX inference engine plus FastAPI at `/predict` and `/health`.
+[INFORMATION GAIN] Seven categories of production infrastructure. Statistical rigor: `MultipleTestingCorrector` with FDR correction, `DeflatedSharpe` adjusting for selection bias, `BacktestOverfitDetector` using Probability of Backtest Overfitting and Minimum Backtest Length. Purged CV: `PurgedWalkForwardCV` with purge (excluding contaminated training data near fold boundaries) and embargo (adding a gap so autocorrelation decays) to prevent label leakage. Drift detection: `DriftMonitor` with 7 statistical tests monitoring rolling accuracy, feature distributions, and cumulative deviations. Regime detection: `RegimeDetector` using Hidden Markov Model with 3 states plus `RegimeAwarePositionSizer` that scales exposure based on regime probability. Execution realism: `TransactionCostModel`, `SlippageModel`, `MarketImpactModel` implementing Almgren-Chriss, `FillSimulator`, `CapacityEstimator`. Data quality: `DataValidator`, `QualityReport`, `UniverseManager`. Serving: ONNX inference engine plus FastAPI at `/predict` and `/health`.
 
 This phase alone has more code than most people's entire trading systems. It is the difference between a research notebook and a deployable system.
 

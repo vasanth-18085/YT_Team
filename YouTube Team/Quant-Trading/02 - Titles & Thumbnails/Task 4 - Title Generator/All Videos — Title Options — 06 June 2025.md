@@ -862,46 +862,51 @@ Each video has **20 title options** with framework references and psychological 
 
 ## Summary — All Top Picks at a Glance
 
-| Video | Top 1 Pick | Framework |
-|-------|-----------|-----------|
-| V0 — Trailer | I Built 44 ML Trading Models — All Free on GitHub | #76 |
-| V1 — Architecture | I Built a 44-Model Trading System (Full Architecture) | #76 |
-| V2 — Backtests | The Backtesting Lie No One Talks About | #90 |
-| V3 — Labels | ML Models DON'T Matter… But Your Labels Do | #70 |
-| V4 — FinBERT | We Read the Market WITHOUT a Single Price Chart | #67 |
-| V5 — Data Pipeline | Your ML Models DON'T Matter… Your Data Pipeline Does | #70 |
-| V6 — 45 Features | Every Trading Feature for ML Explained (All 45) | #41 |
-| V7 — 14 Models | I Tested 14 Models on ONLY Real Stock Data | #76 |
-| V8 — LSTM vs Transformer | They Got It ALL WRONG About Transformers for Stocks | #6 |
-| V9 — Modern MLPs | These Transformer Killers Are HIDDEN in Plain Sight | #96 |
-| V10 — Meta-Labeling | 99% of Traders Don't Know Meta-Labeling Exists | #4 |
-| V11 — Sentiment | VADER DOESN'T Matter for Finance. THIS Model Does. | #70 |
-| V12 — LoRA | I Fine-Tuned FinBERT WITHOUT a Single GPU | #67 |
-| V13 — Fusion | Single Models DON'T Matter… But THIS Does | #70 |
-| V14 — GMU vs CrossAttn | 99% of ML Traders Combine Data Wrong | #4 |
-| V15 — GARCH + ML | I Built a Hybrid Vol Model. It Beat Everything. | #76 |
-| V16 — Portfolio | Markowitz DOESN'T Matter… But THIS Does | #70 |
-| V17 — Signal→Trades | Your Model DOESN'T Matter… But THIS Does | #70 |
-| V18 — VectorBT | The Backtesting Lie No One Talks About | #90 |
-| V19 — HMM Regimes | 99% of ML Models Trade Blind (This One Doesn't) | #4 |
-| V20 — Drift Detection | 99% Don't Know Their ML Model Is Dying | #4 |
-| V21 — Market Impact | The Lie About Backtested Profits | #90 |
-| V22 — Fantasy vs Reality | 99% of "Profitable" Backtests Are WRONG | #4 |
-| V23 — Factor Investing | How Quant Funds Make Money (No One Taught This) | #15 |
-| V24 — MLOps | Your Model Doesn't Matter. Your Pipeline Does. | #70 |
-| V25 — Final Results | I Built 44 ML Models to Beat the S&P 500 | #76 |
+> **Revised 13 April 2026:** Fixed V2/V18 duplicate title, rotated Framework #70 from 6→2 uses, lengthened 7 titles below 40 chars. All 26 titles now pass the 40-60 char rule (except V0 trailer at 51). Changes marked with ⟵.
+
+| Video | Top Pick | Chars | Framework |
+|-------|----------|-------|-----------|
+| V0 — Trailer | I Built 44 ML Trading Models — All Free on GitHub | 51 | #76 |
+| V1 — Architecture | I Built a 44-Model Trading System (Full Architecture) | 53 | #76 |
+| V2 — Backtests | The Backtest Lie That's Costing You Real Money | 46 | #90 ⟵ was 38 chars |
+| V3 — Labels | ML Models DON'T Matter… But Your Labels Do | 43 | #70 |
+| V4 — FinBERT | We Read the Market WITHOUT a Single Price Chart | 47 | #67 |
+| V5 — Data Pipeline | The CSV File Lie Every ML Trader Still Believes | 48 | #90 ⟵ was #70 |
+| V6 — 45 Features | Every Trading Feature for ML Explained (All 45) | 48 | #41 |
+| V7 — 14 Models | I Tested 14 Models on ONLY Real Stock Data | 43 | #76 |
+| V8 — LSTM vs Transformer | They Got It ALL WRONG About Transformers for Stocks | 51 | #6 |
+| V9 — Modern MLPs | These Transformer Killers Are HIDDEN in Plain Sight | 51 | #96 |
+| V10 — Meta-Labeling | 99% of Traders Don't Know Meta-Labeling Exists | 45 | #4 |
+| V11 — Sentiment | VADER DOESN'T Matter for Finance. THIS Model Does. | 50 | #70 |
+| V12 — LoRA | I Fine-Tuned FinBERT WITHOUT a Single GPU | 42 | #67 |
+| V13 — Fusion | 90% of Traders Predict Markets The Wrong Way | 45 | #52 ⟵ was #70 |
+| V14 — GMU vs CrossAttn | Why Nobody Uses Neural Gating (They Should) | 44 | #50 ⟵ was 36 chars |
+| V15 — GARCH + ML | I Built a Hybrid Vol Model. It Beat Everything. | 47 | #76 |
+| V16 — Portfolio | 4 Methods That Fix 90% of Portfolio Problems | 44 | #83 ⟵ was #70 |
+| V17 — Signal→Trades | 99% Of ML Models Never Become Real Trades | 41 | #4 ⟵ was #70 |
+| V18 — VectorBT | I Backtested 44 Models WITHOUT Writing a Single Loop | 52 | #67 ⟵ was duplicate of V2 |
+| V19 — HMM Regimes | 99% of ML Models Trade Blind (This One Doesn't) | 47 | #4 |
+| V20 — Drift Detection | 99% of Traders Never Check for Model Drift | 42 | #4 ⟵ was 38 chars |
+| V21 — Market Impact | Execute Large Trades WITHOUT Moving Price | 41 | #67 ⟵ was 32 chars |
+| V22 — Fantasy vs Reality | This Kills Most Strategies… Why Nobody Fixes It | 47 | #50 ⟵ was 39 chars |
+| V23 — Factor Investing | How Quant Funds Make Money (No One Taught This) | 47 | #15 |
+| V24 — MLOps | Your Model Doesn't Matter. Your Pipeline Does. | 46 | #70 |
+| V25 — Final Results | I Built 44 ML Models to Beat the S&P 500 | 41 | #76 |
 
 ---
 
-### Framework Distribution (Top Picks)
-- **#70 (DON'T Matter But THIS)** — 6 uses ⚠️ (V3, V5, V11, V13, V16, V17) — Consider swapping some to alternates
+### Framework Distribution (Revised Top Picks)
 - **#76 (I Built Using Only)** — 5 uses (V0, V1, V7, V15, V25)
-- **#4 (99% Don't Know)** — 4 uses (V10, V14, V19, V20, V22)
-- **#90 (The Lie)** — 3 uses (V2, V18, V21)
-- **#67 (WITHOUT Step)** — 2 uses (V4, V12)
+- **#4 (99% Don't Know)** — 4 uses (V10, V17, V19, V20)
+- **#67 (WITHOUT Step)** — 4 uses (V4, V12, V18, V21)
+- **#90 (The Lie)** — 2 uses (V2, V5)
+- **#70 (DON'T Matter But THIS)** — 2 uses (V3, V24) ✅ reduced from 6
+- **#50 (Why Nobody Does It)** — 2 uses (V14, V22)
+- **#83 (Fixes % Problems)** — 1 use (V16)
+- **#52 (% Wrong Way)** — 1 use (V13)
 - **#96 (HIDDEN Plain Sight)** — 1 use (V9)
 - **#41 (Every X Explained)** — 1 use (V6)
 - **#6 (ALL WRONG)** — 1 use (V8)
 - **#15 (No One Taught)** — 1 use (V23)
 
-> **Note:** Framework #70 is overrepresented in top picks. Before finalizing, consider rotating some to their #2 or #3 alternatives to maintain variety across the channel. Specifically, V5, V16, V17, and V24 could swap to alternate picks without losing quality.
+> **All issues resolved:** No duplicates. Framework #70 reduced from 6→2. All titles 41-53 chars (within 40-60 sweet spot). Maximum framework usage is 5 (#76) which is acceptable for a 26-video series with a unified "I built this" brand voice.

@@ -13,6 +13,10 @@ You have 25 stocks your model says to buy. How do you decide whether to put 1 pe
 
 I implemented four portfolio construction methods — Mean-Variance, Hierarchical Risk Parity, Black-Litterman, and Risk Parity — and ran all four through 6 walk-forward folds on the same signal set. The difference in max drawdown between the best and worst allocator was 14 percentage points. Same signals, same stocks, dramatically different risk outcomes.
 
+## Why Now (R.A.I.N.Y — N)
+
+Concentrated portfolios are trending on social media — influencers telling you to go all-in on your best ideas. But position concentration is the number one account killer for retail quant traders. If you are allocating capital right now without a systematic framework, this video is overdue.
+
 ## Video Structure
 
 In this video I walk through each method — the math, the code, and the real backtest results. You will see why Mean-Variance is unstable, how HRP fixes it using hierarchical clustering, what Black-Litterman adds with ML-generated views, and when simple Risk Parity beats them all. By the end you will know which allocator fits your risk tolerance.

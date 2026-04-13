@@ -13,6 +13,10 @@ Your strategy has a Sharpe ratio of 1.3. Impressive — until I tell you that af
 
 I computed the Deflated Sharpe Ratio and the Probability of Backtest Overfitting for every strategy variant in my pipeline. Strategies that looked like solid 1.0+ Sharpe performers deflated to 0.4 once you accounted for the search process that found them. Only the handful with deflated Sharpe above 0.7 made it into the production pipeline.
 
+## Why Now (R.A.I.N.Y — N)
+
+Backtest overfitting is the silent killer of retail quant strategies. As AI tools lower the barrier to generating hundreds of strategy variants overnight, selecting the lucky one becomes almost inevitable. If you are not correcting for this right now, you are probably about to trade the luckiest backtest rather than the best strategy.
+
 ## Video Structure
 
 In this video I cover two frameworks — the Deflated Sharpe Ratio from Bailey and López de Prado which adjusts your Sharpe for how many strategies you tried, and Probability of Backtest Overfitting which tells you the odds that your best in-sample strategy underperforms out of sample. You will see the exact formulas, the code, and the real numbers from my pipeline. By the end you will never trust a raw Sharpe ratio again.

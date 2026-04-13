@@ -61,7 +61,7 @@ The inputs: observed_sharpe is your best model's Sharpe from the walk-forward va
 
 The computation has two steps.
 
-Step one: compute the expected maximum Sharpe under the null hypothesis. If you generate n_trials random Sharpe ratios from a standard normal distribution, the expected maximum is approximately: $E[\max(SR)] \approx \sqrt{2 \ln(n\_trials)} \cdot (1 - \frac{\gamma}{2 \ln(n\_trials)}) + \frac{\gamma}{2\sqrt{2 \ln(n\_trials)}}$ where gamma is the Euler-Mascheroni constant (approximately 0.5772). For 14 trials, this gives approximately 0.35. This is the Sharpe you would expect to see from the best of 14 random models with no edge.
+Step one: compute the expected maximum Sharpe under the null hypothesis — in plain English, how high would the best Sharpe be if none of your models had any real edge and you were just picking the luckiest one? If you test 14 random models, the luckiest one will show a Sharpe of about 0.35 purely by chance. That is your baseline. The formula uses a mathematical constant (approximately 0.5772) to calculate this baseline precisely: $E[\max(SR)] \approx \sqrt{2 \ln(n\_trials)} \cdot (1 - \frac{\gamma}{2 \ln(n\_trials)}) + \frac{\gamma}{2\sqrt{2 \ln(n\_trials)}}$. For 14 trials, this gives approximately 0.35.
 
 Step two: compute the standard error of the observed Sharpe, adjusted for non-normality: $SE(SR) = \sqrt{\frac{1 + \frac{1}{2}SR^2 - \gamma_3 \cdot SR + \frac{(\gamma_4 - 3)}{4} \cdot SR^2}{n_{obs} - 1}}$ where gamma_3 is skewness and gamma_4 is kurtosis. The deflated test statistic is: $DSR = \frac{SR_{observed} - E[\max(SR)]}{SE(SR)}$
 

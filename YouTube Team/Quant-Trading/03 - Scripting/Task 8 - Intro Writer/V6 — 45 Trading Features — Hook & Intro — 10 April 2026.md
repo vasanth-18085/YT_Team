@@ -13,6 +13,10 @@ How do you decide which features to feed a machine learning model when there are
 
 I started with over 120 candidate features, tested all of them through information coefficient analysis and forward selection, and ended up with 45 that actually carry predictive signal. The other 75 were adding noise and making every model worse. That culling process took weeks and the pipeline is dramatically better because of it.
 
+## Why Now (R.A.I.N.Y — N)
+
+Automated feature engineering tools are trending in ML engineering. But for financial features, auto-generated signals are mostly noise because the tools do not understand market microstructure. While everyone is chasing automation, this video gives you the curated set that actually survived statistical testing — saving you the months of dead ends I went through.
+
 ## Video Structure
 
 In this video I walk through all 45 features — grouped by category: momentum, volatility, volume, fundamental ratios, and sentiment-derived. For each one I show you what it measures, why it matters for return prediction, and the actual information coefficient it achieved in my walk-forward tests. By the end you will understand exactly what data the models in this pipeline are working with and why.

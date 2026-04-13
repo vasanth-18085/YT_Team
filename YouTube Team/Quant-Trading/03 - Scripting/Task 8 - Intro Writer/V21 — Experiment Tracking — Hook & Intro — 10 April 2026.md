@@ -13,6 +13,10 @@ You have run 200 backtest configurations. Can you tell me right now which hyperp
 
 I could not answer that question for way too long. I was tracking experiments in spreadsheets and Jupyter notebook filenames. When I built a proper experiment tracker that logs every run with full metadata, I found three configurations I had tested months ago that I had completely forgotten about — and one of them was the best performer in the entire pipeline.
 
+## Why Now (R.A.I.N.Y — N)
+
+MLflow and Weights & Biases dominate ML experiment tracking. But neither handles the specific needs of trading backtests — fold-level metrics, statistical corrections, regime-tagged results. If you are running backtests without a proper tracker right now, you are losing experiments to disorganisation.
+
 ## Video Structure
 
 In this video I show you the ExperimentTracker class I built — how it logs every backtest run with parameters, metrics, timestamps, and fold-level results. You will see how to query across experiments, rank by any metric, and generate comparison reports. By the end you will have a system that turns hundreds of scattered backtests into an organised searchable database.

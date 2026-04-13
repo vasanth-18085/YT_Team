@@ -1,6 +1,6 @@
 # V5 — Data Pipeline — Final Script
 
-**Title:** My Stock Data Pipeline: No More Corrupt Downloads, Missing Dates, or Feature Misalignment
+**Title:** The CSV File Lie Every ML Trader Still Believes
 **Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 

@@ -1,6 +1,6 @@
 # V2 — Backtesting Lies — Final Script
 
-**Title:** The Backtesting Lie No One Talks About
+**Title:** The Backtest Lie That's Costing You Real Money
 **Target Length:** 25-35 minutes
 **Date:** 10 April 2026
 
@@ -24,7 +24,7 @@ There are three specific lies baked into most ML backtests. By the end of this v
 
 The most common mistake in financial ML.
 
-[INFORMATION GAIN] Most ML tutorials use `train_test_split(shuffle=True)`. On a time series this is a guaranteed way to leak the future into training. If your test set contains January 2023 and your training set contains December 2022 AND February 2023 — which is exactly what happens with shuffling — your model literally trains on data from after the test period.
+[INFORMATION GAIN] Most ML tutorials use `train_test_split(shuffle=True)`. On a time series this is a guaranteed way to leak the future into training. Say your test set contains January 2023. Your training set contains December 2022 AND February 2023. That is exactly what happens with shuffling. Your model literally trains on data from after the test period.
 
 You have a horizontal timeline. Left to right: 2020, 2021, 2022, 2023. With a correct time-series split you take everything before a cutoff as training and everything after as test. Clean.
 
@@ -44,7 +44,7 @@ If this is making you question your own backtesting setup — good. I put togeth
 
 This one is subtle and almost nobody discusses it.
 
-[INFORMATION GAIN] In this system, triple-barrier labels have a maximum holding period of 10 days. The label for a position opened on Day T depends on prices from Day T through Day T plus 10. If your training set ends at Day T and your test set starts at Day T plus 1, the training set contains information about what happens in the test period — embedded inside the label. That is label leakage, and standard time-series splits do not handle it.
+[INFORMATION GAIN] In this system, triple-barrier labels have a maximum holding period of 10 days. The label for a position opened on Day T depends on prices from Day T through Day T plus 10. If your training set ends at Day T and your test set starts at Day T plus 1, the training set contains information about the test period. That information is embedded inside the label. Standard time-series splits do not handle this.
 
 Walk through a specific example. You are running a model on Apple stock. You take a position on Day 100. The triple-barrier label for that position is determined by what happens on Days 100 through 110. If your test set starts at Day 101, and your training set includes Day 100, then the Day 100 label in your training data was constructed using price information from Days 101 through 110 — the exact period you are supposed to be predicting blind.
 
@@ -167,7 +167,7 @@ Sliding window: training stays at a fixed size and slides forward. Fold 1 uses D
 
 ### Implementation gotchas
 
-[INFORMATION GAIN] Two implementation details that trip people up. First, the date alignment. If your features are calculated with a 20-day rolling window, the first 20 days of each training window have NaN features — they need to be dropped from training. If your fold boundary does not account for this, you get a silent quality degradation because the model trains on partially-computed features at the start of each fold.
+[INFORMATION GAIN] Two implementation details that trip people up. First, the date alignment. If your features use a 20-day rolling window, the first 20 days of each training window have NaN features. Drop them from training. If your fold boundary ignores this, you get silent quality degradation. The model trains on partially-computed features at the start of each fold.
 
 Second, the expanding vs sliding decision interacts with your feature engineering. Some features use long lookback windows — the 200-day moving average, for example. In a sliding window of 504 days, the first 200 days of training have progressively-computed 200-day features. In an expanding window starting from 504 days, those features are fully formed from day one. This makes expanding windows inherently better for long-lookback features. If your shortest lookback is 5 days and your longest is 200 days, expanding is almost always the right choice.
 
@@ -200,11 +200,11 @@ For N equals 14 models and an observed Sharpe of 1.2, the expected lucky Sharpe 
 
 [PERSONAL INSERT NEEDED] Show the before-and-after comparison from your actual data.
 
-Let me show you my actual numbers. Before purged walk-forward validation — standard time-series split, no purge, no embargo — my best model showed a Sharpe of 1.14 on the test set. After switching to purged walk-forward CV with purge window of 5 and embargo of 1 percent, the honest number across 6 folds was a mean Sharpe of 0.72 with standard deviation 0.18.
+Let me show you my actual numbers. Before purged walk-forward validation — standard time-series split, no purge, no embargo — my best model showed a Sharpe of 1.14 on the test set. After switching to purged walk-forward CV — purge window 5, embargo 1 percent — the honest number across 6 folds was a mean Sharpe of 0.72. Standard deviation: 0.18.
 
 That drop from 1.14 to 0.72 is not a model getting worse. It is the model being honestly evaluated for the first time. The 1.14 was inflated by label leakage at fold boundaries and residual autocorrelation giving the model free wins on easy days.
 
-Model rankings also changed. Before purging, a gradient boosted model ranked first by a comfortable margin. After purging, a simpler ensemble model ranked first because the gradient boosted model was more aggressively exploiting the data leakage at boundaries — its complexity gave it more opportunities to overfit.
+Model rankings also changed. Before purging, a gradient boosted model ranked first by a comfortable margin. After purging, a simpler ensemble model ranked first. The gradient boosted model had been exploiting data leakage at boundaries. Its complexity gave it more opportunities to overfit.
 
 This is the core lesson: every ML backtest on financial data that does not use purge and embargo is lying. Not intentionally. But the numbers are wrong by a predictable amount, and they are always wrong in the optimistic direction. Purge and embargo are not optional accessories — they are the minimum honest evaluation standard.
 

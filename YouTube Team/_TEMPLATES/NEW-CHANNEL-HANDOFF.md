@@ -65,6 +65,7 @@ Each channel has 6 phase folders with 18 task subfolders inside:
 | Task snapshot template | `YouTube Team/_TEMPLATES/task-snapshot-template.md` |
 | Handoff template | `YouTube Team/_TEMPLATES/handoff-template.md` |
 | Oscar Owen examples | `YouTube Team/_TEMPLATES/examples/` |
+| **Playbooks (YT strategy)** | `YouTube Team/_TEMPLATES/playbooks/` (4 files — see Section 5A) |
 | Dashboard (all channels) | `YouTube Team/_SYSTEM/DASHBOARD.md` |
 | Session log | `YouTube Team/_SYSTEM/SESSION-LOG.md` |
 | Quant Trading reference | `YouTube Team/Quant-Trading/` (completed example) |
@@ -225,12 +226,14 @@ All other tasks are independent once Master Context exists
 
 For every task:
 1. Read the relevant instruction file from `YouTube Team/_TEMPLATES/instructions/`
-2. Read the channel's `MASTER-CONTEXT.md`
-3. Execute the task following the instruction file
-4. Save output to the correct task folder: `YouTube Team/[Channel]/[Phase]/[Task]/`
-5. Save a task snapshot using `YouTube Team/_TEMPLATES/task-snapshot-template.md`
-6. Update `YouTube Team/_SYSTEM/DASHBOARD.md` with status
-7. Update `YouTube Team/_SYSTEM/SESSION-LOG.md` with what was done
+2. Read the relevant playbook(s) from `YouTube Team/_TEMPLATES/playbooks/` (see Section 5A)
+3. Read the channel's `MASTER-CONTEXT.md`
+4. Execute the task following the instruction file
+5. **Apply the required framework(s)** for this task (see Section 5A mapping table)
+6. Save output to the correct task folder: `YouTube Team/[Channel]/[Phase]/[Task]/`
+7. Save a task snapshot using `YouTube Team/_TEMPLATES/task-snapshot-template.md`
+8. Update `YouTube Team/_SYSTEM/DASHBOARD.md` with status
+9. Update `YouTube Team/_SYSTEM/SESSION-LOG.md` with what was done
 
 ### Instruction file mapping
 | Tasks | Instruction File |
@@ -251,7 +254,96 @@ Examples:
 
 ---
 
-## SECTION 6 — QUALITY LESSONS FROM QUANT TRADING
+## SECTION 5A — PLAYBOOK FRAMEWORKS (Applied to Every Channel)
+
+Every new channel must have these 7 frameworks applied during the task pipeline. These are sourced from 4 playbook files in `YouTube Team/_TEMPLATES/playbooks/`.
+
+### Framework-to-Task Mapping
+
+| When | Framework | What To Do | Quality Gate |
+|------|-----------|------------|-------------|
+| **Task 1** | **FIIRE** | Categorize every video idea as Tinder, Kindling, Logs, or Flint | Distribution: 15–25% Tinder, 25–35% Kindling, 40–50% Logs, 5–15% Flint |
+| **Task 3** | **SEAS** | Score every idea 1–10 on 4 dimensions | All 4 scored: Spread of Users, Excitement, Audience Match, Simplicity |
+| **Task 3** | **CCN Fit** | Validate each idea reaches Core + Casual + New viewers | All 3 audience tiers must engage |
+| **Task 4** | **40–60 char rule** | All top-pick titles must be 40–60 characters | Generate 10–20 variations per video, enforce length |
+| **Task 5** | **5C** | Every thumbnail concept must pass 5 checks | Composition, Context (18% glance test), Clean (≤3 elements), Curiosity, Color (brand accent) |
+| **Task 7** | **3 B's** | Audit every script for clarity | Be Bold (no hedging), Be Basic (jargon defined on first use), Be Brief (≤25 words/sentence) |
+| **Task 8** | **R.A.I.N.Y** | Every hook must have all 5 elements | Result, Address Objections, Instant (under 40s), Why Now, Why You |
+| **Task 8** | **10 Hook Types** | Test at least 3 hook types per video | Question, Shocking Statement, Storytelling, Preview, Personal Connection, Statistic, Challenge, Quotation, Metaphor, Proof |
+| **Pre-Launch** | **COIN** | Create Audience Language document | Audience words + Creator voice = Signature phrases + Tone rules |
+| **Pre-Launch** | **TEACH** | Define on-camera presence per archetype | Tone, Eye Contact, Animation, Coherence, Haste. Set energy level. Create practice schedule. |
+
+### Framework Definitions
+
+**R.A.I.N.Y** (Hooks — Task 8)
+- **R**esult: State the video's outcome in the first sentence
+- **A**ddress Objections: Counter "why should I care?" with proof/credibility
+- **I**nstant: Complete hook in under 40 seconds / ~240 words
+- **N** — Why Now: Why this topic is urgent or timely
+- **Y** — Why You: What gives the creator authority on this topic
+
+**3 B's** (Scripts — Task 7)
+- **B**e Bold: Authority language. "It will" not "it might." No hedging.
+- **B**e Basic: Define jargon on first use. No assumed knowledge beyond what Master Context declares.
+- **B**e Brief: Max 25 words per sentence. Max 3 sentences per paragraph.
+
+**5C** (Thumbnails — Task 5)
+- **C**omposition: Clear framing, single focal point
+- **C**ontext: Thumbnail works without the title (18% size glance test)
+- **C**lean: Maximum 3 visual elements
+- **C**uriosity: Creates a knowledge gap the viewer wants to close
+- **C**olor: Brand accent color applied consistently
+
+**FIIRE** (Content Mix — Task 1)
+- **Tinder** (15–25%): Trending topics that catch fire quickly but burn out
+- **Kindling** (25–35%): Core channel content that keeps the audience engaged
+- **Logs** (40–50%): Evergreen content with long-tail search value
+- **Flint** (5–15%): Experimental content testing new directions
+
+**SEAS** (Idea Validation — Task 3)
+- **S**pread of Users: How broad is the potential audience? (1–10)
+- **E**xcitement: How excited is the creator about this topic? (1–10)
+- **A**udience Match: How well does this fit the target viewer? (1–10)
+- **S**implicity: Can this be made and titled clearly? (1–10)
+
+**COIN** (Audience Language — Pre-Launch)
+- Step 1: Document **Audience Language** (their words, goals, frustrations, communities)
+- Step 2: Document **My Language** (creator voice, callouts, humor, tone markers)
+- Step 3: Combine into **New Language** (signature phrases, tone rules, recurring terminology)
+- Output: A living document that evolves after launch with real audience feedback
+
+**TEACH** (On-Camera Prep — Pre-Launch)
+- **T**one: Match script voice (authoritative/casual/analytical)
+- **E**ye Contact / Engagement: Look at lens (or voice engagement for faceless)
+- **A**nimation / Vocal variety: Pitch, emphasis, natural pauses
+- **C**oherence: Build logically, first-time viewer can follow
+- **H**aste / Pacing: Right speed for content; pause after key definitions
+
+### Playbook Source Files (Read These)
+| File | Frameworks Covered |
+|------|-------------------|
+| `YOUTUBE CHANNEL PLAYBOOK.md` | FIIRE, SEAS, 5C, CCN Fit, MatPat Method, 80/20 Rule |
+| `SCRIPTWRITING PLAYBOOK.md` | R.A.I.N.Y, 3 B's, Bryan System, 6-Point Grading |
+| `ON CAMERA PLAYBOOK.md` | TEACH, Energy Guidelines, 7 Skill Drills |
+| `YOUTUBE CHANNEL CHECKLIST.md` | Pre-launch, per-video, monthly, quarterly checklists |
+
+### Lessons Learned from Quant Trading Application
+
+1. **Apply frameworks DURING the task, not as a separate audit pass.** The Quant Trading build did frameworks as an afterthought — this required retroactive fixes to 24/26 hooks (Why Now missing), 10/26 scripts (jargon/sentence length), and 5/26 thumbnails. Build the framework checks into the task instruction.
+
+2. **FIIRE categorization should happen alongside Task 1, not after.** When you research content ideas, immediately tag each one Tinder/Kindling/Logs/Flint and check the distribution before finalizing.
+
+3. **COIN document should be created right after the Master Context.** The audience language feeds into titles, hooks, scripts, and community posts — having it early substantially improves the outputs.
+
+4. **3 B's "Be Basic" is the hardest to enforce with technical content.** On Quant Trading, 10/26 scripts needed jargon fixes. Rule: search for every technical term and add a parenthetical definition on first use.
+
+5. **R.A.I.N.Y "Why Now" is easy to forget.** It was missing from 24/26 hooks. Make it a checkbox: does this hook answer "why should I watch this TODAY, not next month?"
+
+6. **5C "Color" means formalize a brand accent color EARLY.** Quant Trading formalized Gold #FFD700 late and had to retrofit. Choose the brand color during Task 13 and reference it in every thumbnail concept.
+
+7. **V-Number ordering: plan titles and scripts using the SAME video list.** Quant Trading had a Task 1 plan in viewer-journey order and Task 6 brain dumps in build order. This created a mapping nightmare with 156 files on one ordering and 4 files on another. Define ONE video ordering in Task 1 and use it everywhere.
+
+---
 
 These are hard-learned lessons from the first channel build. Follow them to avoid repeating mistakes.
 
@@ -400,19 +492,23 @@ When the user says "start building [CHANNEL NAME]":
 
 - [ ] Read DASHBOARD.md
 - [ ] Read /memories/yt-team-context.md
+- [ ] Read playbook files from `YouTube Team/_TEMPLATES/playbooks/`
 - [ ] Confirm channel identity (Section 2, Step 1 questions)
 - [ ] Run Master Context interview (Section 3, all 10 sections)
 - [ ] Save MASTER-CONTEXT.md
-- [ ] Begin Task 13 → 14 → 15 (channel setup)
-- [ ] Begin Task 1 → 2 → 3 (content research)
-- [ ] Begin Task 4 → 5 (titles and thumbnails)
-- [ ] Begin Task 6 → 7 → 8 → 9 → 10 (scripting pipeline)
+- [ ] Create COIN (Audience Language) document right after Master Context
+- [ ] Begin Task 13 → 14 → 15 (channel setup — formalize brand color here)
+- [ ] Begin Task 1 + FIIRE categorization → 2 → 3 + SEAS scoring + CCN Fit (content research)
+- [ ] Begin Task 4 + 40–60 char rule → 5 + 5C framework (titles and thumbnails)
+- [ ] Begin Task 6 → 7 + 3 B's audit → 8 + R.A.I.N.Y framework → 9 → 10 (scripting pipeline)
 - [ ] Begin Task 11 (community posts)
 - [ ] Begin Task 16 (playlist strategy)
 - [ ] Begin Task 17 → 18 (outreach)
+- [ ] Create TEACH on-camera prep plan
 - [ ] Update DASHBOARD.md after every task
 - [ ] Git commit + push at milestones
 
 ---
 
-*Generated from the Quant Trading (MLQuant) channel build — 10 April 2026*
+*Generated from the Quant Trading (MLQuant) channel build — 10 April 2026*  
+*Updated with 7 Playbook Frameworks (R.A.I.N.Y, 3 B's, 5C, FIIRE, SEAS, COIN, TEACH) — 14 April 2026*

@@ -8,7 +8,7 @@
 
 ## SECTION 1 — THE HOOK (0:00–2:00)
 
-You have backtested. You have paper traded. The Sharpe looks good. The tearsheet shows acceptable risk. Now what?
+You have backtested. You have paper traded. The Sharpe ratio (your risk-adjusted return score) looks good. The tearsheet shows acceptable risk. Now what?
 
 One missed checklist item can blow an account. A stale model weight that was not retrained. A missing kill switch that lets a feedback loop compound losses. A data feed that silently stopped updating and fed yesterday's prices into today's model.
 
@@ -72,7 +72,7 @@ Five items that ensure the model is trustworthy.
 
 **Item 9: Stress window performance.** Test explicitly on 2008 (financial crisis), 2020 (COVID crash), and 2022 (rate hike regime). These three periods test different failure modes: 2008 tests credit crisis and correlated selloffs, 2020 tests sudden volatility spike and recovery, 2022 tests sustained drawdown from policy change. The strategy does not need to make money during these periods. It needs to not blow up. Maximum acceptable drawdown during stress: negative 25 percent.
 
-**Item 10: Corrected statistical significance.** The Deflated Sharpe Ratio from V19 must be positive with p-value below 0.05. The Probability of Backtest Overfitting from V19 must be below 0.50 (ideally below 0.30). The BH-FDR correction from V18 must confirm at least one model variant is statistically significant. These three checks together ensure the results are not artifacts of multiple testing, selection bias, or data mining.
+**Item 10: Corrected statistical significance.** The Deflated Sharpe Ratio from V19 must be positive with p-value below 0.05. The Probability of Backtest Overfitting from V19 must be below 0.50 (ideally below 0.30). The BH-FDR (Benjamini-Hochberg False Discovery Rate) correction from V18 must confirm at least one model variant is statistically significant. These three checks together ensure the results are not artifacts of multiple testing, selection bias, or data mining.
 
 ---
 
@@ -88,7 +88,7 @@ Six items that prevent catastrophic losses.
 
 **Item 14: Correlation spike de-risking.** If the average pairwise correlation among portfolio stocks exceeds 0.7, reduce all positions by 50 percent. High correlation means diversification has collapsed — your 25 stocks are behaving as one big position. A correlated selloff in this state would produce a position-size-equivalent drawdown.
 
-**Item 15: Volatility spike de-risking.** If VIX exceeds 50 or realised portfolio volatility spikes above 2x the rolling 60-day average, reduce all positions by 50 percent. This stacks with the regime detector from V14 — both reduce exposure during crises through independent mechanisms.
+**Item 15: Volatility spike de-risking.** If VIX (the market's fear index) exceeds 50 or realised portfolio volatility spikes above 2x the rolling 60-day average, reduce all positions by 50 percent. This stacks with the regime detector from V14 — both reduce exposure during crises through independent mechanisms.
 
 **Item 16: Kill switch tested.** The emergency shutdown works: one command halts all trading, closes all positions, moves to 100 percent cash. Test this before deployment, not during a crisis.
 

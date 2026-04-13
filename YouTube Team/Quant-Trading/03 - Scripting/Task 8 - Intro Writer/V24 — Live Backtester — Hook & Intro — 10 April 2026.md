@@ -13,6 +13,10 @@ Your backtest says the strategy works. But how do you know if it actually works 
 
 I built a paper trading engine that connects to live market data and executes the full pipeline in real time — without risking a single dollar. The first week of paper trading revealed three bugs that never showed up in backtesting: a timezone mismatch, a stale data cache, and an order sizing rounding error. All three would have cost real money in production.
 
+## Why Now (R.A.I.N.Y — N)
+
+Paper trading tools have improved dramatically in the last year. But nobody is showing how to properly reconcile paper results with backtest expectations. If you are about to go from backtest to live, this bridge step is the difference between a controlled transition and an expensive surprise.
+
 ## Video Structure
 
 In this video I walk through the complete paper trading system — the live data feed, the daily prediction loop, the simulated execution, and the reconciliation between simulated and actual fills. You will see the PaperTrader class code and the specific discrepancies I found between backtested and live performance. By the end you will have a bridge between backtest and production that catches problems before they cost you money.

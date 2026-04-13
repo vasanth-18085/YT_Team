@@ -4,6 +4,45 @@
 
 ---
 
+## Session 14 — 2026-04-14
+
+**Focus:** Playbook framework application, V-number resolution, channel-wide audit, infrastructure updates
+
+### Actions
+| Time | Action | Result |
+|------|--------|--------|
+| — | Applied R.A.I.N.Y "Why Now" to all 26 hooks | 24 hooks updated (V1+V3 already had it) |
+| — | Applied 3 B's audit across all 26 scripts | 10 scripts fixed for jargon (first-use definitions) and sentence length |
+| — | Applied 5C audit to all 26 thumbnail concepts | 5 fixes: V0/V5/V6 gold accent, V14 text shortened, V21 clarity |
+| — | Formalized brand colour Gold #FFD700 | Applied across all thumbnail concepts |
+| — | Created FIIRE Categorization for all 26 videos | Tinder 19%, Kindling 27%, Logs 46%, Flint 8% — all within target ranges |
+| — | Created Audience Language (COIN) document | Audience Language + My Language + 6 signature phrases |
+| — | Created Pre-Launch Checklist & On-Camera Prep (TEACH) | Practice schedule + per-session self-review framework |
+| — | Synced V2 and V5 titles across files | Consistent between title file and hooks |
+| — | Discovered V-number mapping divergence at V8+ | Title/thumbnail files vs script files use different topic-to-V-number mapping |
+| — | Resolved V-number mapping | Script ordering (156 files) = Production standard. Created V-NUMBER-RESOLUTION.md with complete mapping table. |
+| — | Created CHANNEL-WIDE-AUDIT-SUMMARY.md | Comprehensive audit of all 18 tasks + 7 frameworks. 22/26 videos fully titled, 4 need generation. |
+| — | Updated .github/copilot-instructions.md | Added all 7 playbook frameworks, quality gates, key references, playbook source files |
+| — | Updated NEW-CHANNEL-HANDOFF.md | Added Section 5A (all frameworks + definitions + task mapping + lessons learned), updated quick-start checklist |
+| — | Updated DASHBOARD.md | New timestamp, framework audit noted |
+
+### Decisions
+- Script V-numbers = Production V-numbers (156 files outweigh 4 files using canonical ordering)
+- Task 1 Content Research defines the ORIGINAL video plan but scripts diverged at V8+ during brain dump phase
+- 4 production videos (V18, V19, V20, V24) have no title/thumbnail coverage — need future generation
+- 5 canonical-only topics (LSTM, MLPs, LoRA tutorial, GMU, Fantasy vs Reality) documented as future deep-dive candidates
+- copilot-instructions.md now includes framework quality gates so future sessions auto-apply them
+
+### Next
+- Generate 80 titles for V18, V19, V20, V24 (20 each)
+- Generate 20 thumbnail concepts for V18, V19, V20, V24 (5 each)
+- FIIRE categorize V18, V19, V20, V24
+- Add V-number mapping headers to title, thumbnail, and FIIRE files
+- Begin TEACH practice schedule
+- Git commit + push
+
+---
+
 ## Session 10 — 2026-04-10
 
 **Focus:** Task 7 — Script Refiner quality upgrade (deep rewrite pass)

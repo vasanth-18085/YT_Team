@@ -80,7 +80,7 @@ model = get_peft_model(base_model, lora_config)
 # Trainable params: ~300K out of 109M (0.3%)
 ```
 
-[INFORMATION GAIN] Rank 8 means the adapter matrices A and B have dimensions (768, 8) and (8, 768). So instead of training a full 768×768 weight matrix, you train two thin slices. The information-theoretic argument is that the changes needed for fine-tuning are actually low-rank — you do not need the full parameter space to shift the model's behaviour for a specific domain. This is proven empirically on many tasks.
+[INFORMATION GAIN] Rank 8 means the adapter matrices A and B have dimensions (768, 8) and (8, 768). Think of it this way: instead of training a full 768×768 weight matrix (590,000 numbers), you train two thin slices (about 12,000 numbers total). This works because the changes needed for fine-tuning are low-rank — you do not need the full parameter space to shift the model for a specific domain. Rank 8 is the sweet spot: enough capacity to capture financial language patterns, small enough to prevent overfitting on limited data.
 
 **[DIAGRAM SUGGESTION]** Three bars:
 Bar 1: Full fine-tune — 109M parameters, large GPU memory footprint, high training cost

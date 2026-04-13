@@ -13,6 +13,10 @@ Your strategy is making money. But do you actually know where the returns are co
 
 I ran my pipeline's returns through a Fama-French 5-factor regression. Turns out 40 percent of what I thought was alpha was actually exposure to the size and value factors — known risk premia that anyone can harvest with a simple ETF. The remaining 60 percent was genuine alpha, but I would never have known the split without the factor decomposition.
 
+## Why Now (R.A.I.N.Y — N)
+
+Factor investing content is exploding on social media. Most traders do not realise their alpha is just factor exposure they could get cheaper through an ETF. If you are trading a strategy right now without knowing your factor loadings, you might be paying for complexity that delivers commodity returns.
+
 ## Video Structure
 
 In this video I walk through the Fama-French 5-factor model — market, size, value, profitability, and investment — show you how to run the regression on your own strategy returns, and explain how to interpret the alpha and factor loadings. You will see my actual factor exposures and what I changed to reduce the unintentional beta. By the end you will know exactly where your returns come from.
