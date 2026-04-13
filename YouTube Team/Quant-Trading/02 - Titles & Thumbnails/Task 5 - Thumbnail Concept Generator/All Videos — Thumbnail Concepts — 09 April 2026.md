@@ -1,8 +1,11 @@
 # MLQuant — Thumbnail Concepts (All 26 Videos)
 
 **Generated:** 09 April 2026  
+**Updated:** 13 April 2026  
 **Method:** Oscar Owen's Two-Part Thumbnail Framework  
 **Design Language:** Dark/moody backgrounds · 3-4 word text (left) · Object/visual (right) · Faceless channel — NO human faces · Authority + confidence, not desperation  
+
+> **⚠️ V-NUMBER NOTE:** The main body of this file uses CANONICAL V-numbers (from Task 1 Content Research). Script/hook files use PRODUCTION V-numbers which differ from V8 onwards. See `V-NUMBER-RESOLUTION.md` for the mapping. Production-only videos (Prod V18, V19, V20, V24) are at the end of the file.
 
 ---
 
@@ -46,6 +49,10 @@ Each video has **5 thumbnail concepts** with text, visual description, and reaso
 | V23 | How Quant Funds Make Money (No One Taught This) | THEIR SECRET | Ranked stock leaderboard, longs green/shorts red | Insider Access |
 | V24 | Your Model Doesn't Matter. Your Pipeline Does. | NOT THE MODEL | Crumbling pedestal under shiny model icon | Provocation |
 | V25 | I Built 44 ML Models to Beat the S&P 500 | DID IT WORK? | Two racing equity curves, hidden ending | Tension / Finale |
+| **Prod V18** | The Statistical Check That Killed 6 of My Strategies | 51% COIN FLIP | Gold coin with "p < 0.05" vs "?", dark background | Shock / Doubt |
+| **Prod V19** | Your Sharpe Ratio Is a Lie. Here's the Real One. | SHARPE: 0.78 → 0.41 | Declining arrow from gold to red number | Fear / Deflation |
+| **Prod V20** | Stop Looking at Equity Curves. Use This Instead. | HIDDEN BOMB | Beautiful equity curve with ticking bomb underneath | Fear / Revelation |
+| **Prod V24** | Paper Trading Found 3 Bugs My Backtest Missed | 3 BUGS FOUND | Terminal with 3 red error messages, gold cursor | Alarm / Discovery |
 
 ---
 
@@ -923,3 +930,137 @@ Every pair should pass this test:
 2. ✅ Does the title + thumbnail together create a knowledge gap only the video fills?
 3. ✅ Would the ideal viewer (ML-aware, zero QF, mid-20s) stop scrolling?
 4. ✅ Is it readable at phone size in under 1 second?
+
+---
+
+## ADDENDUM — Production-Only Videos (No Canonical Equivalent)
+
+> **⚠️ V-NUMBER NOTE:** The main body of this file uses CANONICAL V-numbers (from Task 1 Content Research). Script/hook files use PRODUCTION V-numbers which differ from V8 onwards. See `V-NUMBER-RESOLUTION.md` for the mapping table. These 4 videos below use PRODUCTION V-numbers (Prod V prefix) — they exist only in the script pipeline.
+
+---
+
+### Prod V18 — Multiple Testing Correction
+**Title:** "The Statistical Check That Killed 6 of My Strategies"
+
+**Concept 1**
+- Thumbnail text: 6 KILLED
+- Visual: Lineup of 14 model icons (small neural net symbols), 6 crossed out in red, 2 glowing gold as survivors. Dark background, red X marks dramatic.
+- Why it works: "6 KILLED" is visceral. The lineup visual immediately communicates selection/elimination. Gold survivors draw the eye.
+
+**Concept 2**
+- Thumbnail text: NOISE OR REAL?
+- Visual: Two p-value distribution charts side by side — one uniform (noise), one with a spike at low p (real signal). Red vs green. Dark background.
+- Why it works: "NOISE OR REAL?" is the exact question every quantitative trader asks. The distributions are recognizable to the ML audience.
+
+**Concept 3**
+- Thumbnail text: 51% COIN FLIP
+- Visual: Large coin (heads/tails) with "p < 0.05" on one side and a question mark on the other. Dark background, gold coin, red accent on the "?" side.
+- Why it works: "51% COIN FLIP" is the shocking statistic from the video — that testing 14 models gives you a coin-flip chance of false positives. The coin visual is immediately understood.
+
+**Concept 4**
+- Thumbnail text: BEFORE / AFTER
+- Visual: Split bar chart — left (before correction): 8 green bars labelled "significant". Right (after correction): only 2 green bars, 6 turned red. Dark background.
+- Why it works: Before/after split is a proven visual motif. The dramatic reduction from 8 to 2 tells the story in one glance.
+
+**Concept 5**
+- Thumbnail text: p-HACK FIX
+- Visual: Terminal screen showing p-value table with red strikethroughs on 6 rows, gold checkmarks on 2 surviving rows. Dark VS Code aesthetic.
+- Why it works: "p-HACK FIX" is technically specific yet concise. The terminal aesthetic appeals to the coding audience.
+
+**Best pick: #3 — "51% COIN FLIP"** with the coin visual. It's the single most shocking number from the video, immediately understood, and creates massive curiosity: "What has a 51% coin flip probability?" Gold coin reinforces brand accent.
+
+---
+
+### Prod V19 — Deflated Sharpe & PBO
+**Title:** "Your Sharpe Ratio Is a Lie. Here's the Real One."
+
+**Concept 1**
+- Thumbnail text: SHARPE: 0.78 → 0.41
+- Visual: Large declining arrow from gold "0.78" to red "0.41". Dark background. The deflation is the whole story.
+- Why it works: Specific numbers are irresistible to quant traders. Seeing a decent Sharpe get cut nearly in half is alarming.
+
+**Concept 2**
+- Thumbnail text: 28% FAKE
+- Visual: Pie chart — 28% red slice labelled "overfitting", 72% green slice. Dark background, gold border on pie.
+- Why it works: "28% FAKE" is concrete and scary. The pie chart instantly communicates probability. Simple, clean, one element.
+
+**Concept 3**
+- Thumbnail text: DEFLATED
+- Visual: Balloon with "Sharpe 1.3" written on it, partially deflated/shrinking, with a needle labelled "DSR" puncturing it. Dark background.
+- Why it works: "DEFLATED" paired with the balloon metaphor is visually striking and immediately communicates the concept. The needle adds drama.
+
+**Concept 4**
+- Thumbnail text: REAL SHARPE
+- Visual: Two gauges side by side — left gauge at 1.3 (green), right gauge at 0.4 (red/warning zone). Dark dashboard aesthetic.
+- Why it works: Dashboard gauges are intuitive. Seeing the same metric drop from safe to danger zone is alarming.
+
+**Concept 5**
+- Thumbnail text: HONEST NUMBER
+- Visual: Calculator display showing "0.41" with a gold glow. Above it, "0.78" crossed out in red. Clean, dark, minimal.
+- Why it works: "HONEST NUMBER" is a signature MLQuant phrase. Calculator implies rigorous computation. The crossed-out number adds the correction narrative.
+
+**Best pick: #1 — "SHARPE: 0.78 → 0.41"** with the declining arrow. The specific numbers from the creator's own pipeline make it personal and credible. Every quant trader knows what a Sharpe ratio is — watching it get cut in half is a scroll-stopper.
+
+---
+
+### Prod V20 — Performance Tearsheet
+**Title:** "Stop Looking at Equity Curves. Use This Instead."
+
+**Concept 1**
+- Thumbnail text: 6 PANELS
+- Visual: 2×3 grid of mini chart panels (equity curve, drawdown, monthly heatmap, distribution, rolling Sharpe, factor exposure) — all rendered small but recognizable. Dark background, gold border.
+- Why it works: "6 PANELS" adds specificity the title lacks. The grid layout shows the actual tearsheet — the viewer instantly sees something more sophisticated than an equity curve.
+
+**Concept 2**
+- Thumbnail text: HIDDEN BOMB
+- Visual: Beautiful smooth equity curve (green) with a ticking bomb emoji/icon glowing underneath it. Dark background, red glow on bomb.
+- Why it works: "HIDDEN BOMB" creates fear. The equity curve looks fine on the surface — but something dangerous lurks underneath. Perfect pairing with a title about equity curves lying.
+
+**Concept 3**
+- Thumbnail text: SAME SHARPE
+- Visual: Two equity curves overlaid, nearly identical shape. But below: split panel showing one with healthy stats (green) and one with terrible stats (red). Dark background.
+- Why it works: "SAME SHARPE" with two identical curves — but different underlying stats — is the exact insight from the video. Creates a "how is that possible?" moment.
+
+**Concept 4**
+- Thumbnail text: X-RAY VIEW
+- Visual: Equity curve with an X-ray/wireframe overlay revealing internal statistics — drawdown bands, regime zones, distribution shape underneath. Dark, techy.
+- Why it works: "X-RAY VIEW" implies seeing what others can't. The overlay visual communicates depth beyond surface metrics.
+
+**Concept 5**
+- Thumbnail text: 0.85 SHARPE ⚠️
+- Visual: Single strategy card showing Sharpe 0.85 (gold, looks great) with a red warning triangle and "Skew: −1.4" in small red text. Dark background.
+- Why it works: "0.85 SHARPE" looks attractive — then the warning triangle says "something is wrong." Exactly the scenario from the video. The ⚠️ creates stop-and-read urgency.
+
+**Best pick: #2 — "HIDDEN BOMB"** with the beautiful equity curve + bomb underneath. Maximum emotional impact. The viewer thinks "my equity curves look like that too — is there a bomb in mine?" Strong fear-to-curiosity arc pairs perfectly with the "Stop Looking at Equity Curves" title.
+
+---
+
+### Prod V24 — Live Backtester & Paper Trading
+**Title:** "Paper Trading Found 3 Bugs My Backtest Missed"
+
+**Concept 1**
+- Thumbnail text: 3 BUGS FOUND
+- Visual: Code terminal with 3 red error messages highlighted (timezone, cache, rounding). Dark VS Code aesthetic, gold cursor.
+- Why it works: "3 BUGS FOUND" is specific and alarming. Terminal with real error messages appeals to the coding audience. Makes them think "what bugs are in my code?"
+
+**Concept 2**
+- Thumbnail text: BACKTEST ≠ LIVE
+- Visual: Split — left: clean green backtest equity curve. Right: same curve but jagged, shifted down, with slippage marks. Dark background.
+- Why it works: "≠" is immediately understood. The visual gap between backtest and live is the video's entire thesis. Before/after motif.
+
+**Concept 3**
+- Thumbnail text: NO REAL MONEY
+- Visual: Paper bills floating upward from a laptop screen displaying a trade execution dashboard. Bills are semi-transparent/ghostly. Dark background, gold accent.
+- Why it works: "NO REAL MONEY" directly addresses the biggest fear (losing money while testing). Ghost bills are eye-catching and communicate "simulation."
+
+**Concept 4**
+- Thumbnail text: 200-400 BPS GONE
+- Visual: Stack of dollar bills with a large chunk vaporizing/disintegrating into red particles. Dark background.
+- Why it works: "200-400 BPS GONE" is the specific implementation shortfall range from the video. Money literally disappearing is visceral.
+
+**Concept 5**
+- Thumbnail text: SAFE TEST
+- Visual: Shield icon protecting a small trading dashboard screen. Green checkmarks appearing on order fills. Dark background, gold shield glow.
+- Why it works: "SAFE TEST" promises risk-free validation. Shield communicates protection. Positive framing after fear-heavy series.
+
+**Best pick: #1 — "3 BUGS FOUND"** with the terminal + red errors. It's specific (3 bugs), visually speaks the audience's language (code/terminal), and creates immediate fear: "what bugs are hiding in MY pipeline?" Pairs perfectly with the title about paper trading finding backtest bugs.

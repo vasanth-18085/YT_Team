@@ -1,6 +1,7 @@
 # MLQuant — Channel-Wide Audit Summary
 
 **Date:** 14 April 2026  
+**Updated:** 13 April 2026  
 **Scope:** All 18 Oscar Owen tasks + all 7 YouTube Playbook frameworks  
 **Status:** 16/18 tasks complete | 7/7 frameworks applied or initialized  
 **Videos:** 26 (V0 trailer + V1–V25 main series)
@@ -28,10 +29,10 @@
 | **Task Completion** | 88.9% | 16/18 Oscar Owen tasks done |
 | **Framework Coverage** | 100% | All 7 playbook frameworks applied or initialized |
 | **Script Readiness** | 26/26 | All final scripts exist with CTAs, hooks, and community posts |
-| **Title Coverage** | 22/26 | 4 videos need title generation (V18, V19, V20, V24) |
-| **Thumbnail Coverage** | 26/26 | All concepts exist (canonical ordering — needs V-number remapping) |
+| **Title Coverage** | 26/26 | All 26 production videos have titles (4 production-only added 13 Apr) |
+| **Thumbnail Coverage** | 26/26 | All concepts exist (4 production-only added + mapping headers added) |
 | **V-Number Issue** | ✅ Resolved | Script ordering = Production standard; mapping document complete |
-| **Pre-Launch Blockers** | 3 | Logo/profile pic, channel URL, real comment data |
+| **Pre-Launch Blockers** | 1 | Logo/profile pic (channel creation + URL claim are user actions) |
 
 **Bottom line:** The 26-video series is script-complete and framework-audited. The remaining work is operational (channel creation, logo, claim URL) and post-launch (comment replies, creator collab). Four videos need title generation due to the V-number topic divergence.
 
@@ -53,8 +54,8 @@
 
 | Task | Status | Quality Notes |
 |------|--------|---------------|
-| **T4 — Title Generator** | ✅ DONE (partial gap) | 520 titles (20×26). 10 title-top-picks swapped based on 40–60 char audit. **GAP:** 4 videos (V18, V19, V20, V24 production) have no titles — topic mismatch with canonical ordering. |
-| **T5 — Thumbnail Concepts** | ✅ DONE | 130 concepts (5×26). 5C framework applied. Gold brand accent (#FFD700) formalized. 5 concepts fixed (V0/V5/V6 gold, V14 text, V21 clarity). Uses canonical V-numbers — needs remap header. |
+| **T4 — Title Generator** | ✅ DONE | 520 titles (20×26) + 80 production-only titles (20×4). 10 title-top-picks swapped based on 40–60 char audit. All 26 production videos now have title coverage. |
+| **T5 — Thumbnail Concepts** | ✅ DONE | 130 concepts (5×26) + 20 production-only concepts (5×4). 5C framework applied. Gold brand accent (#FFD700). V-number mapping headers added. |
 
 **Phase Quality:** Good overall. Title 40–60 char rule enforced. 5C check completed. The 4-video title gap is the only material issue, caused by V-number topic divergence (not a quality failure).
 
@@ -239,13 +240,13 @@ Production V-numbers used throughout (Script ordering = canonical standard).
 | V15 | Drift | ⚠️ use T.V20 | ✅ | ✅ | ⚠️ remap | Logs† | ✅ | ✅ |
 | V16 | Transaction Costs | ⚠️ use T.V21 | ✅ | ✅ | ⚠️ remap | Logs† | ✅ | ✅ |
 | V17 | Position Sizing | ✅ | ✅ | ✅ | ⚠️ remap | Kindling | ✅ | ✅ |
-| V18 | Multiple Testing | ❌ NEEDS GEN | ✅ | ✅ | ❌ NEEDS | ❌ NEEDS | ✅ | ✅ |
-| V19 | Deflated Sharpe | ❌ NEEDS GEN | ✅ | ✅ | ❌ NEEDS | ❌ NEEDS | ✅ | ✅ |
-| V20 | Perf. Tearsheet | ❌ NEEDS GEN | ✅ | ✅ | ❌ NEEDS | ❌ NEEDS | ✅ | ✅ |
+| V18 | Multiple Testing | ✅ | ✅ | ✅ | ✅ | Logs | ✅ | ✅ |
+| V19 | Deflated Sharpe | ✅ | ✅ | ✅ | ✅ | Flint | ✅ | ✅ |
+| V20 | Perf. Tearsheet | ✅ | ✅ | ✅ | ✅ | Logs | ✅ | ✅ |
 | V21 | Experiment Track | ⚠️ use T.V24 | ✅ | ✅ | ⚠️ remap | Logs† | ✅ | ✅ |
 | V22 | Factor Analysis | ⚠️ use T.V23 | ✅ | ✅ | ⚠️ remap | Tinder† | ✅ | ✅ |
 | V23 | Cross-Sect. Alpha | ✅ | ✅ | ✅ | ⚠️ remap | Kindling† | ✅ | ✅ |
-| V24 | Live Backtester | ❌ NEEDS GEN | ✅ | ✅ | ❌ NEEDS | ❌ NEEDS | ✅ | ✅ |
+| V24 | Live Backtester | ✅ | ✅ | ✅ | ✅ | Kindling | ✅ | ✅ |
 | V25 | Deployment | ✅ | ✅ | ✅ fix | ✅ | Kindling | ✅ | ✅ |
 
 **Legend:**
@@ -261,9 +262,9 @@ Production V-numbers used throughout (Script ordering = canonical standard).
 | Metric | Score | Notes |
 |--------|-------|-------|
 | Scripts complete | **26/26** (100%) | All have hooks, clean versions, CTAs |
-| Titles available | **22/26** (84.6%) | 4 need generation |
-| Thumbnails available | **22/26** (84.6%) | 4 need new concepts + 13 need V-number remap |
-| FIIRE categorized | **22/26** (84.6%) | 4 need categorization |
+| Titles available | **26/26** (100%) | All production videos titled (4 prod-only added) |
+| Thumbnails available | **26/26** (100%) | All production videos have concepts (4 prod-only added + headers) |
+| FIIRE categorized | **26/26** (100%) | All production videos categorized (4 prod-only added) |
 | R.A.I.N.Y hooks | **26/26** (100%) | All 5 elements verified |
 | 3 B's scripts | **26/26** (100%) | 10 received jargon fixes |
 | Community posts | **26/26** (100%) | All have unique CTAs |
@@ -361,10 +362,10 @@ Production V-numbers used throughout (Script ordering = canonical standard).
 | V0 Trailer script | ✅ | 480w, short-form, series premise |
 | V1–V25 scripts | ✅ | All 26 filming-ready |
 | Hooks | ✅ | All 26, R.A.I.N.Y verified |
-| Titles | ⚠️ | 22/26 available; 4 need generation |
-| Thumbnails | ⚠️ | 22/26 matched; 4 need creation; V-number remap needed |
+| Titles | ✅ | 26/26 — all production videos titled |
+| Thumbnails | ✅ | 26/26 — all concepts exist with mapping headers |
 | Community posts | ✅ | 26 scheduled ready |
-| FIIRE schedule | ✅ | 22/26 categorized; 4 need assignment |
+| FIIRE schedule | ✅ | 26/26 categorized |
 | TEACH prep | ⏳ | Framework defined; practice not yet started |
 | Shorts | ❌ | Not yet extracted from scripts |
 
@@ -385,18 +386,18 @@ Production V-numbers used throughout (Script ordering = canonical standard).
 
 | # | Issue | Impact | Fix |
 |---|-------|--------|-----|
-| 1 | **4 videos have no titles** (V18, V19, V20, V24) | Cannot publish these 4 without titles | Generate 80 titles (20 × 4) using Task 4 framework |
-| 2 | **4 videos have no thumbnail concepts** (V18, V19, V20, V24) | No visual for these 4 | Generate 20 concepts (5 × 4) using 5C framework |
+| 1 | ~~4 videos have no titles~~ | ~~Cannot publish~~ | ✅ FIXED — 80 titles generated for Prod V18, V19, V20, V24 |
+| 2 | ~~4 videos have no thumbnail concepts~~ | ~~No visual~~ | ✅ FIXED — 20 concepts generated for Prod V18, V19, V20, V24 |
 | 3 | **Logo/profile picture not created** | Channel identity incomplete | Run saved prompts through image generator |
 
 ### Important (Should Fix Before Launch)
 
 | # | Issue | Impact | Fix |
 |---|-------|--------|-----|
-| 4 | **Thumbnail file uses canonical V-numbers** | Confusion when matching thumbnails to scripts | Add mapping header to thumbnail file |
-| 5 | **FIIRE file uses canonical V-numbers** | Category lookup requires mental translation | Add mapping header to FIIRE file |
-| 6 | **Title file V8+ sections don't match script topics** | Need V-number resolution mapping to find correct titles | Mapping exists in V-NUMBER-RESOLUTION.md |
-| 7 | **4 videos not FIIRE categorized** (V18, V19, V20, V24) | Upload schedule gap for these | Assign FIIRE categories |
+| 4 | ~~Thumbnail file uses canonical V-numbers~~ | ~~Confusion~~ | ✅ FIXED — Mapping header + production-only videos added |
+| 5 | ~~FIIRE file uses canonical V-numbers~~ | ~~Mental translation~~ | ✅ FIXED — Mapping header + production-only categories added |
+| 6 | ~~Title file V8+ sections don't match scripts~~ | ~~Wrong title lookup~~ | ✅ FIXED — Mapping header + Prod V sections added |
+| 7 | ~~4 videos not FIIRE categorized~~ | ~~Schedule gap~~ | ✅ FIXED — Prod V18=Logs, V19=Flint, V20=Logs, V24=Kindling |
 | 8 | **[INFORMATION GAIN] markers in scripts** | Scripts have placeholder markers where personal voice-note content should be inserted | Record personal stories/insights for each marker |
 
 ### Deferred (Post-Launch)
@@ -417,10 +418,10 @@ Production V-numbers used throughout (Script ordering = canonical standard).
 
 | # | Action | Effort | Dependency |
 |---|--------|--------|------------|
-| 1 | Generate titles for V18, V19, V20, V24 (80 titles) | Medium | V-number resolution ✅ |
-| 2 | Generate thumbnail concepts for V18, V19, V20, V24 (20 concepts) | Medium | V-number resolution ✅ |
-| 3 | Assign FIIRE categories to V18, V19, V20, V24 | Small | None |
-| 4 | Add V-number mapping headers to title, thumbnail, and FIIRE files | Small | V-number resolution ✅ |
+| 1 | ~~Generate titles for V18, V19, V20, V24~~ | ~~Medium~~ | ✅ DONE — 80 titles generated |
+| 2 | ~~Generate thumbnail concepts for V18, V19, V20, V24~~ | ~~Medium~~ | ✅ DONE — 20 concepts generated |
+| 3 | ~~Assign FIIRE categories to V18, V19, V20, V24~~ | ~~Small~~ | ✅ DONE |
+| 4 | ~~Add V-number mapping headers~~ | ~~Small~~ | ✅ DONE — Headers on title, thumbnail, FIIRE files |
 | 5 | Create channel on YouTube + claim URL | Small | None |
 | 6 | Generate logo from saved prompts | Small | Image generation tool |
 | 7 | Begin TEACH practice schedule | Ongoing | None |

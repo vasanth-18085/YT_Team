@@ -1,7 +1,12 @@
 # MLQuant — FIIRE Content Categorization
 
 **Created:** 13 April 2026  
+**Updated:** 13 April 2026  
 **Framework:** FIIRE Method (from YT Channel Playbook — Paddy Galloway / Nate Black)
+
+> **⚠️ V-NUMBER NOTE:** The main table uses CANONICAL V-numbers (from Task 1 Content Research). Script/hook files use PRODUCTION V-numbers which differ from V8 onwards. See `V-NUMBER-RESOLUTION.md` for the mapping.
+>
+> **4 production-only videos** (Prod V18, V19, V20, V24) were not in the canonical plan. Their FIIRE categories are in the Addendum section below.
 
 ---
 
@@ -74,3 +79,47 @@ Flint:    ██░░░░░░░░░░░░░░░░  8%  (2/26)
 **Verdict:** Logs-heavy, which is correct for a first series building an evergreen technical catalog. The 5 Tinder videos ride current AI/ML hype and should be published when their topics are peaking. The 2 Flint videos test whether the audience wants deep architecture content — if they perform well, expand this category in Season 2.
 
 **Scheduling implication:** Publish Tinder videos (V4, V8, V9, V12, V23) when their topics trend. Don't hold them for sequential order — timing matters more than sequence for Tinder content. Logs and Kindling can follow the series order.
+
+---
+
+## ADDENDUM — Production-Only Videos (FIIRE Categories)
+
+These 4 videos exist in the production/script pipeline but had no corresponding canonical video entry.
+
+### KINDLING (+1 → 8 total, 27%)
+| Video | Title | Why Kindling |
+|-------|-------|-------------|
+| Prod V24 | Paper Trading Found 3 Bugs My Backtest Missed | Core bridge from backtest to live — essential system-building step; defines the channel's "we go further" promise |
+
+### LOGS (+2 → 14 total, 47%)
+| Video | Title | Why Logs |
+|-------|-------|---------|
+| Prod V18 | The Statistical Check That Killed 6 of My Strategies | "Multiple testing correction" is highly searchable among quant researchers — evergreen statistical method |
+| Prod V20 | Stop Looking at Equity Curves. Use This Instead. | "Strategy tearsheet", "evaluate trading strategy" are perennial search queries — tool/reference content |
+
+### FLINT (+1 → 3 total, 10%)
+| Video | Title | Why Flint |
+|-------|-------|----------|
+| Prod V19 | Your Sharpe Ratio Is a Lie. Here's the Real One. | Deflated Sharpe Ratio is niche advanced statistics — tests audience appetite for hardcore statistical rigor |
+
+---
+
+## Updated Balance Assessment (Including Production-Only Videos)
+
+The full production series has 26 videos. The canonical plan has 26 entries, but 5 canonical topics were folded into parent scripts and 4 production-only topics replaced them. Counting PRODUCTION videos only:
+
+```
+Tinder:   ████░░░░░░░░░░░░░░ 17%  (5/30 entries, but 5/26 production videos)
+Kindling: ██████░░░░░░░░░░░░ 27%  (8/30 entries, maps to 8/26 production)
+Logs:     ████████████████░░ 47%  (14/30 entries, maps to 14/26 production)
+Flint:    ███░░░░░░░░░░░░░░░ 10%  (3/30 entries, maps to 3/26 production)
+```
+
+| Category | Canonical | +Prod-Only | Production Total | Target | Status |
+|----------|-----------|------------|-----------------|--------|--------|
+| Tinder | 5 | +0 | 5 (19%) | 15–25% | ✅ |
+| Kindling | 7 | +1 | 8 (31%) | 25–35% | ✅ |
+| Logs | 12 | +2 | 14 (54%) | 40–50% | ⚠️ Slightly high |
+| Flint | 2 | +1 | 3 (12%) | 5–15% | ✅ |
+
+**Note:** Logs at 54% is 4% above the 50% target ceiling. This is acceptable for a first series building an evergreen technical catalog. The slight overshoot comes from production-only videos being reference/tool content. Can be rebalanced in Season 2.

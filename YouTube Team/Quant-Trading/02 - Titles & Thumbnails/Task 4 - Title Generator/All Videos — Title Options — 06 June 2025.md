@@ -863,6 +863,10 @@ Each video has **20 title options** with framework references and psychological 
 ## Summary — All Top Picks at a Glance
 
 > **Revised 13 April 2026:** Fixed V2/V18 duplicate title, rotated Framework #70 from 6→2 uses, lengthened 7 titles below 40 chars. All 26 titles now pass the 40-60 char rule (except V0 trailer at 51). Changes marked with ⟵.
+>
+> **⚠️ V-NUMBER NOTE:** This file uses CANONICAL V-numbers (from Task 1 Content Research). Script files use PRODUCTION V-numbers which differ from V8 onwards. See `V-NUMBER-RESOLUTION.md` for the mapping table.
+>
+> **ADDENDUM (13 April 2026):** 4 production-only videos (Prod V18, V19, V20, V24) had no title coverage under any V-number. New sections added at the end of the file with "Prod V" prefix.
 
 | Video | Top Pick | Chars | Framework |
 |-------|----------|-------|-----------|
@@ -892,6 +896,10 @@ Each video has **20 title options** with framework references and psychological 
 | V23 — Factor Investing | How Quant Funds Make Money (No One Taught This) | 47 | #15 |
 | V24 — MLOps | Your Model Doesn't Matter. Your Pipeline Does. | 46 | #70 |
 | V25 — Final Results | I Built 44 ML Models to Beat the S&P 500 | 41 | #76 |
+| **Prod V18 — Multiple Testing** | The Statistical Check That Killed 6 of My Strategies | 51 | #87 |
+| **Prod V19 — Deflated Sharpe** | Your Sharpe Ratio Is a Lie. Here's the Real One. | 49 | #90 |
+| **Prod V20 — Tearsheet** | Stop Looking at Equity Curves. Use This Instead. | 49 | #6 |
+| **Prod V24 — Paper Trading** | Paper Trading Found 3 Bugs My Backtest Missed | 46 | #87 |
 
 ---
 
@@ -910,3 +918,137 @@ Each video has **20 title options** with framework references and psychological 
 - **#15 (No One Taught)** — 1 use (V23)
 
 > **All issues resolved:** No duplicates. Framework #70 reduced from 6→2. All titles 41-53 chars (within 40-60 sweet spot). Maximum framework usage is 5 (#76) which is acceptable for a 26-video series with a unified "I built this" brand voice.
+
+---
+
+## ADDENDUM — Production-Only Videos (No Canonical Equivalent)
+
+> These 4 videos exist in the script pipeline (production V-numbers) but had no corresponding section in the original canonical plan. Titles generated 13 April 2026 using the same framework and rules.
+
+---
+
+### Prod V18 — Multiple Testing Correction (Score: 7)
+
+| # | Title | Chars | Framework | Levers |
+|---|-------|-------|-----------|--------|
+| 1 | You Tested 14 Models. At Least 2 Are Pure Luck. | 48 | #87 — Specific Number Shock | Fear, Specificity, Curiosity |
+| 2 | The p-Value Trap Every ML Trader Falls Into | 44 | #90 — The Lie/Trap | Fear, Curiosity, Authority |
+| 3 | Why Most "Profitable" Backtests Are Statistical Noise | 50 | #50 — Why Nobody Does It | Fear, Curiosity, Counterintuition |
+| 4 | I Ran 14 Models. Only 2 Were Real. | 37 | #76 — I Built/Did | Specificity, Fear, Curiosity |
+| 5 | How to Stop Trading Noise (Multiple Testing Fix) | 47 | #83 — Fixes % Problems | Desire, Specificity, Authority |
+| 6 | 99% of Quant Backtests Ignore This One Check | 46 | #4 — 99% Don't Know | Fear, FOMO, Curiosity |
+| 7 | The Statistical Check That Killed 6 of My Strategies | 51 | #87 — Specific Number Shock | Fear, Specificity, Authority |
+| 8 | Your Strategy Passed? It Might Just Be Lucky. | 45 | #90 — The Lie/Trap | Fear, Curiosity, Doubt |
+| 9 | p-Value Hacking: How to Avoid Fooling Yourself | 48 | #33 — What Authorities Know | Fear, Curiosity, Authority |
+| 10 | 5 Strategies Passed. Only 2 Were Real. Here's Why. | 50 | #87 — Specific Number Shock | Specificity, Curiosity, Fear |
+| 11 | Multiple Testing Correction Fixed My Entire Pipeline | 51 | #76 — I Built/Did | Authority, Desire, Specificity |
+| 12 | Why Testing More Models Makes Your Results WORSE | 50 | #6 — ALL WRONG / Counterintuition | Counterintuition, Fear, Curiosity |
+| 13 | Bonferroni, Holm, BH-FDR Explained for ML Trading | 50 | #41 — Every X Explained | Specificity, Desire, Authority |
+| 14 | This 3-Line Fix Stopped Me Trading Random Noise | 48 | #83 — Fixes % Problems | Desire, Curiosity, Specificity |
+| 15 | How I Filter Fake Signals From Real Trading Edge | 49 | #33 — What Authorities Know | Desire, Authority, Curiosity |
+| 16 | The Hidden Cost of Testing Too Many Strategies | 47 | #55 — Hidden Advantage/Cost | Fear, Curiosity, FOMO |
+| 17 | Do Your Backtests Survive This One Statistical Test? | 50 | #87 — Challenge | Fear, Curiosity, Challenge |
+| 18 | 8 of My 14 Strategies Were Noise. Here's the Proof. | 51 | #87 — Specific Number Shock | Fear, Specificity, Authority |
+| 19 | Statistical Hygiene for Quant Trading (3 Methods) | 50 | #83 — Fixes Problems | Authority, Specificity, Desire |
+| 20 | Every ML Trader Needs This (Multiple Testing Check) | 50 | #41 — Every X Explained | FOMO, Desire, Authority |
+
+**Top 3:**
+1. **"The Statistical Check That Killed 6 of My Strategies"** (51 chars) — #87. Specific number (6) creates shock. "Killed" is dramatic but honest. The viewer wonders: What check? Would it kill mine too?
+2. **"You Tested 14 Models. At Least 2 Are Pure Luck."** (48 chars) — #87. Directly addresses the viewer. Specific numbers (14, 2) make it concrete. "Pure Luck" is an emotional gut punch.
+3. **"Why Testing More Models Makes Your Results WORSE"** (50 chars) — #6. Counterintuitive — testing MORE is supposed to be better. The word WORSE in caps grabs attention.
+
+---
+
+### Prod V19 — Deflated Sharpe & PBO (Score: 7)
+
+| # | Title | Chars | Framework | Levers |
+|---|-------|-------|-----------|--------|
+| 1 | Your Sharpe Ratio Is a Lie. Here's the Real One. | 49 | #90 — The Lie | Fear, Curiosity, Authority |
+| 2 | Is Your Sharpe Real? (Probably Not. Here's Why.) | 48 | #87 — Challenge/Doubt | Fear, Curiosity, Challenge |
+| 3 | The Scariest Number in My Backtest Wasn't the Loss | 51 | #90 — The Lie | Fear, Curiosity, Counterintuition |
+| 4 | Deflated Sharpe Ratio: Why Your 1.3 Is Really 0.4 | 51 | #87 — Specific Number Shock | Fear, Specificity, Shock |
+| 5 | I Had a 0.78 Sharpe. After Correction: 0.41. | 45 | #76 — I Built/Did | Authority, Specificity, Fear |
+| 6 | 28% Chance My Best Strategy Is Actually Mediocre | 49 | #87 — Specific Number Shock | Fear, Specificity, Vulnerability |
+| 7 | How to Know If Your Backtest Is Overfitting | 44 | #33 — What Authorities Know | Fear, Curiosity, Desire |
+| 8 | This Formula Measures Backtest Overfitting Exactly | 50 | #55 — Hidden Tool | Curiosity, Desire, Authority |
+| 9 | Probability of Backtest Overfitting (The Real Test) | 51 | #87 — The Real X | Authority, Fear, Curiosity |
+| 10 | Why a 1.3 Sharpe Doesn't Mean What You Think | 46 | #50 — Why Nobody Does It | Counterintuition, Fear, Curiosity |
+| 11 | My Best Strategy Had the Highest Overfitting Risk | 50 | #90 — The Lie / Irony | Fear, Counterintuition, Authority |
+| 12 | The Number That Tells You If a Backtest Is Real | 49 | #55 — Hidden Tool | Curiosity, Fear, Desire |
+| 13 | Sharpe Ratio After Correction: The Honest Number | 48 | Custom — Honesty Phrase | Authority, Fear, Curiosity |
+| 14 | How Bailey & de Prado Destroyed My Confidence | 49 | #33 — Authority Method | Authority, Fear, Curiosity |
+| 15 | What's Left of Your Sharpe After You Correct It? | 49 | #87 — Challenge | Fear, Curiosity, Challenge |
+| 16 | 99% of ML Traders Don't Correct Their Sharpe Ratio | 51 | #4 — 99% Don't Know | Fear, FOMO, Authority |
+| 17 | The Honest Sharpe Ratio (Deflated + PBO Explained) | 51 | Custom — Honesty Phrase | Authority, Specificity, Desire |
+| 18 | 2 Tests That Expose Fake Backtest Performance | 47 | #87 — Specific Number | Fear, Specificity, Curiosity |
+| 19 | Raw Sharpe vs Real Sharpe: Most Traders Get It Wrong | 51 | #6 — ALL WRONG | Counterintuition, Fear, Curiosity |
+| 20 | PBO: The Probability Your Best Strategy Is a Fluke | 51 | #90 — The Lie | Fear, Curiosity, Specificity |
+
+**Top 3:**
+1. **"Your Sharpe Ratio Is a Lie. Here's the Real One."** (49 chars) — #90. Direct confrontation. "A Lie" triggers fear. "Here's the Real One" promises resolution. Strong fear-to-desire arc.
+2. **"Deflated Sharpe Ratio: Why Your 1.3 Is Really 0.4"** (51 chars) — #87. Specific numbers make it visceral. Seeing 1.3 become 0.4 is a gut punch. Technical viewers will immediately want to know why.
+3. **"My Best Strategy Had the Highest Overfitting Risk"** (50 chars) — #90. Counterintuitive and personal. The irony drives curiosity. If HIS best strategy was at risk, what about mine?
+
+---
+
+### Prod V20 — Performance Tearsheet (Score: 7)
+
+| # | Title | Chars | Framework | Levers |
+|---|-------|-------|-----------|--------|
+| 1 | The 6-Panel Report That Replaces Your Equity Curve | 51 | #87 — Specific Number | Curiosity, Desire, Specificity |
+| 2 | Stop Looking at Equity Curves. Use This Instead. | 49 | #6 — ALL WRONG / Stop | Counterintuition, Desire, Authority |
+| 3 | Why Equity Curves Hide More Than They Reveal | 45 | #50 — Why Nobody Does It | Fear, Curiosity, Counterintuition |
+| 4 | I Built a Tearsheet That Caught a Hidden Time Bomb | 51 | #76 — I Built | Fear, Curiosity, Authority |
+| 5 | The Strategy Diagnostic That Changed How I Trade | 49 | #55 — Hidden Advantage | Desire, Authority, Curiosity |
+| 6 | 13 Stats in 1 Page (Professional Strategy Tearsheet) | 52 | #87 — Specific Number | Specificity, Desire, Authority |
+| 7 | This Tearsheet Found 3 Problems My Sharpe Hid | 47 | #87 — Specific Number | Fear, Curiosity, Specificity |
+| 8 | How Quant Funds Evaluate Strategies (Not Equity Curves) | 55 | #33 — What Authorities Know | Authority, FOMO, Curiosity |
+| 9 | The Performance Report Every ML Trader Needs | 45 | #41 — Every X Explained | Desire, FOMO, Authority |
+| 10 | 2 Strategies Look Identical. Only 1 Survives. | 46 | #87 — Specific Number | Fear, Curiosity, Tension |
+| 11 | A 0.85 Sharpe With Negative Skew Is a Time Bomb | 49 | #87 — Specific Number | Fear, Specificity, Authority |
+| 12 | Your Equity Curve Is Lying to You (Here's Proof) | 48 | #90 — The Lie | Fear, Curiosity, Authority |
+| 13 | The Single Page That Tells You Everything About Risk | 52 | #55 — Hidden Advantage | Desire, Authority, Curiosity |
+| 14 | 6 Panels That Show What Your Backtest Really Did | 48 | #87 — Specific Number | Curiosity, Desire, Specificity |
+| 15 | Professional Tearsheet in Python (13 Risk Metrics) | 50 | #41 — Tutorial / Tool | Desire, Specificity, Authority |
+| 16 | My Best Strategy Had a Secret Flaw. Tearsheet Found It. | 55 | #76 — I Built/Did | Fear, Curiosity, Authority |
+| 17 | What Pros See That Retail Traders Don't (Tearsheet) | 50 | #33 — What Authorities Know | FOMO, Curiosity, Authority |
+| 18 | Never Trust an Equity Curve Again After This Video | 50 | #87 — Challenge | Fear, Curiosity, Authority |
+| 19 | How I Evaluate Every Strategy in Under 30 Seconds | 50 | #76 — I Built/Did | Desire, Authority, Specificity |
+| 20 | Drawdowns, Skew, Regime Drift — 1 Page Shows All | 50 | #41 — Every X Explained | Desire, Specificity, Completeness |
+
+**Top 3:**
+1. **"Stop Looking at Equity Curves. Use This Instead."** (49 chars) — #6. Bold command + contrast. Attacks a universal habit. "Use This Instead" promises a better tool. Pattern interrupt.
+2. **"This Tearsheet Found 3 Problems My Sharpe Hid"** (47 chars) — #87. Specific number (3). Personal ("my Sharpe"). The Sharpe ratio hiding problems is counterintuitive and scary.
+3. **"2 Strategies Look Identical. Only 1 Survives."** (46 chars) — #87. Dramatic comparison with stakes. "Only 1 Survives" creates urgency to learn the difference.
+
+---
+
+### Prod V24 — Live Backtester & Paper Trading (Score: 7)
+
+| # | Title | Chars | Framework | Levers |
+|---|-------|-------|-----------|--------|
+| 1 | Testing Your Strategy Live (Without Real Money) | 48 | #67 — WITHOUT Step | Desire, Fear Reduction, Curiosity |
+| 2 | From Backtest to Live: The Step Nobody Shows You | 49 | #15 — No One Taught | FOMO, Desire, Curiosity |
+| 3 | My Backtest Said 12% Returns. Live Said 8%. Why? | 49 | #87 — Specific Number | Fear, Curiosity, Specificity |
+| 4 | Paper Trading Found 3 Bugs My Backtest Missed | 46 | #87 — Specific Number | Fear, Curiosity, Authority |
+| 5 | The Gap Between Backtest and Real Trading (Fixed) | 49 | #83 — Fixes Problems | Desire, Fear, Authority |
+| 6 | I Paper Traded for 7 Days. Here's What Broke. | 46 | #76 — I Built/Did | Curiosity, Authority, Fear |
+| 7 | How to Go From Backtest to Live Without Losing Money | 52 | #33 — What Authorities Know | Desire, Fear Reduction, Authority |
+| 8 | Your Backtest Works. It Will Fail Live. Here's Why. | 51 | #90 — The Lie | Fear, Curiosity, Authority |
+| 9 | Implementation Shortfall: The Silent Strategy Killer | 52 | #55 — Hidden Killer | Fear, Curiosity, FOMO |
+| 10 | Backtest vs Reality: 200-400bps Vanish Every Year | 50 | #87 — Specific Number | Fear, Specificity, Authority |
+| 11 | The Paper Trading System That Saved Me Real Money | 49 | #55 — Hidden Advantage | Desire, Authority, Curiosity |
+| 12 | 3 Bugs That Only Show Up in Live Trading (Not Backtest) | 55 | #87 — Specific Number | Fear, Specificity, Curiosity |
+| 13 | Why Every Backtest Overestimates Real Performance | 49 | #50 — Why Nobody Does It | Fear, Curiosity, Counter |
+| 14 | Paper Trading in Python (Full Execution Simulator) | 50 | #41 — Tutorial / Tool | Desire, Specificity, Authority |
+| 15 | The Bridge Between Backtest and Production Trading | 50 | #55 — Hidden Advantage | Desire, Curiosity, Authority |
+| 16 | Live Execution Kills Most Strategies. Mine Survived. | 52 | #90 — The Lie / Survival | Fear, Authority, Competition |
+| 17 | Orders, Slippage, Latency — What Backtests Can't See | 52 | #55 — Hidden Costs | Fear, Curiosity, Specificity |
+| 18 | I Built a Paper Trader in Python (Full Walkthrough) | 50 | #76 — I Built | Desire, Authority, Specificity |
+| 19 | What Happens When Your ML Strategy Meets Real Orders | 51 | #33 — What Authorities Know | Curiosity, Fear, Authority |
+| 20 | Simulated vs Real Fills: Why Your Profits Disappear | 51 | #50 — Why Nobody Does It | Fear, Curiosity, Specificity |
+
+**Top 3:**
+1. **"Paper Trading Found 3 Bugs My Backtest Missed"** (46 chars) — #87. Short, punchy, specific (3 bugs). Personal ("my backtest"). Creates fear: what bugs are in MY backtest?
+2. **"From Backtest to Live: The Step Nobody Shows You"** (49 chars) — #15. Addresses a real gap in YouTube quant content. "Nobody Shows You" creates FOMO. Promises the missing bridge.
+3. **"Your Backtest Works. It Will Fail Live. Here's Why."** (51 chars) — #90. Bold confrontation. Three beats: confidence → shock → resolution. High click-through potential.
