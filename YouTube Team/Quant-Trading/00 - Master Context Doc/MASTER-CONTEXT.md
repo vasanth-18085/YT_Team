@@ -119,7 +119,8 @@
 - Real coding, not just Jupyter notebooks — full working systems with multiple files
 - Leveled projects: beginner → intermediate → advanced
 - Even failures are shown — learn what doesn't work and why
-- All code, notebooks, and notes provided free
+- YouTube shows architecture, results, and key code snippets
+- Full implementation exercises + datasets available in the paid course (₹1,999)
 
 ### Step 3: Level Up — Research to Reality
 - Implement actual research papers and book concepts in code
@@ -131,7 +132,7 @@
 
 ## 9. Channel Vision Statement
 
-> I help **ML-aware beginners** transition from **"I know AI but have no idea how to use it in quant finance"** to **building real, end-to-end trading systems** so they can **land QF jobs, earn from their own systems, or build a portfolio that proves they're the real deal — all for free.**
+> I help **ML-aware beginners** transition from **"I know AI but have no idea how to use it in quant finance"** to **building real, end-to-end trading systems** so they can **land QF jobs, earn from their own systems, or build a portfolio that proves they're the real deal — with all concepts taught free on YouTube, and a hands-on course (₹1,999) for those who want to build it themselves with guided exercises.**
 
 ---
 

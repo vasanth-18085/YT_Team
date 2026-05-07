@@ -317,7 +317,7 @@ Production V-numbers used throughout (Script ordering = canonical standard).
 |----------------|--------|
 | **Exclusive Topics** | 12/18 topics no competitor covers (meta-labeling, multi-input fusion, triple-barrier, drift detection, etc.) |
 | **Scale** | 44 models, 2 universes (S&P 100 + Nifty 50), full pipeline |
-| **Format** | Free 12.5-hour course (no paywall) |
+| **Format** | Free 12.5-hour concept series on YouTube + ₹1,999 hands-on course (exercises, datasets, build-it-yourself projects) |
 | **Proof** | Real codebase on GitHub — viewers can run the code |
 | **#1 Threat** | Ryan O'Connell (closest content overlap) |
 

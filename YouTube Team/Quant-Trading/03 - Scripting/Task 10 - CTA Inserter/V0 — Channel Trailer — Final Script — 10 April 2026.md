@@ -14,7 +14,7 @@
 
 ## SECTION 2 — WHAT THIS ACTUALLY IS (0:15–0:45)
 
-[INFORMATION GAIN] I built a complete ML trading system — 44 machine learning models, 10 phases, from raw Yahoo Finance data all the way to paper-traded portfolio returns. Every line of code is free on GitHub. No course. No paywall. No catch.
+[INFORMATION GAIN] I built a complete ML trading system — 44 machine learning models, 10 phases, from raw Yahoo Finance data all the way to paper-traded portfolio returns. Every concept explained free on YouTube. The code architecture is on GitHub. If you want to build it yourself — hands-on exercises, datasets, guided projects — there's a course for that. But the knowledge? Always free.
 
 What you are looking at right now is the real repo. Public badge. 58 Python files. Fully documented.
 
