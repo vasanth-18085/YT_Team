@@ -1,7 +1,7 @@
 # YouTube Team — Dashboard
 
-> **Last updated:** 2026-05-07
-> **Active channel:** Quant Trading (16/18 tasks, ready to launch) + Mahabharatham (16/18 tasks done — V01 fully scripted, launch Jun 13)
+> **Last updated:** 2026-05-10
+> **Active channel:** Quant Trading (16/18 tasks) + Mahabharatham (16/18 tasks, launch Jun 13) + The Quant Noob (16/18 tasks built this session)
 
 ---
 
@@ -11,9 +11,9 @@
 |---------|---------------|-------|-----------|-------|
 | **Quant Trading** | DRAFT | Phase 6 | Task 12 / Task 18 | 16/18 tasks done. All 7 playbook frameworks applied. V-number resolved. All 26 production videos have titles, thumbnails, FIIRE categories, scripts, hooks, CTAs, community posts. Audit issues 1-7 fixed. Only Task 12 (Comment Replies) + Task 18 (Creator Collab) remain. |
 | **Mahabharatham** | COMPLETE | Phase 1 Active | Task 12 (post-launch) + Task 18 (post-launch) | Channel name: Vyasa's Witness. BORI-only, faceless TTS (Kokoro bm_fable). 16/18 tasks done. V01 fully scripted (Karna). Launch Jun 13, 2026. TEACH N/A (faceless). All 7 frameworks applied. |
+| **The Quant Noob** | COMPLETE | Phase 1 Active | Task 12 / Task 18 (post-launch) | Folder: Quant-Noob/. 16/18 tasks done. V01 fully scripted. Launch June 2026. English CPM $6-15. Amazon affiliate Day 1. All 7 frameworks applied. |
 | **Cricket Analytics** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
 | **Gaming Noob** | NOT STARTED | — | Waiting | After Quant Trading workflow proven |
-| **Vasanth Builds** | NOT STARTED | — | Waiting | Live prep/building channel — QF learning, Cricket Analytics, AI projects |
 
 ---
 
@@ -78,6 +78,32 @@
 | 05 - Channel & Positioning | Task 16 — Playlist Strategy | done | 2026-05-07 | Included in Channel-Setup-Plan-07-May-2026.md |
 | 05 - Channel & Positioning | COIN Document | done | 2026-05-07 | [Audience-Language-COIN-07-May-2026.md](../Mahabharatham/05%20-%20Channel%20%26%20Positioning/Audience-Language-COIN-07-May-2026.md) |
 | 06 - Monetisation & Outreach | Task 17 — Brand Outreach | done | 2026-05-07 | [Brand-Outreach-07-May-2026.md](../Mahabharatham/06%20-%20Monetisation%20%26%20Outreach/Task%2017%20-%20Brand%20Outreach/Brand-Outreach-07-May-2026.md) |
+| 06 - Monetisation & Outreach | Task 18 — Creator Collab | not-started | — | Deferred to post-launch |
+
+---
+
+## The Quant Noob — Task Status
+
+> **Channel:** The Quant Noob | **Handle:** @TheQuantNoob | **Folder:** Quant-Noob/ | **Launch:** June 2026
+> **Format:** Face cam + screen share | English | Brand: #0d1117 + #58a6ff | V01 fully scripted
+
+| Phase | Task | Status | Last Updated | Output File |
+|-------|------|--------|--------------|-------------|
+| 00 - Master Context | MASTER-CONTEXT | done | 2026-05-10 | [MASTER-CONTEXT.md](../Quant-Noob/00%20-%20Master%20Context%20Doc/MASTER-CONTEXT.md) |
+| 01 - Ideas & Research | Task 1 — Content Research + FIIRE (V01–V21 catalog) | done | 2026-05-10 | [Content-Research-FIIRE-10-May-2026.md](../Quant-Noob/01%20-%20Ideas%20%26%20Research/Task%201%20-%20Content%20Research/Content-Research-FIIRE-10-May-2026.md) |
+| 01 - Ideas & Research | Task 2 — Competitor Analysis (8 channels) | done | 2026-05-10 | [Competitor-Analysis-10-May-2026.md](../Quant-Noob/01%20-%20Ideas%20%26%20Research/Task%202%20-%20Competitor%20Analysis/Competitor-Analysis-10-May-2026.md) |
+| 01 - Ideas & Research | Task 3 — Idea Validation + SEAS (all V01–V21) | done | 2026-05-10 | [Idea-Validation-SEAS-10-May-2026.md](../Quant-Noob/01%20-%20Ideas%20%26%20Research/Task%203%20-%20Idea%20Validation/Idea-Validation-SEAS-10-May-2026.md) |
+| 02 - Titles & Thumbnails | Task 4 — Title Generator (all V01–V21, 10+ per video) | done | 2026-05-10 | [All-Videos-Title-Options-10-May-2026.md](../Quant-Noob/02%20-%20Titles%20%26%20Thumbnails/Task%204%20-%20Title%20Generator/All-Videos-Title-Options-10-May-2026.md) |
+| 02 - Titles & Thumbnails | Task 5 — Thumbnail Concepts (all V01–V21, Concept A+B) | done | 2026-05-10 | [All-Videos-Thumbnail-Concepts-10-May-2026.md](../Quant-Noob/02%20-%20Titles%20%26%20Thumbnails/Task%205%20-%20Thumbnail%20Concept%20Generator/All-Videos-Thumbnail-Concepts-10-May-2026.md) |
+| 03 - Scripting | Task 6 — Brain Dump V01 | done | 2026-05-10 | [V01-Brain-Dump-10-May-2026.md](../Quant-Noob/03%20-%20Scripting/Task%206%20-%20Brain%20Dump/V01-Brain-Dump-10-May-2026.md) |
+| 03 - Scripting | Task 7 — Script Refiner V01 | done | 2026-05-10 | [V01-Script-Refined-10-May-2026.md](../Quant-Noob/03%20-%20Scripting/Task%207%20-%20Script%20Refiner/V01-Script-Refined-10-May-2026.md) |
+| 03 - Scripting | Task 8 — Intro/Hook V01 | done | 2026-05-10 | [V01-Hook-10-May-2026.md](../Quant-Noob/03%20-%20Scripting/Task%208%20-%20Intro%20Hook%20Generator/V01-Hook-10-May-2026.md) |
+| 03 - Scripting | Task 9 — Fluff Reducer V01 | done | 2026-05-10 | [V01-Fluff-Reduced-10-May-2026.md](../Quant-Noob/03%20-%20Scripting/Task%209%20-%20Fluff%20Reducer/V01-Fluff-Reduced-10-May-2026.md) |
+| 03 - Scripting | Task 10 — CTA + Final Script V01 | done | 2026-05-10 | [V01-Final-Script-With-CTA-10-May-2026.md](../Quant-Noob/03%20-%20Scripting/Task%2010%20-%20CTA%20Inserter/V01-Final-Script-With-CTA-10-May-2026.md) |
+| 04 - Community & Comments | Task 11 — Community Posts (V01–V08 + pre-launch) | done | 2026-05-10 | [Community-Posts-V01-V08-10-May-2026.md](../Quant-Noob/04%20-%20Community%20%26%20Comments/Task%2011%20-%20Community%20Posts/Community-Posts-V01-V08-10-May-2026.md) |
+| 04 - Community & Comments | Task 12 — Comment Replies | not-started | — | Deferred to post-launch |
+| 05 - Channel & Positioning | Tasks 13–16 + COIN (channel setup, about, banner, playlists, audience language) | done | 2026-05-10 | [Channel-Setup-About-Banner-Playlists-COIN-10-May-2026.md](../Quant-Noob/05%20-%20Channel%20%26%20Positioning/Channel-Setup-About-Banner-Playlists-COIN-10-May-2026.md) |
+| 06 - Monetisation & Outreach | Task 17 — Brand Outreach + Monetisation Plan | done | 2026-05-10 | [Brand-Outreach-Monetisation-Plan-10-May-2026.md](../Quant-Noob/06%20-%20Monetisation%20%26%20Outreach/Task%2017%20-%20Brand%20Outreach/Brand-Outreach-Monetisation-Plan-10-May-2026.md) |
 | 06 - Monetisation & Outreach | Task 18 — Creator Collab | not-started | — | Deferred to post-launch |
 
 ---

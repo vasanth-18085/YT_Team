@@ -4,6 +4,50 @@
 
 ---
 
+## Session 17 — 2026-05-10
+
+**Focus:** Full 18-task Oscar Owen system build for **The Quant Noob** (formerly Vasanth-Builds folder). Channel renamed, MASTER-CONTEXT created, all 16 tasks completed in one session. V01 fully scripted.
+
+### Channel Context
+- Channel name: **The Quant Noob** | Handle: @TheQuantNoob
+- Folder: `Quant-Noob/` (renamed from `Vasanth-Builds/`)
+- Source: Quant Dharma Plan (`/Users/vasanth-18085/Projects/EPATPrep/Quant_Dharma/QUANT_DHARMA_PLAN.md`)
+- Format: Face cam + screen share | English | Launch June 2026
+- Brand: Dark navy #0d1117 + Electric blue #58a6ff + White #ffffff
+- Tone: "I'm figuring this out too" — not guru posture
+
+### Actions
+
+| Action | Output File | Notes |
+|--------|------------|-------|
+| Folder rename | `Vasanth-Builds/` → `Quant-Noob/` | `mv` command executed |
+| MASTER-CONTEXT | `00 - Master Context Doc/MASTER-CONTEXT.md` | 14 sections: Target Market, 10× "If You Are A", Things Tried/Pains/Pleasures/Dreads, 6 Myths, Secret Sauce, Vision, Voice/Tone, Infrastructure, Content Pillars, Monetisation, Launch Plan |
+| Task 1 FIIRE | `Task 1.../Content-Research-FIIRE-10-May-2026.md` | V01–V21 catalog + L01–L05 livestreams. FIIRE balance analysis. SEO keyword targets (13 keywords). Year 2 preview. |
+| Task 2 Competitor Analysis | `Task 2.../Competitor-Analysis-10-May-2026.md` | 8 channels: QuantProgram, PatrickBoyle, NickMcCullum, CodeEmporium, TiborCodes, b001io, AlgoVibes, AndyOnFinance. Title/thumbnail formulas. Keyword territory map. Competitive positioning matrix. |
+| Task 3 SEAS | `Task 3.../Idea-Validation-SEAS-10-May-2026.md` | All 21 videos scored. V20 highest (36). 6 Priority (≥35), 15 Approved. 0 reframes needed. CCN Fit mapped. Production order defined. |
+| Task 4 Titles | `Task 4.../All-Videos-Title-Options-10-May-2026.md` | All V01–V21. 10–15 variations each. All top picks 40–60 chars. All 21 top picks passed char audit. |
+| Task 5 Thumbnails | `Task 5.../All-Videos-Thumbnail-Concepts-10-May-2026.md` | All V01–V21. Concept A + B per video. 5C framework check per concept. Visual continuity plan (Desk Trilogy V01/V18/V21). Thumbnail Do's/Don'ts guide. |
+| Task 6 Brain Dump V01 | `Task 6.../V01-Brain-Dump-10-May-2026.md` | Raw material for channel trailer. Core message: gap in market + Quant Dharma Plan + honest uncertainty. |
+| Task 7 Script Refiner V01 | `Task 7.../V01-Script-Refined-10-May-2026.md` | Full script structure. 3 B's audit. Section timing (~10–12 min). Jargon table. |
+| Task 8 Intro/Hook V01 | `Task 8.../V01-Hook-10-May-2026.md` | 5 hook types tested (Shocking Statement, Question, Storytelling, Preview, Personal Connection). Primary: Storytelling. R.A.I.N.Y check: all 5 passed. |
+| Task 9 Fluff Reducer V01 | `Task 9.../V01-Fluff-Reduced-10-May-2026.md` | ~90 words cut. Full cleaned script included. All 3 B's maintained post-reduction. |
+| Task 10 CTA + Final Script | `Task 10.../V01-Final-Script-With-CTA-10-May-2026.md` | Mid-video CTA (min 5–6), end CTA (full + short), YouTube description, pinned comment. Full V01 script assembled end-to-end (hook → CTA). |
+| Task 11 Community Posts | `Task 11.../Community-Posts-V01-V08-10-May-2026.md` | Phase 0 pre-launch: 3 Reddit posts (r/algotrading, r/quant, r/learnmachinelearning) + 1 LinkedIn thread. YouTube Community tab: V01–V08 posts (announce + between-video engagement). Tone guide + cadence table. |
+| Tasks 13–16 + COIN | `05.../Channel-Setup-About-Banner-Playlists-COIN-10-May-2026.md` | Pre-launch checklist (23 items). About text (~180 words). Banner spec (2560×1440, #0d1117 bg, electric blue accent, typography rules). Profile picture spec. 5 playlists with descriptions + video order. Channel home layout. COIN framework (audience language 16 terms, creator language 10 phrases, 8 signature phrases, 6 tone rules). |
+| Task 17 Brand Outreach | `Task 17.../Brand-Outreach-Monetisation-Plan-10-May-2026.md` | 5 revenue streams: Amazon affiliate (Day 1, 7 books mapped), course affiliate (QuantInsti), sponsors (Tier 1: QuantConnect/Alpaca/Polygon.io/IBKR, Tier 2: QuantInsti/Brilliant/DataCamp, Tier 3: Notion/GitHub), Patreon (post-2K subs, 3 tiers), YPP (May 2027 target). Sponsor outreach template. Disclosure language blocks. |
+| DASHBOARD.md updated | `_SYSTEM/DASHBOARD.md` | Channel Overview updated (Vasanth Builds → The Quant Noob), full task status table added (16 rows). Date updated to 2026-05-10. |
+
+### Final State (The Quant Noob)
+- 16/18 tasks complete (Task 12 + Task 18 deferred to post-launch)
+- V01 has complete script ready to film (hook → end CTA, ~10–13 min)
+- All 21 Year 1 videos have: FIIRE category, SEAS score, 10+ title variations, 2 thumbnail concepts
+- Channel setup documents ready: about text, banner spec, 5 playlists, COIN
+- Monetisation plan covers Day 1 (affiliate) through 5K subs (direct sponsorships)
+- Reddit pre-launch seeding strategy defined
+- Launch target: June 2026 (V01 drop)
+
+---
+
 ## Session 16 — 2026-05-07 (continuation)
 
 **Focus:** Extended Mahabharatham tasks — Tasks 1/3/4/5 for all 113 videos, deep competitor analysis (12 channels), channel positioning.
