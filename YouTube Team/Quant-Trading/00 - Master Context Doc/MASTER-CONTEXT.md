@@ -1,8 +1,10 @@
 # Master Context Doc — MLQuant (Quant Trading)
 
-> **Last updated:** 2026-04-09
+> **Last updated:** 2026-05-11
 > **Channel:** MLQuant
-> **Status:** Draft
+> **Status:** Active — Dharma Plan v7 aligned
+> **Season 1:** 26 videos | V0 recorded Nov 2026 | V1–V26 through 2027–2028
+> **Philosophy:** Learn it (CPF) → Build it (Projects P1–P7) → Teach it (YouTube)
 
 ---
 
@@ -117,10 +119,10 @@
 
 ### Step 2: Build — End-to-End Real Projects
 - Real coding, not just Jupyter notebooks — full working systems with multiple files
-- Leveled projects: beginner → intermediate → advanced
+- Leveled projects: beginner → intermediate → advanced (P1 → P7 → Quant Agent)
 - Even failures are shown — learn what doesn't work and why
 - YouTube shows architecture, results, and key code snippets
-- Full implementation exercises + datasets available in the paid course (₹1,999)
+- All concepts free on YouTube, always. No paywalls. A hands-on practice guide (₹1,499 on Gumroad) exists for those who want structured exercises — but it is never the gate to the knowledge.
 
 ### Step 3: Level Up — Research to Reality
 - Implement actual research papers and book concepts in code
@@ -132,7 +134,13 @@
 
 ## 9. Channel Vision Statement
 
-> I help **ML-aware beginners** transition from **"I know AI but have no idea how to use it in quant finance"** to **building real, end-to-end trading systems** so they can **land QF jobs, earn from their own systems, or build a portfolio that proves they're the real deal — with all concepts taught free on YouTube, and a hands-on course (₹1,999) for those who want to build it themselves with guided exercises.**
+> I help **ML engineers and software developers** go from **"I know Python and ML but have no idea how quant finance actually works"** to **building real, production-quality quantitative systems** — so they can **build a portfolio that gets noticed, understand what quant firms actually look for, and follow a self-funded path into the field without paying ₹5 lakh for a course.**
+
+**1-year vision (May 2027):** 500–1,500 subscribers. The audience is small but deeply engaged — ML/SWE engineers genuinely on the quant path. Workflow proven. V0–V9 published.
+
+**3-year vision (May 2029):** The definitive free resource for ML engineers entering quant finance. 6,000–10,000 subscribers. Season 1 complete (26 videos, P1–P7). Season 2 begins — documenting the Quant Agent build (P14). Vasanth's real-world transition happening in public.
+
+**Long-term:** Season 2 = the Quant Agent series. A 10-layer autonomous trading system built episode by episode. Every ML concept applied to a real system. The most ambitious quant YouTube series in India.
 
 ---
 
@@ -145,3 +153,67 @@
 **Things to avoid:** Hype language, "guaranteed returns" talk, overly academic tone, long theory-only sections without code, gatekeeping.
 
 **Things to embrace:** Real code, honest failures, "here's what actually happened" transparency, humor where natural, structured progression, community references.
+
+---
+
+## 11. Season 1 Content Plan — 26 Videos (P1–P7)
+
+Every video in S1 maps to one of the 7 Python quant projects. The pattern: project is built first (privately), then taught on YouTube. No teaching before doing.
+
+| Videos | Project | Core Theme |
+|--------|---------|------------|
+| V0 | Trailer | "I'm building a quant ML system from scratch. Here's the 3-year plan." (2–3 min) |
+| V1–V4 | P1 — Market Data & Risk Engine | NSE data pipeline, adjusted prices, Sharpe/VaR/CVaR, risk dashboard |
+| V5–V7 | P2 — Event-Driven Backtester | Engine architecture, strategies, bias detection (lookahead, survivorship, transaction costs) |
+| V8–V10 | P3 — Factor Alpha Engine | Momentum/Value/Quality factors, IC evaluation, multi-factor composites |
+| V11–V14 | P4 — Volatility & Options Lab | GARCH, Black-Scholes from scratch, Greeks, IV surface, vol premium |
+| V15–V19 | P5 — ML Alpha Research Lab | Feature engineering, purged CV, LightGBM alpha, overfitting audit |
+| V20–V22 | P6 — Portfolio Optimizer | Markowitz, HRP, Black-Litterman, real-world constraints |
+| V23–V26 | P7 — Multi-Strategy Arena | Strategy ensemble, regime detection, live dashboard, full capstone |
+
+**FIIRE distribution:** ~20% Tinder (titles like "Every backtest lies"), ~30% Kindling (core project videos), ~45% Logs (evergreen technique tutorials), ~5% Flint (experimental/research paper implementations).
+
+---
+
+## 12. Channel Timeline
+
+| Date | Milestone |
+|------|-----------|
+| Nov 2026 | V0 recorded (trailer) |
+| Dec 2026 | V0 published. V1–V2 recorded. |
+| Jan–Feb 2027 | V1–V4 published. V5–V7 recorded. |
+| Mar–Apr 2027 | V5–V9 published. |
+| May–Oct 2027 | V10–V24 — acceleration phase (2 videos/month) |
+| Nov 2027–Jan 2028 | V25–V26 — Season 1 complete |
+| 2028 | Season 2 planning. First S2 videos (Quant Agent build). |
+
+---
+
+## 13. Monetisation Strategy
+
+**Core rule (non-negotiable from Dharma plan):** Free. Always. The channel, the code, the ebooks. Education should be accessible. This is why Vasanth left Ineuron. Don't become what you walked away from.
+
+| Revenue Stream | Detail | When |
+|---------------|--------|------|
+| **AdSense** | India CPM ~$0.46. Not significant. Accept it. | Post 1K subs + 4K hrs |
+| **YouTube Membership** | 3 tiers: ₹99 / ₹299 / ₹999. Community, Q&A, early access. | Post 500 subs |
+| **Gumroad course** | ₹1,499 — hands-on implementation exercises. NOT the main content. | Year 2 |
+| **Book affiliates** | Lopez, Chan, Hull, Carver, Jansen — Amazon affiliate links | Day 1 |
+
+**Honest revenue projection (realistic case):** ₹0 in Year 1. ₹5K/month in Year 2 (3K subs). ₹15K/month in Year 3 (6K subs). YouTube revenue is gravy — not the plan.
+
+---
+
+## 14. The Dharma Alignment
+
+This channel is Track E of the Dharma Plan. It exists because of the 3-pass rule:
+
+> **Three passes minimum:** Learn it (CPF) → Build it (Project) → Teach it (YouTube).
+
+The implication: no video gets made until the underlying project is built. No teaching before doing. The YouTube channel is the proof-of-understanding, not the learning vehicle.
+
+**Dharma rules that govern this channel:**
+- NSE/NIFTY first. Every project uses Indian market data. US data secondary.
+- Show the honest numbers. Failed backtests, bad results — they teach more than wins.
+- Community over audience. Respond to comments. Answer questions. Build relationships.
+- If transition doesn't happen — everything taught, everything built, everything free — that has value regardless.

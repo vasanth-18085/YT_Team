@@ -1,6 +1,6 @@
 # Master Context Doc — The Quant Noob
 
-> **Last updated:** 2026-05-10
+> **Last updated:** 2026-05-11
 > **Channel:** The Quant Noob
 > **Handle:** @TheQuantNoob
 > **Format:** Face cam + screen share | Live streams + recorded videos
@@ -190,13 +190,16 @@
 
 ## 13. Monetisation Strategy
 
+**Core rule (Dharma, non-negotiable):** Everything free. The ebooks, the code, the concepts — all of it. Paid ebook sales are off the table. This is why Vasanth left Ineuron.
+
 | Phase | Revenue Stream | Timeline |
-|-------|---------------|---------|
+|-------|---------------|----------|
 | **Phase 1** | Amazon affiliate (quant books: Lopez, Chan, Hull, Carver) | Day 1 |
 | **Phase 2** | YouTube AdSense (English CPM: $4–12) | Post 1K subs + 4K watch hours |
-| **Phase 3** | Ebook sales (CPF study notes as paid ebooks ₹99–499) | When ebooks complete |
-| **Phase 4** | Course affiliate (CPF, EPAT, MScFE referral commissions) | Post 500 subs |
-| **Phase 5** | Patreon / channel membership | Post 2K subs |
+| **Phase 3** | Course affiliates (CPF, EPAT, MScFE referral commissions) | Post 500 subs |
+| **Phase 4** | YouTube Membership (3 tiers: ₹99 / ₹299 / ₹999) | Post 2K subs |
+
+**Honest expectations:** ₹0 in Year 1. ₹~5K/month in Year 2 if things go well. This channel is portfolio and community first, revenue last. Revenue from this channel plus MLQuant combined is the model.
 
 **CPM note:** English-language quant/finance content CPM = $6–15. A small engaged audience (5K subs) in this niche outearns a 50K general-tech Hindi channel. Language decision is also a revenue decision.
 
@@ -214,3 +217,20 @@
 - r/algotrading, r/quant, r/learnmachinelearning — post the trailer with honest framing
 - LinkedIn post: "I'm documenting my quant finance self-study journey on YouTube — starting today"
 - Twitter/X: thread format — "I'm a software engineer trying to break into quant. Thread 🧵"
+
+---
+
+## 15. Relationship to MLQuant Channel
+
+These are two separate channels with distinct roles:
+
+| | The Quant Noob | MLQuant |
+|-|----------------|--------|
+| **Role** | Learn in public | Teach what's been built |
+| **Format** | Live streams + concept videos | Structured project walkthroughs |
+| **Starts** | June 2026 | Nov 2026 (V0 trailer) |
+| **Content** | CPF study, DSA, EPAT journey, monthly updates | P1–P7 Python projects (26 videos, S1) |
+| **Energy** | Raw, honest, messy | Polished, structured, purposeful |
+| **Audience** | People going through the same journey right now | ML engineers wanting to learn quant by building |
+
+The two channels reinforce each other. Quant Noob builds the relationship and community. MLQuant builds the portfolio and reputation. Same creator, different modes.

@@ -1,7 +1,7 @@
 # YouTube Team — Dashboard
 
-> **Last updated:** 2026-05-10
-> **Active channel:** Quant Trading (16/18 tasks) + Mahabharatham (16/18 tasks, launch Jun 13) + The Quant Noob (16/18 tasks built this session)
+> **Last updated:** 2026-05-11
+> **Active channel:** Quant Trading (MLQuant) — Dharma rebuild complete. Mahabharatham (16/18 done). The Quant Noob (16/18 done).
 
 ---
 

@@ -4,6 +4,42 @@
 
 ---
 
+## Session 18 — 2026-05-11
+
+**Focus:** Dharma Plan full rebuild for **MLQuant (Quant-Trading)** channel. Read all 4 PDFs (DHARMA_PLAN_SUMMARY, QUANT_DHARMA_PLAN, DSA_PREP_PLAN, QUANT_AI_PROJECT_CURRICULUM). Updated master contexts for both Quant channels, then did full 18-task rebuild for MLQuant based on new P1–P7 curriculum (27-video Season 1).
+
+### Part 1 — Context Update (both channels)
+
+| Action | File | Notes |
+|--------|------|---------| 
+| MLQuant MASTER-CONTEXT rewrite | `Quant-Trading/00 - Master Context Doc/MASTER-CONTEXT.md` | Updated date, removed ₹1,999 course reference, updated Section 8 (Free always), Section 9 (Vision — S1=P1–7, S2=Quant Agent), added Sections 11–14: Season 1 Content Plan (V0–V26 mapped to P1–7), Timeline (V0 Nov 2026, V1–V26 through 2027–2028), Monetisation (membership tiers, honest projections), Dharma Alignment (3-pass rule) |
+| Quant-Noob MASTER-CONTEXT update | `Quant-Noob/00 - Master Context Doc/MASTER-CONTEXT.md` | Removed paid ebook revenue stream (violates Free Always rule), rewrote Section 13 (Monetisation — honest projections, membership tiers, no paid ebooks), added Section 15 (Relationship to MLQuant) |
+
+### Part 2 — MLQuant Full Task Rebuild (Tasks 1, 3, 4, 5, 11, 13–16, 17)
+
+| Task | Output File | Key Content |
+|------|-------------|-------------|
+| **Task 1 — Content Research + FIIRE** | `Task 1.../Content-Research-FIIRE-11-May-2026.md` | 27-video plan (V0+V1–V26) mapped to P1–P7. FIIRE: 6 Tinder (22%), 8 Kindling (30%), 11 Logs (41%), 2 Flint (7%). All within targets. 13 SEO keywords mapped. Content calendar Nov 2026–Jan 2028. Competitor territory map. |
+| **Task 3 — SEAS Validation** | `Task 3.../Idea-Validation-SEAS-11-May-2026.md` | All 27 videos scored. 5 Priority (≥35): V5 (37), V8 (36), V16 (36), V20 (35), V25 (35). CCN distribution: 12 N-magnets, 11 Casual, 4 Core-only. Packaging advice for 5 low-simplicity videos. Production order recommendation. |
+| **Task 4 — Titles** | `Task 4.../All-Videos-Title-Options-11-May-2026.md` | 10–12 variations per video (all 27). Top picks: all 44–56 chars, all within 40–60 rule. Full character audit table at end of file. |
+| **Task 5 — Thumbnails** | `Task 5.../All-Videos-Thumbnail-Concepts-11-May-2026.md` | 2 concepts per video (all 27 = 54 concepts). 5C framework check per concept. Visual continuity rules and series markers by project block. |
+| **Task 11 — Community Posts** | `Task 11.../Community-Posts-All-V0-V26-11-May-2026.md` | 2 pre-launch posts (announcement + plan reveal). 1 post per video (V0–V26 = 27 posts). 3 engagement post templates (study check-in, question, honest failure). |
+| **Tasks 13–16 + COIN** | `05.../Channel-Setup-About-Banner-Playlists-COIN-11-May-2026.md` | Pre-launch checklist (16 items). About text (~250 words, SEO keywords listed). Banner spec (2560×1440, #0d1117 bg, gold accent, P1→P7 arc graphic). 5 playlists with descriptions + video order. COIN (15 audience terms, 8 creator phrases, 6 signature phrases, 6 tone rules). |
+| **Task 17 — Brand Outreach** | `Task 17.../Brand-Outreach-Monetisation-11-May-2026.md` | 5 revenue streams: Book affiliates (Day 1, 7 books mapped), YouTube Membership (3 tiers, post-500 subs), AdSense (honest CPM projections), Gumroad practice guide (₹1,499 — Year 2), Course affiliates (EPAT/CPF/MScFE). Sponsorship strategy: no sponsors until V13+. Tier 1 targets: Alpaca, Polygon.io, QuantConnect, Zerodha. Full outreach email template. Disclosure language. "What We Never Do" table. Task 18 collab strategy (Year 2 only). |
+
+### PDF Source Context
+- **DHARMA_PLAN_SUMMARY.pdf**: 3-year visual overview. Year 1 = Learn (CPF+DSA+Math). Year 2 = Build (MScFE+P1–8+YT S1). Year 3 = Quant Agent+Apply.
+- **QUANT_DHARMA_PLAN.pdf**: Full plan. YouTube: MLQuant S1=27 videos, V0 Nov 2026, V1–V26 through Jan 2028. Revenue: AdSense + Membership (₹99/299/999) + Gumroad (₹1,499). Free always non-negotiable.
+- **DSA_PREP_PLAN.pdf**: 12-month DSA plan (May 2026–Apr 2027). Striver A2Z + Grokking books. Python first, C++ from Month 7. ~162 problems Year 1.
+- **QUANT_AI_PROJECT_CURRICULUM.pdf**: 14 projects (P1–P14). Track A Python (P1–7) = S1 content. P1=Data+Risk, P2=Backtester, P3=Factor Alpha, P4=Vol+Options, P5=ML Alpha, P6=Portfolio, P7=Multi-Strategy. P14=Quant Agent (S2, Year 3).
+
+### Final State (MLQuant)
+- Old content (44 ML models from Quant_System) formally superseded
+- New 27-video plan fully documented across all task files
+- Scripting tasks (6, 7, 8, 9, 10) deferred — Vasanth will script based on what he actually builds/learns
+- Task 12 (Comment Replies) + Task 18 (Creator Collab) deferred to post-launch
+- All new files dated 2026-05-11, old files from April 2026 preserved as historical reference
+
 ## Session 17 — 2026-05-10
 
 **Focus:** Full 18-task Oscar Owen system build for **The Quant Noob** (formerly Vasanth-Builds folder). Channel renamed, MASTER-CONTEXT created, all 16 tasks completed in one session. V01 fully scripted.
